@@ -1,0 +1,38 @@
+{
+	"parent": "minecraft:husbandry/obtain_netherite_hoe",
+	"criteria": {
+		"break_netherite_hoe": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items":"minecraft:netherite_hoe"
+				},
+				"durability": {
+					"max":0
+				}
+			}
+		}
+	},
+	"display": {
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.break_netherite_hoe.description"
+		},
+		"frame": "challenge",
+		"icon": {
+			"count": 1,
+			"id": "minecraft:netherite_hoe"
+		},
+		"title": {
+			"translate": "advancements.husbandry.netherite_hoe.title"
+		}
+	},
+	"requirements": [
+		[
+			"break_netherite_hoe"
+		]
+	],
+	"rewards": {
+		"experience": 100
+	},
+	"sends_telemetry_event": true
+}

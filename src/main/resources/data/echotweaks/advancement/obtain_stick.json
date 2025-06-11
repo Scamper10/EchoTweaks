@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"get_stick": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:stick"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"recipes": [
+			"echotweaks:big_stick"
+		]
+	}
+}
