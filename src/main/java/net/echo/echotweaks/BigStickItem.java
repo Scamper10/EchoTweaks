@@ -22,7 +22,7 @@ public class BigStickItem extends Item {
 
 	public static Item.Settings createSettings() {
 		return new Item.Settings()
-			.maxDamage(59)
+			.maxDamage(60)
 			.component(DataComponentTypes.WEAPON, new WeaponComponent(1))
 			.component(DataComponentTypes.TOOL, new ToolComponent(List.of(), 1.0F, 2, false))
 			.attributeModifiers(BigStickItem.createAttributeModifiers());
