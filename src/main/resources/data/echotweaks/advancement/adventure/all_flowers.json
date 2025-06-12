@@ -1,0 +1,99 @@
+{
+	"parent":"minecraft:husbandry/plant_any_sniffer_seed",
+	"criteria": {
+		"all_flowers":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions": {
+				"items":[
+					{
+						"items": "minecraft:dandelion"
+					},
+					{
+						"items": "minecraft:open_eyeblossom"
+					},
+					{
+						"items": "minecraft:poppy"
+					},
+					{
+						"items": "minecraft:blue_orchid"
+					},
+					{
+						"items": "minecraft:allium"
+					},
+					{
+						"items": "minecraft:azure_bluet"
+					},
+					{
+						"items": "minecraft:red_tulip"
+					},
+					{
+						"items": "minecraft:orange_tulip"
+					},
+					{
+						"items": "minecraft:white_tulip"
+					},
+					{
+						"items": "minecraft:pink_tulip"
+					},
+					{
+						"items": "minecraft:oxeye_daisy"
+					},
+					{
+						"items": "minecraft:cornflower"
+					},
+					{
+						"items": "minecraft:lily_of_the_valley"
+					},
+					{
+						"items": "minecraft:wither_rose"
+					},
+					{
+						"items": "minecraft:torchflower"
+					},
+					{
+						"items": "minecraft:closed_eyeblossom"
+					},
+					{
+						"items": "minecraft:sunflower"
+					},
+					{
+						"items": "minecraft:lilac"
+					},
+					{
+						"items": "minecraft:peony"
+					},
+					{
+						"items": "minecraft:rose_bush"
+					},
+					{
+						"items": "minecraft:pitcher_plant"
+					},
+					{
+						"items": "minecraft:pink_petals"
+					},
+					{
+						"items": "minecraft:wildflowers"
+					},
+					{
+						"items": "minecraft:spore_blossom"
+					},
+					{
+						"items": "minecraft:cactus_flower"
+					}
+				]
+			}
+		}
+	},
+	"display":{
+		"description": {
+			"translate":"advancement.echotweaks.adventure.all_flowers.description"
+		},
+		"frame": "challenge",
+		"icon": {
+			"id":"minecraft:blue_orchid"
+		},
+		"title":{
+			"translate":"advancement.echotweaks.adventure.all_flowers.title"
+		}
+	}
+}

@@ -20,10 +20,7 @@
 		"frame": "challenge",
 		"icon": {
 			"count": 1,
-			"id": "minecraft:netherite_hoe",
-			"components": {
-				"minecraft:enchantment_glint_override":true
-			}
+			"id": "minecraft:netherite_hoe"
 		},
 		"title": {
 			"translate": "advancements.husbandry.netherite_hoe.title"

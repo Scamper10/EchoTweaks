@@ -1,5 +1,7 @@
 {
 	"item.echotweaks.big_stick": "Big Stick",
+	"advancement.echotweaks.adventure.all_flowers.description": "Have every Flower in your inventory",
+	"advancement.echotweaks.adventure.all_flowers.title": "Flower Power",
 	"advancement.echotweaks.husbandry.obtain_netherite_hoe.description": "Use a Netherite Ingot to upgrade a Hoe",
 	"advancement.echotweaks.husbandry.obtain_netherite_hoe.title": "A Heavy Commitment",
 	"advancement.echotweaks.husbandry.break_netherite_hoe.description": "Use a Netherite Hoe until it breaks, and then reevaluate your life choices"

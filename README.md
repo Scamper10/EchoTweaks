@@ -2,7 +2,12 @@
 
 My small additions, for Minecraft 1.21.5
 
-## *Quick Navigation* 
+<details open>
+<summary>
+
+## <ins>*Quick Navigation*</ins>
+
+</summary>
 
 - [Commands](#commands)
 	- [unbreakable](#unbk)
@@ -11,6 +16,9 @@ My small additions, for Minecraft 1.21.5
 	- [Big Stick](#big-stick)
 - [Advancements](#advancements)
 	- [A Heavy Commitment / Serious Dedication](#serious-dedication)
+	- [Flower Power](#flower-power)
+
+</details>
 
 ## Additions
 
@@ -24,7 +32,7 @@ My small additions, for Minecraft 1.21.5
 ### Items
 
 #### <ins>Big Stick</ins>
-![The Big Stick. It's like the normal stick, but Bigger!](readmeAssets/BigStickCraft.gif  "echotweaks:big_stick")<br>
+![The Big Stick. It's like the normal stick, but Bigger!](readmeAssets/BigStickCraft.gif "echotweaks:big_stick")<br>
 Only hits as well as a boring normal stick.<br>
 Knocks attacked enemies very far away.<br>
 Has 60 durability, loses 1 on attack, 2 on block break
@@ -33,14 +41,53 @@ Has 60 durability, loses 1 on attack, 2 on block break
 
 #### <ins>Serious Dedication</ins>
 
-<p>The old one was better!</p>
+The old one was better!
 
-<p>
+The vanilla 1.21.5 *Serious&nbsp;Dedication* (`minecraft:husbandry/obtain_netherite_hoe`) has been replaced by *A&nbsp;Heavy&nbsp;Commitment*, and demoted to a `goal` rather than a `challenge`  (see [frame](https://minecraft.wiki/w/Advancement_definition)).
 
-The vanilla 1.21.5 *Serious Dedication* (`minecraft:husbandry/obtain_netherite_hoe`) has been replaced by *A&nbsp;Heavy&nbsp;Commitment*, and demoted to a `goal` rather than a `challenge`  (see [frame](https://minecraft.wiki/w/Advancement_definition)).
-</p>
+Instead, *Serious&nbsp;Dedication* (now `echotweaks:husbandry/break_netherite_hoe`) is restored to its former glory, requiring you to use up and break the precious tool.
 
-<p>
+#### <ins>Flower Power</ins>
 
-Instead, *Serious Dedication* (now `echotweaks:husbandry/break_netherite_hoe`) is restored to its former glory, requiring you to use up and break the precious tool.
-</p>
+They're pretty, right?
+
+This one's simple, have all the Flowers at once.
+
+<details>
+<summary>&nbsp;(Specifically these 25)</summary>
+
+```
+minecraft:allium
+minecraft:azure_bluet
+minecraft:blue_orchid
+minecraft:cactus_flower
+minecraft:cornflower
+minecraft:dandelion
+minecraft:closed_eyeblossom
+minecraft:open_eyeblossom
+minecraft:lilac
+minecraft:lily_of_the_valley
+minecraft:oxeye_daisy
+minecraft:peony
+minecraft:pink_petals
+minecraft:pitcher_plant
+minecraft:poppy
+minecraft:rose_bush
+minecraft:spore_blossom
+minecraft:sunflower
+minecraft:torchflower
+minecraft:red_tulip
+minecraft:orange_tulip
+minecraft:pink_tulip
+minecraft:white_tulip
+minecraft:wildflowers
+minecraft:wither_rose
+```
+
+(Yes I know there are more things with "flower" in them)<br>
+(and more things in `#minecraft:flowers`)<br>
+(these are the ones that I say count)<br>
+(they have petals idk)<br>
+(don't @ me)
+
+</details>
