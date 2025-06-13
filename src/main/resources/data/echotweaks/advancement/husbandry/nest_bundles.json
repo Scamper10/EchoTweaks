@@ -1,0 +1,28 @@
+{
+	"parent": "minecraft:husbandry/breed_an_animal",
+	"criteria": {
+		"nest_bundles": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:bundle",
+						"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]}
+					}
+				]
+			}
+		}
+	},
+	"display": {
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.nest_bundles.description"
+		},
+		"frame": "goal",
+		"icon": {
+			"id": "minecraft:bundle"
+		},
+		"title": {
+			"translate": "advancement.echotweaks.husbandry.nest_bundles.title"
+		}
+	}
+}

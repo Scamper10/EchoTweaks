@@ -1,0 +1,32 @@
+{
+	"parent": "echotweaks:story/fill_cobblestone_chest",
+	"criteria": {
+		"fill_furnace_inventory": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"type": "minecraft:player",
+					"nbt": "{Inventory:[{count: 64, Slot: 0b, id: \"minecraft:furnace\"}, {count: 64, Slot: 1b, id: \"minecraft:furnace\"}, {count: 64, Slot: 2b, id: \"minecraft:furnace\"}, {count: 64, Slot: 3b, id: \"minecraft:furnace\"}, {count: 64, Slot: 4b, id: \"minecraft:furnace\"}, {count: 64, Slot: 5b, id: \"minecraft:furnace\"}, {count: 64, Slot: 6b, id: \"minecraft:furnace\"}, {count: 64, Slot: 7b, id: \"minecraft:furnace\"}, {count: 64, Slot: 8b, id: \"minecraft:furnace\"}, {count: 64, Slot: 9b, id: \"minecraft:furnace\"}, {count: 64, Slot: 10b, id: \"minecraft:furnace\"}, {count: 64, Slot: 11b, id: \"minecraft:furnace\"}, {count: 64, Slot: 12b, id: \"minecraft:furnace\"}, {count: 64, Slot: 13b, id: \"minecraft:furnace\"}, {count: 64, Slot: 14b, id: \"minecraft:furnace\"}, {count: 64, Slot: 15b, id: \"minecraft:furnace\"}, {count: 64, Slot: 16b, id: \"minecraft:furnace\"}, {count: 64, Slot: 17b, id: \"minecraft:furnace\"}, {count: 64, Slot: 18b, id: \"minecraft:furnace\"}, {count: 64, Slot: 19b, id: \"minecraft:furnace\"}, {count: 64, Slot: 20b, id: \"minecraft:furnace\"}, {count: 64, Slot: 21b, id: \"minecraft:furnace\"}, {count: 64, Slot: 22b, id: \"minecraft:furnace\"}, {count: 64, Slot: 23b, id: \"minecraft:furnace\"}, {count: 64, Slot: 24b, id: \"minecraft:furnace\"}, {count: 64, Slot: 25b, id: \"minecraft:furnace\"}, {count: 64, Slot: 26b, id: \"minecraft:furnace\"}, {count: 64, Slot: 27b, id: \"minecraft:furnace\"}, {count: 64, Slot: 28b, id: \"minecraft:furnace\"}, {count: 64, Slot: 29b, id: \"minecraft:furnace\"}, {count: 64, Slot: 30b, id: \"minecraft:furnace\"}, {count: 64, Slot: 31b, id: \"minecraft:furnace\"}, {count: 64, Slot: 32b, id: \"minecraft:furnace\"}, {count: 64, Slot: 33b, id: \"minecraft:furnace\"}, {count: 64, Slot: 34b, id: \"minecraft:furnace\"}, {count: 64, Slot: 35b, id: \"minecraft:furnace\"}]}",
+					"equipment": {
+						"offhand": {
+							"items": "minecraft:furnace",
+							"count": 64
+						}
+					}
+				}
+			}
+		}
+	},
+	"display": {
+		"description": {
+			"translate": "advancement.echotweaks.story.fill_furnace_inventory.description"
+		},
+		"frame": "challenge",
+		"icon": {
+			"id": "minecraft:furnace"
+		},
+		"title": {
+			"translate": "advancement.echotweaks.story.fill_furnace_inventory.title"
+		}
+	}
+}

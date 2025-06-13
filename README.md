@@ -16,7 +16,10 @@ My small additions, for Minecraft 1.21.5
 	- [Big Stick](#big-stick)
 - [Advancements](#advancements)
 	- [A Heavy Commitment / Serious Dedication](#serious-dedication)
+	- [Chestful Of Cobblestone](#chestful-of-cobblestone)
+	- [Fully Furnaced](#fully-furnaced)
 	- [Flower Power](#flower-power)
+	- [Stack Overflow](#stack-overflow)
 
 </details>
 
@@ -46,6 +49,22 @@ The old one was better!
 The vanilla 1.21.5 *Serious&nbsp;Dedication* (`minecraft:husbandry/obtain_netherite_hoe`) has been replaced by *A&nbsp;Heavy&nbsp;Commitment*, and demoted to a `goal` rather than a `challenge`  (see [frame](https://minecraft.wiki/w/Advancement_definition)).
 
 Instead, *Serious&nbsp;Dedication* (now `echotweaks:husbandry/break_netherite_hoe`) is restored to its former glory, requiring you to use up and break the precious tool.
+
+#### <ins>Chestful Of Cobblestone</ins>
+
+That's a lot.
+
+Fill a Chest with exactly 1,728 Cobblestone, and then open it.
+
+(For the uninitiated, just fill a single Chest all the way.)
+
+#### <ins>Fully Furnaced</ins>
+
+That's more.
+
+Fill your Inventory with exactly 2,368 Furnaces.
+
+(Again, no counting is required. You'll know when you're done.)
 
 #### <ins>Flower Power</ins>
 
@@ -91,3 +110,11 @@ minecraft:wither_rose
 (don't @ me)
 
 </details>
+
+#### <ins>Stack Overflow</ins>
+
+It's too deep!
+
+Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle.
+
+(Basically just do it until you can't anymore.)
