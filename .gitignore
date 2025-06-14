@@ -1,4 +1,4 @@
 .gradle/**
-.vscode/**
+.vscode/launch.json
 build/**
 run/**

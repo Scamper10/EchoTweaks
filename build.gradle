@@ -82,3 +82,17 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+task buildAndReveal(dependsOn: build) {
+	group = "build"
+	description = "Runs build and opens the output directory"
+
+    doLast {
+        def outputDir = file("$buildDir/libs")
+        println "Opening directory: ${outputDir.absolutePath}"
+        exec {
+            commandLine "explorer.exe", outputDir.absolutePath
+			ignoreExitValue = true
+        }
+    }
+}
