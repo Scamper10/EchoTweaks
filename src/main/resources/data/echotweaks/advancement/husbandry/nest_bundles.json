@@ -6,8 +6,25 @@
 			"conditions": {
 				"items": [
 					{
-						"items": "minecraft:bundle",
-						"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"components": {"minecraft:bundle_contents": [{"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]},"id": "minecraft:bundle"}]}
+						"items": "#minecraft:bundles",
+						"predicates": {
+							"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles",
+							"predicates": {"minecraft:bundle_contents": {"items": {"contains": [{"items": "#minecraft:bundles"
+						}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}}]}}}
 					}
 				]
 			}
