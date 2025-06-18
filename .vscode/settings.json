@@ -12,5 +12,6 @@
 		"gradlew": true,
 		"gradlew.bat": true,
 		"*.gradle": true
-	}
+	},
+	"java.debug.settings.onBuildFailureProceed": true
 }

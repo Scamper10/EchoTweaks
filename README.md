@@ -17,6 +17,7 @@ My small additions, for Minecraft 1.21.5
 - [Advancements](#advancements)
 	- [A Heavy Commitment / Serious Dedication](#serious-dedication)
 	- [Chestful Of Cobblestone](#chestful-of-cobblestone)
+	- [Diamonds To You!](#diamonds-to-you)
 	- [Fully Furnaced](#fully-furnaced)
 	- [Flower Power](#flower-power)
 	- [Overkill / Over-Overkill](#overkill)
@@ -58,6 +59,12 @@ That's a lot.
 Fill a Chest with exactly 1,728 Cobblestone, and then open it.
 
 (For the uninitiated, just fill a single Chest all the way.)
+
+#### <ins>Diamonds To You</ins>
+
+Sharing is caring.
+
+Have another entity pick up a diamond you have thrown on the ground, Players and Zombies alike.
 
 #### <ins>Fully Furnaced</ins>
 

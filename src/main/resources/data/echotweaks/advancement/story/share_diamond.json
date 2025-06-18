@@ -1,0 +1,25 @@
+{
+	"parent": "minecraft:story/mine_diamond",
+	"criteria": {
+		"share_diamond": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": "minecraft:diamond"
+				}
+			}
+		}
+	},
+	"display": {
+		"description": {
+			"translate": "advancement.echotweaks.story.share_diamond.description"
+		},
+		"frame": "task",
+		"icon": {
+			"id": "minecraft:diamond"
+		},
+		"title": {
+			"translate": "advancement.echotweaks.story.share_diamond.title"
+		}
+	}
+}
