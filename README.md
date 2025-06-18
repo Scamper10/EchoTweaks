@@ -19,6 +19,7 @@ My small additions, for Minecraft 1.21.5
 	- [Chestful Of Cobblestone](#chestful-of-cobblestone)
 	- [Fully Furnaced](#fully-furnaced)
 	- [Flower Power](#flower-power)
+	- [Overkill / Over-Overkill](#overkill)
 	- [Stack Overflow](#stack-overflow)
 
 </details>
@@ -110,6 +111,12 @@ minecraft:wither_rose
 (don't @ me)
 
 </details>
+
+#### <ins>Overkill</ins>
+
+You gotta wallk first.
+
+It's just like it was before the new fancy Mace existed. Deal at least a full 10 hearts of damage in a single hit. *Over-Overkill* is now after this in the tree, but is otherwise unchanged.
 
 #### <ins>Stack Overflow</ins>
 
