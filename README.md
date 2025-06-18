@@ -21,6 +21,7 @@ My small additions, for Minecraft 1.21.5
 	- [Fully Furnaced](#fully-furnaced)
 	- [Flower Power](#flower-power)
 	- [Overkill / Over-Overkill](#overkill)
+	- [Rainbow Collection](#rainbow-collection)
 	- [Stack Overflow](#stack-overflow)
 
 </details>
@@ -124,6 +125,12 @@ minecraft:wither_rose
 You gotta wallk first.
 
 It's just like it was before the new fancy Mace existed. Deal at least 9 hearts of damage in a single hit. *Over-Overkill* is now after this in the tree, but is otherwise unchanged.
+
+#### <ins>Rainbow Collection</ins>
+
+Loud and proud!
+
+Have all 16 differently coloured wool blocks at the same time.
 
 #### <ins>Stack Overflow</ins>
 
