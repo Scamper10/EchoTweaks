@@ -116,7 +116,7 @@ minecraft:wither_rose
 
 You gotta wallk first.
 
-It's just like it was before the new fancy Mace existed. Deal at least a full 10 hearts of damage in a single hit. *Over-Overkill* is now after this in the tree, but is otherwise unchanged.
+It's just like it was before the new fancy Mace existed. Deal at least 9 hearts of damage in a single hit. *Over-Overkill* is now after this in the tree, but is otherwise unchanged.
 
 #### <ins>Stack Overflow</ins>
 
