@@ -1,7 +1,8 @@
 {
-	"item.echotweaks.big_stick": "Big Stick",
 	"advancement.echotweaks.adventure.all_flowers.description": "Have every Flower in your inventory",
 	"advancement.echotweaks.adventure.all_flowers.title": "Flower Power",
+	"advancement.echotweaks.adventure.overkill.description": "Deal 10 hearts of damage in a single hit",
+	"advancement.echotweaks.adventure.overkill.title": "Overkill",
 	"advancement.echotweaks.husbandry.nest_bundles.description":"Have a Bundle inside a Bundle inside... Well, you get it.",
 	"advancement.echotweaks.husbandry.nest_bundles.title":"Stack Overflow",
 	"advancement.echotweaks.husbandry.obtain_netherite_hoe.description": "Use a Netherite Ingot to upgrade a Hoe",
@@ -10,5 +11,6 @@
 	"advancement.echotweaks.story.fill_cobblestone_chest.description": "Open a Chest to be greeted by 1,728 Cobblestone",
 	"advancement.echotweaks.story.fill_cobblestone_chest.title": "Chestful Of Cobblestone",
 	"advancement.echotweaks.story.fill_furnace_inventory.description": "Completely fill your Inventory with Furnaces",
-	"advancement.echotweaks.story.fill_furnace_inventory.title": "Fully Furnaced"
+	"advancement.echotweaks.story.fill_furnace_inventory.title": "Fully Furnaced",
+	"item.echotweaks.big_stick": "Big Stick"
 }
