@@ -6,6 +6,13 @@
 			"conditions": {
 				"item": {
 					"items": "minecraft:diamond"
+				},
+				"entity": {
+					"distance": {
+						"absolute": {
+							"min": 1e-7
+						}
+					}
 				}
 			}
 		}
