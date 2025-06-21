@@ -57,7 +57,7 @@ Instead, *Serious&nbsp;Dedication* (now `echotweaks:husbandry/break_netherite_ho
 
 That's a lot.
 
-Fill a Chest with exactly 1,728 Cobblestone, and then open it.
+Fill a single Chest with exactly 1,728 Cobblestone, and then open it.
 
 (For the uninitiated, just fill a single Chest all the way.)
 
