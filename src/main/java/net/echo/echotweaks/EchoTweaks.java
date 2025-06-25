@@ -20,6 +20,7 @@ public class EchoTweaks implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.init();
+		ModBlocks.init();
 		Commands.registerAll();
 		LOGGER.info("My mod loaded :3");
 	}

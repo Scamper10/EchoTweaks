@@ -16,5 +16,7 @@
 	"advancement.echotweaks.story.fill_furnace_inventory.title": "Fully Furnaced",
 	"advancement.echotweaks.story.share_diamond.description": "Toss a diamond to another",
 	"advancement.echotweaks.story.share_diamond.title": "Diamonds To You!",
-	"item.echotweaks.big_stick": "Big Stick"
+	"item.echotweaks.big_stick": "Big Stick",
+	"item.echotweaks.charcoal_block": "Block of Charcoal",
+	"item.echotweaks.wrench": "Wrench"
 }
