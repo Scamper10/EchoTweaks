@@ -42,10 +42,10 @@ public class ModBlocks {
 
 		return Registry.register(Registries.BLOCK, blockKey, block);
 	}
-	private static Block register(String name) {
+	private static Block register(String name, AbstractBlock.Settings settings) {
 		return register(
 			name,
-			AbstractBlock.Settings.create(),
+			settings,
 			new Item.Settings(),
 			true,
 			Block::new
@@ -55,5 +55,10 @@ public class ModBlocks {
 		return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(EchoTweaks.MOD_ID, name));
 	}
 
-	public static final Block CHARCOAL_BLOCK = register("charcoal_block");
+	public static final Block CHARCOAL_BLOCK = register(
+		"charcoal_block",
+		AbstractBlock.Settings.create()
+			.requiresTool()
+			.strength(5.0F, 6.0F)
+	);
 }
