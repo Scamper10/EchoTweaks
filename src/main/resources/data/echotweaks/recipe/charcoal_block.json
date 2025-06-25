@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"ccc",
+		"ccc",
+		"ccc"
+	],
+	"key": {
+		"c": "minecraft:charcoal"
+	},
+	"result": {
+		"id": "echotweaks:charcoal_block"
+	}
+}
