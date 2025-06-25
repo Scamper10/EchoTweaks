@@ -1,5 +1,6 @@
 package net.echo.echotweaks;
 
+import net.echo.echotweaks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +21,6 @@ public class EchoTweaks implements ModInitializer {
 
 		ModItems.init();
 		Commands.registerAll();
-		LOGGER.info("My mod loaded :)");
+		LOGGER.info("My mod loaded :3");
 	}
 }

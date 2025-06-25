@@ -1,4 +1,4 @@
-package net.echo.echotweaks;
+package net.echo.echotweaks.item;
 
 import java.util.function.Function;
 
@@ -9,10 +9,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.echo.echotweaks.EchoTweaks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 
 public class ModItems {
+
 	public static void init() {
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
 			builder.add(ModItems.BIG_STICK, 150);
@@ -21,14 +23,18 @@ public class ModItems {
 			.register((itemGroup) -> itemGroup.add(ModItems.BIG_STICK));
 	}
 
-	public static Item register(String id, Item.Settings settings, Function<Item.Settings, Item> itemFactory) {
-		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EchoTweaks.MOD_ID, id));
+	private static Item register(String name, Item.Settings settings, Function<Item.Settings, Item> itemFactory) {
+		RegistryKey<Item> itemKey = keyOf(name);
 		Item item = itemFactory.apply(settings.registryKey(itemKey));
 		Registry.register(Registries.ITEM, itemKey, item);
 		return item;
 	}
-	public static Item register(String id, Item.Settings settings) {
-		return register(id, settings, Item::new);
+	private static Item register(String name, Item.Settings settings) {
+		return register(name, settings, Item::new);
+	}
+
+	public static RegistryKey<Item> keyOf(String name) {
+		return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EchoTweaks.MOD_ID, name));
 	}
 
 	public static final Item BIG_STICK = ModItems.register(
@@ -36,4 +42,5 @@ public class ModItems {
 		BigStickItem.createSettings(),
 		BigStickItem::new
 	);
+
 }

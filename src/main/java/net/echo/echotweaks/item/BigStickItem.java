@@ -1,7 +1,8 @@
-package net.echo.echotweaks;
+package net.echo.echotweaks.item;
 
 import java.util.List;
 
+import net.echo.echotweaks.EchoTweaks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
