@@ -14,6 +14,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 
 public class ModItems {
+	private static final Item.Settings COSMETIC_SETTINGS = new Item.Settings().maxCount(1);
 
 	public static void init() {
 		FuelRegistryEvents.BUILD.register((builder, context) -> {
@@ -21,6 +22,8 @@ public class ModItems {
 		});
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
 			.register((itemGroup) -> itemGroup.add(ModItems.BIG_STICK));
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+			.register((itemGroup) -> itemGroup.add(ModItems.WRENCH));
 	}
 
 	private static Item register(String name, Item.Settings settings, Function<Item.Settings, Item> itemFactory) {
@@ -43,4 +46,8 @@ public class ModItems {
 		BigStickItem::new
 	);
 
+	public static final Item WRENCH = ModItems.register(
+		"wrench",
+		COSMETIC_SETTINGS
+	);
 }
