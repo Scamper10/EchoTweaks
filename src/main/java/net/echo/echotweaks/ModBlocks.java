@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import net.echo.echotweaks.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -24,7 +25,9 @@ public class ModBlocks {
 		});
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-			.register((itemGroup) -> itemGroup.addAfter(Items.COAL_BLOCK, ModBlocks.CHARCOAL_BLOCK.asItem()));
+			.register((itemGroup) -> itemGroup.addAfter(Items.COAL_BLOCK, CHARCOAL_BLOCK.asItem()));
+
+		FlammableBlockRegistry.getDefaultInstance().add(CHARCOAL_BLOCK, 5, 5);
 	}
 	
 	private static Block register(String name, AbstractBlock.Settings blockSettings, Item.Settings itemSettings, Boolean shouldRegisterItem, Function<AbstractBlock.Settings, Block> blockFactory) {
@@ -39,10 +42,10 @@ public class ModBlocks {
 
 		return Registry.register(Registries.BLOCK, blockKey, block);
 	}
-	private static Block register(String name, AbstractBlock.Settings blockSettings) {
+	private static Block register(String name) {
 		return register(
 			name,
-			blockSettings,
+			AbstractBlock.Settings.create(),
 			new Item.Settings(),
 			true,
 			Block::new
@@ -52,8 +55,5 @@ public class ModBlocks {
 		return RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(EchoTweaks.MOD_ID, name));
 	}
 
-	public static final Block CHARCOAL_BLOCK = register(
-		"charcoal_block",
-		AbstractBlock.Settings.create().burnable()
-	);
+	public static final Block CHARCOAL_BLOCK = register("charcoal_block");
 }
