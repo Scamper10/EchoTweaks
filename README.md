@@ -14,6 +14,9 @@ My small additions, for Minecraft 1.21.5
 	- [heal](#heal)
 - [Items](#items)
 	- [Big Stick](#big-stick)
+	- [Wrench](#wrench)
+- [Blocks](#blocks)
+	- [Charcoal Block](#charcoal-block)
 - [Advancements](#advancements)
 	- [A Heavy Commitment / Serious Dedication](#serious-dedication)
 	- [Chestful Of Cobblestone](#chestful-of-cobblestone)
@@ -42,6 +45,17 @@ My small additions, for Minecraft 1.21.5
 Only hits as well as a boring normal stick.<br>
 Knocks attacked enemies very far away.<br>
 Has 60 durability, loses 1 on attack, 2 on block break
+
+#### <ins>Wrench</ins>
+![The Wrench. It's got a handle bit and a claw bit. That's it. It's useless. Move on.](readmeAssets/WrenchCraft.png "echotweaks:wrench")<br>
+Is purely cosmetic, can be crafted back down into three ingots.
+
+### Blocks
+
+#### <ins>Charcoal Block</ins>
+![The Charcoal Block. It's pretty similar-looking to a normal Coal Block. Maybe a bit lighter and brown-er, like Charcoal is to Coal.](readmeAssets/CharcoalBlock.png)<br>
+Functionally identical to the vanilla Coal Block, but for Charcoal.<br>
+Also smelts the same 80 items.
 
 ### Advancements
 
