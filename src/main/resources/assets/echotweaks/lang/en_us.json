@@ -16,6 +16,11 @@
 	"advancement.echotweaks.story.fill_furnace_inventory.title": "Fully Furnaced",
 	"advancement.echotweaks.story.share_diamond.description": "Toss a diamond to another",
 	"advancement.echotweaks.story.share_diamond.title": "Diamonds To You!",
+
+	"commands.echotweaks.heal.maximum": "Healed %s",
+	"commands.echotweaks.heal.specific": "Healed %1$s by %2$s points",
+	"commands.echotweaks.unbreakable.success": "It will never be broken.",
+
 	"item.echotweaks.big_stick": "Big Stick",
 	"item.echotweaks.charcoal_block": "Block of Charcoal",
 	"item.echotweaks.wrench": "Wrench"
