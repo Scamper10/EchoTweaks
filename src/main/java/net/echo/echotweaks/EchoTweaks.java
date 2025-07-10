@@ -7,6 +7,7 @@
 
 package net.echo.echotweaks;
 
+import net.echo.echotweaks.command.ModCommands;
 import net.echo.echotweaks.config.EchoConfig;
 import net.echo.echotweaks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,11 +16,6 @@ import org.slf4j.LoggerFactory;
 
 public class EchoTweaks implements ModInitializer {
 	public static final String MOD_ID = "echotweaks";
-
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
@@ -31,6 +27,20 @@ public class EchoTweaks implements ModInitializer {
 		ModBlocks.init();
 		ModCommands.registerAll();
 
-		LOGGER.info("My Mod Loaded :3");
+		LOGGER.log("My Mod Loaded :3");
+	}
+
+	public class LOGGER {
+		private static final Logger l = LoggerFactory.getLogger(MOD_ID);
+
+		public static void log(String s) {
+			l.info(s);
+		}
+		public static void log(int i) {
+			l.info(((Integer)i).toString());
+		}
+		public static void err(String s) {
+			l.error(s);
+		}
 	}
 }
