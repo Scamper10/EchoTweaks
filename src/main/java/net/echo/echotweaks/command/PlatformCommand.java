@@ -1,4 +1,6 @@
-/*
+/* TODO
+ * remove centerblock argument when size is 0
+ * 
  * existing block handling?
  * 
  * config?

@@ -9,25 +9,33 @@ My small additions, for Minecraft 1.21.5
 
 </summary>
 
-- [Commands](#commands)
-	- [unbreakable](#unbk)
-	- [heal](#heal)
-- [Items](#items)
-	- [Big Stick](#big-stick)
-	- [Wrench](#wrench)
-- [Blocks](#blocks)
-	- [Charcoal Block](#charcoal-block)
-- [Advancements](#advancements)
-	- [A Heavy Commitment / Serious Dedication](#serious-dedication)
-	- [Chestful Of Cobblestone](#chestful-of-cobblestone)
-	- [Diamonds To You!](#diamonds-to-you)
-	- [Fully Furnaced](#fully-furnaced)
-	- [Flower Power](#flower-power)
-	- [Overkill / Over-Overkill](#overkill)
-	- [Rainbow Collection](#rainbow-collection)
-	- [Stack Overflow](#stack-overflow)
+- [Dependencies & Relations](#dependencies--relations)
+- [Additions](#additions)
+	- [Commands](#commands)
+		- [heal](#heal)
+		- [platform](#plat)
+		- [unbreakable](#unbk)
+	- [Items](#items)
+		- [Big Stick](#big-stick)
+		- [Wrench](#wrench)
+	- [Blocks](#blocks)
+		- [Charcoal Block](#charcoal-block)
+	- [Advancements](#advancements)
+		- [A Heavy Commitment / Serious Dedication](#serious-dedication)
+		- [Chestful Of Cobblestone](#chestful-of-cobblestone)
+		- [Diamonds To You!](#diamonds-to-you)
+		- [Fully Furnaced](#fully-furnaced)
+		- [Flower Power](#flower-power)
+		- [Overkill / Over-Overkill](#overkill)
+		- [Rainbow Collection](#rainbow-collection)
+		- [Stack Overflow](#stack-overflow)
 
 </details>
+
+## Dependencies & Relations
+EchoTweaks **needs** [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files/6351756) to function fully.
+
+It also supports [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu/files/6347337), which is recommended for access to the config screen.
 
 ## Additions
 
@@ -35,8 +43,9 @@ My small additions, for Minecraft 1.21.5
 
 |Command|Description|
 |-------|-----------|
+|<a id="heal"></a>`heal [<entity>] [<amount>]`|Heals `entity` by `amount` health points.<br>- If `entity` is omitted, targets the executing entity.<br>- If `amount` is omitted, restores max health.|
+|<a id="plat"></a>`platform [<main_block>\|$use_held] [<size>] [<center_block>]`|Fills `main_block` (or the block in your hand) in a square around you.<br>- Uses config if no arguments are given, or if `size` is missing.<br>- Each `size` correlates to a square of side-length `2*size + 1` centred on the player.|
 |<a id="unbk"></a>`unbreakable`|Applies the `minecraft:unbreakable` component to the player's currently held item.|
-|<a id="heal"></a>`heal [<entity>] [<amount>]`|Heals `entity` by `amount` health points.<br>If `entity` is omitted, targets the executing entity.<br>If `amount` is omitted, restores max health.|
 
 ### Items
 
