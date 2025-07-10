@@ -2,14 +2,14 @@
 	"schemaVersion": 1,
 	"id": "echotweaks",
 	"version": "${version}",
-	"name": "Tutorial Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "EchoTweaks",
+	"description": "The game was bad, so I learned Java.",
 	"authors": [
-		"Me!"
+		"J"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Scamper10/EchoTweaks",
+		"issues": "https://github.com/Scamper10/EchoTweaks/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/echotweaks/icon.png",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"net.echo.echotweaks.EchoTweaks"
+		],
+		"modmenu": [
+			"net.echo.echotweaks.config.EchoModMenu"
 		]
 	},
 	"depends": {
@@ -24,5 +27,8 @@
 		"minecraft": "~1.21.5",
 		"java": ">=21",
 		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": ">=v14.0.0-rc.2"
 	}
 }
