@@ -14,6 +14,9 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
+
 public class EchoTweaks implements ModInitializer {
 	public static final String MOD_ID = "echotweaks";
 
@@ -22,6 +25,8 @@ public class EchoTweaks implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+		AutoConfig.register(EchoConfig.class, Toml4jConfigSerializer::new);
 
 		ModItems.init();
 		ModBlocks.init();

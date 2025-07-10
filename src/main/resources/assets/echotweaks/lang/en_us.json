@@ -19,9 +19,26 @@
 
 	"commands.echotweaks.heal.maximum": "Healed %s",
 	"commands.echotweaks.heal.specific": "Healed %1$s by %2$s points",
+
+	"commands.echotweaks.platform.fail.invalid_item": "Held item could not be recognized as a block",
+	"commands.echotweaks.platform.fail.not_set": "Platform block could not be created",
+	"commands.echotweaks.platform.fail.none_filled": "No blocks were filled",
+	"commands.echotweaks.platform.success.one_filled": "Platform block created",
+	"commands.echotweaks.platform.success.some_filled": "Filled %1$s blocks (out of %2$s)",
+	"commands.echotweaks.platform.success.all_filled": "Filled %s blocks",
+
 	"commands.echotweaks.unbreakable.success": "It will never be broken.",
 
 	"item.echotweaks.big_stick": "Big Stick",
 	"item.echotweaks.charcoal_block": "Block of Charcoal",
-	"item.echotweaks.wrench": "Wrench"
+	"item.echotweaks.wrench": "Wrench",
+
+	"text.echotweaks.config.title": "EchoTweaks Settings",
+	"text.echotweaks.config.label.platformNoArgBehavior": "Default Platform Behavior",
+	"echotweaks.enum.DefaultPlatformBehavior.USE_HELD": "Held Item",
+	"echotweaks.enum.DefaultPlatformBehavior.VOID_WORLD": "From Void World",
+	"echotweaks.enum.DefaultPlatformBehavior.CUSTOM": "Custom",
+	"text.echotweaks.config.label.defaultPlatformSize": "Default Platform Size",
+	"text.echotweaks.config.label.customPlatformBlock": "Custom Platform Block",
+	"text.echotweaks.config.label.customPlatformCenterBlock": "Custom Center Block"
 }
