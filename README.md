@@ -29,6 +29,8 @@ My small additions, for Minecraft 1.21.5
 		- [Overkill / Over-Overkill](#overkill)
 		- [Rainbow Collection](#rainbow-collection)
 		- [Stack Overflow](#stack-overflow)
+- [Changes](#changes)
+	- [Swamp Oaks](#swamp-oaks)
 
 </details>
 
@@ -162,6 +164,15 @@ It's too deep!
 Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle.
 
 (Basically either just do it until you can't anymore, or, if you want to be interesting, get one of every color.)
+
+## Changes
+
+### Swamp Oaks
+
+When an Oak Sapling grows near swamp blocks, it will grow into a vanilla [Swamp Oak](https://minecraft.wiki/w/Oak#Swamp_Oak).
+
+This is guaranteed if and only if a block in `#echotweaks:grows_swamp_oaks` is present in a 5x3x5 square around the sapling. By default, Lily Pads and Vines.
+
 <hr>
 <p style="color:lightgrey;text-align:center;">That's all.</p>
 <hr>

@@ -1,10 +1,3 @@
-/* TODO:
- * 	- Add mod icon
- * 	- Change mod info in fabric.mod.json
- * 	- Finish /platform
- */
-
-
 package net.echo.echotweaks;
 
 import net.echo.echotweaks.command.ModCommands;
@@ -33,6 +26,7 @@ public class EchoTweaks implements ModInitializer {
 		ModCommands.registerAll();
 
 		LOGGER.log("My Mod Loaded :3");
+		// LOGGER.log("IT COMPILES"); // toggle this to check
 	}
 
 	public class LOGGER {
