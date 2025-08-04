@@ -32,14 +32,19 @@ public class EchoTweaks implements ModInitializer {
 	public class LOGGER {
 		private static final Logger l = LoggerFactory.getLogger(MOD_ID);
 
-		public static void log(String s) {
-			l.info(s);
+		public static void log(Object... stuff) {
+			l.info(formString(stuff));
 		}
-		public static void log(int i) {
-			l.info(((Integer)i).toString());
+		public static void err(Object... stuff) {
+			l.error(formString(stuff));
 		}
-		public static void err(String s) {
-			l.error(s);
+
+		private static String formString(Object[] stuff) {
+			String s = "";
+			for(int i = 0; i < stuff.length - 1; i++) {
+				s += stuff[i].toString() + ", ";
+			}
+			return s + stuff[stuff.length-1];
 		}
 	}
 }
