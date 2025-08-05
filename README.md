@@ -30,6 +30,8 @@ My small additions, for Minecraft 1.21.5
 		- [Rainbow Collection](#rainbow-collection)
 		- [Stack Overflow](#stack-overflow)
 - [Changes](#changes)
+	- [Recipes](#recipes)
+		- [Dead Bush](#dead-bush)
 	- [Swamp Oaks](#swamp-oaks)
 
 </details>
@@ -165,7 +167,16 @@ Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle in
 
 (Basically either just do it until you can't anymore, or, if you want to be interesting, get one of every color.)
 
+
 ## Changes
+
+### Recipes
+
+> This section details new recipes involving vanilla items. Modded recipes are detailed in their respective items' sections.</span>
+
+#### <ins>Dead Bush</ins>
+![You can smelt a Bush to obtain a Dead Bush.](readmeAssets/BushSmelt.png)<br>
+This makes Dead Bushes renewable.
 
 ### Swamp Oaks
 
