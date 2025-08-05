@@ -36,7 +36,12 @@ public class ModBlocks {
 			.strength(5.0F, 6.0F)
 	);
 
-
+	public static final Block INFESTED_SANDSTONE = register(
+		"infested_sandstone"
+		, InfestedSandstoneBlock.createBlockSettings()
+		, InfestedSandstoneBlock.createItemSettings()
+		, InfestedSandstoneBlock::new
+	);
 
 	public static void init() {
 		// Charcoal Block as fuel

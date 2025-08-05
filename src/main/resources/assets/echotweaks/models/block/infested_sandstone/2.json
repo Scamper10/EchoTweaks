@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/cube_bottom_top",
+	"textures": {
+		"top": "echotweaks:block/infested_sandstone/2/top",
+		"side": "echotweaks:block/infested_sandstone/2/side",
+		"bottom": "echotweaks:block/infested_sandstone/2/bottom"
+	}
+}

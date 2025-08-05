@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"decay=0": {
+			"model": "echotweaks:block/infested_sandstone/0"
+		},
+		"decay=1": {
+			"model": "echotweaks:block/infested_sandstone/1"
+		},
+		"decay=2": {
+			"model": "echotweaks:block/infested_sandstone/2"
+		}
+	}
+}

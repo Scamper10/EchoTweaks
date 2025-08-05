@@ -1,0 +1,27 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:block_state",
+		"block_state_property": "decay",
+		"cases": [
+			{
+				"when": "1",
+				"model": {
+					"type": "minecraft:model",
+					"model": "echotweaks:block/infested_sandstone/1"
+				}
+			},
+			{
+				"when": "2",
+				"model": {
+					"type": "minecraft:model",
+					"model": "echotweaks:block/infested_sandstone/2"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "echotweaks:block/infested_sandstone/0"
+		}
+	}
+}

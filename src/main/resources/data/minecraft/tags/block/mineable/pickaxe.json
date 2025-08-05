@@ -1,6 +1,6 @@
 {
-	"replace": false,
 	"values": [
-		"echotweaks:charcoal_block"
+		"echotweaks:charcoal_block",
+		"echotweaks:infested_sandstone"
 	]
 }
