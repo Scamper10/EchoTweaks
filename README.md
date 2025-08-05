@@ -54,13 +54,13 @@ It also supports [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu
 ### Items
 
 #### <ins>Big Stick</ins>
-![The Big Stick. It's like the normal stick, but Bigger!](readmeAssets/BigStickCraft.gif "echotweaks:big_stick")<br>
+![The Big Stick. You craft it with 3 Planks placed vertically. It's like the normal stick, but Bigger!](readmeAssets/BigStickCraft.gif "echotweaks:big_stick")<br>
 Only hits as well as a boring normal stick.<br>
 Knocks attacked enemies very far away.<br>
 Has 60 durability, loses 1 on attack, 2 on block break
 
 #### <ins>Wrench</ins>
-![The Wrench. It's got a handle bit and a claw bit. That's it. It's useless. Move on.](readmeAssets/WrenchCraft.png "echotweaks:wrench")<br>
+![The Wrench. You craft it with 3 Iron Ingots placed diagonally. It's got a handle bit and a claw bit. That's it. It's useless. Move on.](readmeAssets/WrenchCraft.png "echotweaks:wrench")<br>
 Is purely cosmetic, can be crafted back down into three ingots.
 
 ### Blocks
