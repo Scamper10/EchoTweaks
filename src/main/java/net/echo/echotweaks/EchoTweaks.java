@@ -1,5 +1,6 @@
 package net.echo.echotweaks;
 
+import net.echo.echotweaks.block.ModBlocks;
 import net.echo.echotweaks.command.ModCommands;
 import net.echo.echotweaks.config.EchoConfig;
 import net.echo.echotweaks.item.ModItems;

@@ -1,7 +1,8 @@
-package net.echo.echotweaks;
+package net.echo.echotweaks.block;
 
 import java.util.function.Function;
 
+import net.echo.echotweaks.EchoTweaks;
 import net.echo.echotweaks.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
