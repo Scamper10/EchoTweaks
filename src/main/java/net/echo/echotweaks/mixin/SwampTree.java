@@ -29,7 +29,7 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 
 @Mixin(SaplingGenerator.class)
-public abstract class SwampTreeMixin {
+public abstract class SwampTree {
 	
 	@Shadow Optional<RegistryKey<ConfiguredFeature<?, ?>>> regularVariant;
 

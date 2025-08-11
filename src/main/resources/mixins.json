@@ -4,7 +4,7 @@
 	"package": "net.echo.echotweaks.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"SwampTreeMixin"
+		"SwampTree"
 	],
 	"client": [],
 	"server": [],
