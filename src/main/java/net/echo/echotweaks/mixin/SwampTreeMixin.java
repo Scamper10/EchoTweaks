@@ -9,6 +9,7 @@ import java.util.Optional;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
@@ -49,6 +50,7 @@ public abstract class SwampTreeMixin {
 		return TreeConfiguredFeatures.SWAMP_OAK;
 	}
 
+	@Unique
 	private boolean areSwampBlocksNearby(WorldAccess world, BlockPos pos) {
 		Iterator<BlockPos> posIterator = Mutable.iterate(pos.down().north(2).west(2), pos.up().south(2).east(2)).iterator();
 
