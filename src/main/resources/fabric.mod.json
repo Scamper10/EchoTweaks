@@ -23,7 +23,8 @@
 		]
 	},
 	"mixins": [
-		"mixinInfo/general.json"
+		"mixinInfo/general.json",
+		"mixinInfo/hiddenAdvancement.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",

@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.echo.echotweaks.mixin.hiddenAdvancement",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"Hinter",
+		"Revealer"
+	],
+	"client": [],
+	"server": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -32,6 +32,7 @@ My small additions, for Minecraft 1.21.5
 - [Changes](#changes)
 	- [Recipes](#recipes)
 		- [Dead Bush](#dead-bush)
+	- [Visual](#visual)
 	- [Swamp Oaks](#swamp-oaks)
 
 </details>
@@ -177,6 +178,11 @@ Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle in
 #### <ins>Dead Bush</ins>
 ![You can smelt a Bush to obtain a Dead Bush.](readmeAssets/BushSmelt.png)<br>
 This makes Dead Bushes renewable.
+
+### Visual
+
+![](src\main\resources\assets\echotweaks\textures\gui\sprites\hinter.png)<br>
+Hidden Advancements will now show a small icon in their place in the advancement tree. This allows the player to know when they still have advancements to complete.
 
 ### Swamp Oaks
 
