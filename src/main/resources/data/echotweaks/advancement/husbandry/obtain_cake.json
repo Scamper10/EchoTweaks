@@ -1,0 +1,24 @@
+{
+	"parent": "minecraft:husbandry/plant_seed",
+	"criteria": {
+		"obtain_cake": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": "minecraft:cake"
+				}]
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.husbandry.obtain_cake.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.obtain_cake.description"
+		},
+		"icon": {
+			"id": "minecraft:cake"
+		}
+	}
+}

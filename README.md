@@ -29,6 +29,7 @@ My small additions, for Minecraft 1.21.5
 		- [Overkill / Over-Overkill](#overkill)
 		- [Rainbow Collection](#rainbow-collection)
 		- [Stack Overflow](#stack-overflow)
+		- [The Lie](#the-lie)
 - [Changes](#changes)
 	- [Recipes](#recipes)
 		- [Dead Bush](#dead-bush)
@@ -168,6 +169,11 @@ Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle in
 
 (Basically either just do it until you can't anymore, or, if you want to be interesting, get one of every color.)
 
+#### <ins>The Lie</ins>
+
+You will be baked. And then there will be cake.
+
+Get together all the ingredients, combine then in just the right way, et voilà! A cake.
 
 ## Changes
 
