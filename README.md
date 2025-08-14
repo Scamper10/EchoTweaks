@@ -21,15 +21,6 @@ My small additions, for Minecraft 1.21.5
 	- [Blocks](#blocks)
 		- [Charcoal Block](#charcoal-block)
 	- [Advancements](#advancements)
-		- [A Heavy Commitment / Serious Dedication](#serious-dedication)
-		- [Chestful Of Cobblestone](#chestful-of-cobblestone)
-		- [Diamonds To You!](#diamonds-to-you)
-		- [Fully Furnaced](#fully-furnaced)
-		- [Flower Power](#flower-power)
-		- [Overkill / Over-Overkill](#overkill)
-		- [Rainbow Collection](#rainbow-collection)
-		- [Stack Overflow](#stack-overflow)
-		- [The Lie](#the-lie)
 - [Changes](#changes)
 	- [Recipes](#recipes)
 		- [Dead Bush](#dead-bush)
@@ -73,6 +64,24 @@ Functionally identical to the vanilla Coal Block, but for Charcoal.<br>
 Also smelts the same 80 items.
 
 ### Advancements
+<details>
+<summary>
+
+#### *Skip to advancement*
+
+</summary>
+
+- [A Heavy Commitment / Serious Dedication](#serious-dedication)
+- [Chestful Of Cobblestone](#chestful-of-cobblestone)
+- [Diamonds To You!](#diamonds-to-you)
+- [Fully Furnaced](#fully-furnaced)
+- [Flower Power](#flower-power)
+- [Overkill / Over-Overkill](#overkill)
+- [Rainbow Collection](#rainbow-collection)
+- [Stack Overflow](#stack-overflow)
+- [The Lie](#the-lie)
+
+</details>
 
 #### <ins>Serious Dedication</ins>
 
