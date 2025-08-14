@@ -219,7 +219,7 @@ Hidden Advancements will now show a small icon in their place in the advancement
 
 When an Oak Sapling grows near swamp blocks, it will grow into a vanilla [Swamp Oak](https://minecraft.wiki/w/Oak#Swamp_Oak).
 
-This is guaranteed if and only if a block in `#echotweaks:grows_swamp_oaks` is present in a 5x3x5 square around the sapling. By default, Lily Pads and Vines.
+This is guaranteed if and only if a block in `#echotweaks:grows_swamp_oaks` is present in a 5x3x5 area around the sapling. By default, Lily Pads and Vines.
 
 <hr>
 <p style="color:lightgrey;text-align:center;">That's all.</p>
