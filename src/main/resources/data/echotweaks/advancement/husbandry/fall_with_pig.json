@@ -1,0 +1,27 @@
+{
+	"parent": "minecraft:husbandry/root",
+	"display": {
+		"icon": {
+			"id": "minecraft:saddle"
+		},
+		"title": {
+			"translate": "advancement.echotweaks.husbandry.fall_with_pig.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.fall_with_pig.description"
+		}
+	},
+	"criteria": {
+		"fly_pig": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:pig",
+						"nbt": "{fall_distance: 5.0F}"
+					}
+				}
+			}
+		}
+	}
+}
