@@ -90,6 +90,7 @@ Also smelts the same 80 items.
 - [A Heavy Commitment / Serious Dedication](#serious-dedication)
 - [Chestful Of Cobblestone](#chestful-of-cobblestone)
 - [Diamonds To You!](#diamonds-to-you)
+- [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
 - [Flower Power](#flower-power)
 - [Overkill / Over-Overkill](#overkill)
@@ -120,6 +121,13 @@ Fill a single Chest with exactly 1,728 Cobblestone, and then open it.
 Sharing is caring.
 
 Have another entity pick up a diamond you have thrown on the ground, Players and Zombies alike.
+
+#### <ins>Full Circle</ins>
+
+Slayyyyy!
+
+Kill the Ender Dragon 20 times.<br>
+(You must get kill credit yourself. Gateways are not actually linked to this advancement.)
 
 #### <ins>Fully Furnaced</ins>
 
