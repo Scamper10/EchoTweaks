@@ -121,6 +121,13 @@ Sharing is caring.
 
 Have another entity pick up a diamond you have thrown on the ground, Players and Zombies alike.
 
+#### <ins>Full Circle</ins>
+
+Slayyyyy!
+
+Kill the Ender Dragon 20 times.<br>
+(You must get kill credit yourself. Gateways are not actually linked to this advancement.)
+
 #### <ins>Fully Furnaced</ins>
 
 That's more.
