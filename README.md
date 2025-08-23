@@ -90,6 +90,7 @@ Also smelts the same 80 items.
 - [A Heavy Commitment / Serious Dedication](#serious-dedication)
 - [Chestful Of Cobblestone](#chestful-of-cobblestone)
 - [Diamonds To You!](#diamonds-to-you)
+- [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
 - [Flower Power](#flower-power)
 - [Overkill / Over-Overkill](#overkill)
