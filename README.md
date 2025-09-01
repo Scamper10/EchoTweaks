@@ -22,6 +22,8 @@ My small additions, for Minecraft 1.21.5
 		- [Charcoal Block](#charcoal-block)
 	- [Advancements](#advancements)
 - [Changes](#changes)
+	- [Advancements](#advancements-1)
+		- [Total Beelocation](#total-beelocation)
 	- [Recipes](#recipes)
 		- [Dead Bush](#dead-bush)
 	- [Visual](#visual)
@@ -209,6 +211,11 @@ You will be baked. And then there will be cake.
 Get together all the ingredients, combine then in just the right way, et voilà! A cake.
 
 ## Changes
+
+### Advancements
+
+#### <ins>Total Beelocation</ins>
+The game now correctly grants the advancement with Beehives, as well as Bee Nests.
 
 ### Recipes
 
