@@ -1,0 +1,38 @@
+{
+	"parent": "minecraft:end/respawn_dragon",
+	"criteria": {
+		"kill_20_dragons": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:ender_dragon"
+				},
+				"player": {
+					"type_specific": {
+						"type": "player",
+						"stats": [{
+							"type": "minecraft:killed",
+							"stat": "minecraft:ender_dragon",
+							"value": {
+								"min": 19
+							}
+						}]
+					}
+				}
+			}
+		}
+	},
+	"display": {
+		"hidden": true,
+		"title": {
+			"translate": "advancement.echotweaks.end.kill_20_dragons.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.end.kill_20_dragons.description"
+		},
+		"frame": "challenge",
+		"icon": {
+			"id": "minecraft:bedrock"
+		}
+	}
+}
