@@ -1,0 +1,21 @@
+{
+	"parent": "minecraft:husbandry/breed_an_animal",
+	"criteria": {
+		"crush_turtle_egg": {
+			"trigger": "echotweaks:crush_turtle_egg"
+		}
+	},
+	"display": {
+		"hidden": true,
+		"title": {
+			"translate": "advancement.echotweaks.husbandry.crush_turtle_egg.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.crush_turtle_egg.description"
+		},
+		"frame": "goal",
+		"icon": {
+			"id": "minecraft:turtle_egg"
+		}
+	}
+}
