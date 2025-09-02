@@ -99,6 +99,7 @@ Also smelts the same 80 items.
 - [Rainbow Collection](#rainbow-collection)
 - [Stack Overflow](#stack-overflow)
 - [The Lie](#the-lie)
+- [You Monster](#you-monster)
 
 </details>
 
@@ -209,6 +210,12 @@ Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle in
 You will be baked. And then there will be cake.
 
 Get together all the ingredients, combine then in just the right way, et voilà! A cake.
+
+#### <ins>You Monster</ins>
+
+Eh. It was bound to happen.
+
+Crush a turtle egg.
 
 ## Changes
 

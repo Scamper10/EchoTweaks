@@ -1,5 +1,4 @@
 /* TODO
- * Asvancement: You Monster - Crush a turtle egg
  */
 
 package net.echo.echotweaks;
@@ -7,8 +6,10 @@ package net.echo.echotweaks;
 import net.echo.echotweaks.block.ModBlocks;
 import net.echo.echotweaks.command.ModCommands;
 import net.echo.echotweaks.config.EchoConfig;
+import net.echo.echotweaks.criterion.ModCriteria;
 import net.echo.echotweaks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,6 +30,7 @@ public class EchoTweaks implements ModInitializer {
 		ModItems.init();
 		ModBlocks.init();
 		ModCommands.registerAll();
+		ModCriteria.init();
 
 		LOGGER.log("My Mod Loaded :3");
 		// LOGGER.log("IT COMPILES"); // toggle this to check
