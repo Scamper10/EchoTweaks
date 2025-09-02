@@ -1,4 +1,19 @@
 /* TODO
+ * Advancements:
+ * 	- Say Again? 			- Tame every color of parrot
+ * 	- (need a name) 		- Tame everything that can be tamed, and ride everything that can be ridden [https://minecraft.wiki/w/Taming]
+ * 	- Caves & Cliffs (V) 	- Fix so breaking bedrock is not needed
+ * 	- (need a name)			- Use every goat horn
+ * 	- (need a name)			- Get every horse color (pattern?)
+ * Villager inventory management
+ * 	- gifting/stealing (with gossips)
+ * 	- add button to trading menu? (would require villager to have a profession)
+ * 	- gift via bundle? how steal?
+ * Crop replanting
+ * Button to toggle tick pausing in the pause/advancement menus
+ * Quick composting
+ * More jungle saplings, dark oak too
+ * Something about accidental peaceful difficulty when ticking is not paused
  */
 
 package net.echo.echotweaks;
