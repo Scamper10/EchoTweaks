@@ -89,6 +89,7 @@ Also smelts the same 80 items.
 
 </summary>
 
+- [A Cacophonous Chorus](#a-cacophonous-chorus)
 - [A Heavy Commitment / Serious Dedication](#serious-dedication)
 - [Chestful Of Cobblestone](#chestful-of-cobblestone)
 - [Diamonds To You!](#diamonds-to-you)
@@ -103,6 +104,12 @@ Also smelts the same 80 items.
 - [Zoology](#zoology)
 
 </details>
+
+#### <ins>A Cacophonous Chorus</ins>
+
+"A Cacophonous Chorus"
+
+Tame all 5 different colors of parrot
 
 #### <ins>Serious Dedication</ins>
 

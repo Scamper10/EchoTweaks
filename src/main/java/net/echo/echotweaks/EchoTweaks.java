@@ -1,6 +1,5 @@
 /* TODO
  * Advancements:
- * 	- Say Again? 			- Tame every color of parrot
  * 	- (need a name) 		- Tame everything that can be tamed, and ride everything that can be ridden [https://minecraft.wiki/w/Taming]
  * 	- Caves & Cliffs (V) 	- Fix so breaking bedrock is not needed
  * 	- (need a name)			- Use every goat horn
