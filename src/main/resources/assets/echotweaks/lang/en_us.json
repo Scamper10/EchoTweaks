@@ -22,6 +22,8 @@
 	"advancement.echotweaks.story.fill_furnace_inventory.title": "Fully Furnaced",
 	"advancement.echotweaks.story.share_diamond.description": "Toss a diamond to another",
 	"advancement.echotweaks.story.share_diamond.title": "Diamonds To You!",
+	"advancement.echotweaks.zoology.root.description": "Promoting diversity and life!",
+	"advancement.echotweaks.zoology.root.title": "Zoology",
 
 	"commands.echotweaks.heal.maximum": "Healed %s",
 	"commands.echotweaks.heal.specific": "Healed %1$s by %2$s points",

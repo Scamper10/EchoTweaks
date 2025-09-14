@@ -100,6 +100,7 @@ Also smelts the same 80 items.
 - [Stack Overflow](#stack-overflow)
 - [The Lie](#the-lie)
 - [You Monster](#you-monster)
+- [Zoology](#zoology)
 
 </details>
 
@@ -216,6 +217,14 @@ Get together all the ingredients, combine then in just the right way, et voilà!
 Eh. It was bound to happen.
 
 Crush a turtle egg.
+
+#### <ins>Zoology</ins>
+
+The world is full of life!
+
+Breed animals 5 times.
+
+This is a root advancement - It creates its own tab.
 
 ## Changes
 
