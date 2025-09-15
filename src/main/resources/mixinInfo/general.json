@@ -5,7 +5,8 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"SwampTree",
-		"CrushTurtleEggTrigger"
+		"CrushTurtleEggTrigger",
+		"GainOcelotTrustTrigger"
 	],
 	"client": [],
 	"server": [],

@@ -5,6 +5,7 @@ import net.minecraft.advancement.criterion.Criteria;
 
 public class ModCriteria {
 	public static final GenericEventCriterion CRUSH_TURTLE_EGG	= Criteria.register(EchoTweaks.MOD_ID+":crush_turtle_egg",	new GenericEventCriterion());
+	public static final GenericEventCriterion GAIN_OCELOT_TRUST	= Criteria.register(EchoTweaks.MOD_ID+":gain_ocelot_trust",	new GenericEventCriterion());
 
 	public static void init() {}
 }
