@@ -8,7 +8,7 @@ import net.minecraft.advancement.criterion.AbstractCriterion;
 import net.minecraft.predicate.entity.LootContextPredicate;
 import net.minecraft.server.network.ServerPlayerEntity;
 
-public class CrushTurtleEggCriterion extends AbstractCriterion<CrushTurtleEggCriterion.Conditions> {
+public class GenericEventCriterion extends AbstractCriterion<GenericEventCriterion.Conditions> {
 
 	@Override
 	public Codec<Conditions> getConditionsCodec() {
