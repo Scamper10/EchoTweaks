@@ -96,6 +96,7 @@ Also smelts the same 80 items.
 - [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
 - [Flower Power](#flower-power)
+- [One with the Wild](#one-with-the-wild)
 - [Overkill / Over-Overkill](#overkill)
 - [Rainbow Collection](#rainbow-collection)
 - [Stack Overflow](#stack-overflow)
@@ -191,6 +192,34 @@ minecraft:wither_rose
 (they have petals idk)<br>
 (don't @ me)
 
+</details>
+
+#### <ins>One with the Wild</ins>
+
+Gotta catch'em all!
+
+Tame everything that is tameable, be trusted by everything that can trust, and ride every (living or undead) thing that can be ridden.
+
+<details>
+<summary>&nbsp;(Here's the list)</summary>
+
+```
+minecraft:camel (ride)
+minecraft:cat (tame)
+minecraft:donkey (tame)
+minecraft:fox (breed)
+minecraft:horse (tame)
+minecraft:llama (tame) OR minecraft:trader_llama (tame)
+minecraft:mule (tame)
+minecraft:ocelot (tame*)
+minecraft:parrot (tame)
+minecraft:pig (ride)
+minecraft:skeleton_horse (ride)
+minecraft:strider (ride)
+minecraft:wolf (tame)
+```
+
+\* Ocelots cannot be tamed, but the can gain player "Trust" in a similar way
 </details>
 
 #### <ins>Overkill</ins>

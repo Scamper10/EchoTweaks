@@ -1,0 +1,147 @@
+{
+	"parent": "echotweaks:zoology/root",
+	"criteria": {
+		"donkey": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:donkey"
+				}
+			}
+		},
+		"horse": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:horse"
+				}
+			}
+		},
+		"llama": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:llama"
+				}
+			}
+		},
+		"mule": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:mule"
+				}
+			}
+		},
+		"skeleton_horse": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:skeleton_horse"
+					}
+				}
+			}
+		},
+		"trader_llama": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:trader_llama"
+				}
+			}
+		},
+		"cat": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:cat"
+				}
+			}
+		},
+		"parrot": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:parrot"
+				}
+			}
+		},
+		"wolf": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:wolf"
+				}
+			}
+		},
+		"fox": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:fox"
+				}
+			}
+		},
+		"ocelot": {
+			"trigger": "echotweaks:gain_ocelot_trust"
+		},
+		"camel": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:camel"
+					}
+				}
+			}
+		},
+		"pig": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:pig"
+					}
+				}
+			}
+		},
+		"strider": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:strider"
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		["llama", "trader_llama"],
+		["donkey"],
+		["horse"],
+		["mule"],
+		["skeleton_horse"],
+		["cat"],
+		["parrot"],
+		["wolf"],
+		["fox"],
+		["ocelot"],
+		["camel"],
+		["pig"],
+		["strider"]
+	],
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.zoology.tame_everything.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.zoology.tame_everything.description"
+		},
+		"icon": {
+			"id": "minecraft:poppy"
+		},
+		"frame": "challenge"
+	}
+}
