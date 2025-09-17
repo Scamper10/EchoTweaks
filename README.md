@@ -100,6 +100,7 @@ Also smelts the same 80 items.
 - [One with the Wild](#one-with-the-wild)
 - [Overkill / Over-Overkill](#overkill)
 - [Rainbow Collection](#rainbow-collection)
+- [Rein Check](#rein-check)
 - [Stack Overflow](#stack-overflow)
 - [The Lie](#the-lie)
 - [You Monster](#you-monster)
@@ -240,6 +241,16 @@ It's just like it was before the new fancy Mace existed. Deal at least 9 hearts 
 Loud and proud!
 
 Have all 16 differently coloured wool blocks at the same time.
+
+#### <ins>Rein Check</ins>
+
+Quite the collection.
+
+Collect (tame) all possible combinations of horse colors and markings.
+
+There are 7 colors and 5 markings, giving 35 different horse appearances.
+![A table showing what each combination looks like, which is likely useless if you've got this text.](readmeAssets/HorseCombinations.png)<br>
+(Image via [minecraft.wiki](https://minecraft.wiki/w/Horse#Appearance))
 
 #### <ins>Stack Overflow</ins>
 
