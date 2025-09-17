@@ -90,6 +90,7 @@ Also smelts the same 80 items.
 </summary>
 
 - [A Cacophonous Chorus](#a-cacophonous-chorus)
+- [A Dense Octette](#a-dense-octette)
 - [A Heavy Commitment / Serious Dedication](#serious-dedication)
 - [Chestful Of Cobblestone](#chestful-of-cobblestone)
 - [Diamonds To You!](#diamonds-to-you)
@@ -111,6 +112,12 @@ Also smelts the same 80 items.
 "A Cacophonous Chorus"
 
 Tame all 5 different colors of parrot
+
+#### <ins>A Dense Octette</ins>
+
+It sure is... sound.
+
+Use all 8 differently-sounding Goat Horns.
 
 #### <ins>Serious Dedication</ins>
 

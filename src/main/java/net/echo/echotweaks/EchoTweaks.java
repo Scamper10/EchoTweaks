@@ -1,7 +1,6 @@
 /* TODO
  * Advancements:
  * 	- Caves & Cliffs (V) 	- Fix so breaking bedrock is not needed
- * 	- (need a name)			- Use every goat horn
  * 	- (need a name)			- Get every horse color (pattern?)
  * Villager inventory management
  * 	- gifting/stealing (with gossips)
