@@ -1,0 +1,340 @@
+{
+	"parent": "minecraft:adventure/play_jukebox_in_meadows",
+	"criteria": {
+		"13": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_13"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"cat": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_cat"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"blocks": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_blocks"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"chirp": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_chirp"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"far": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_far"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"mall": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_mall"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"mellohi": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_mellohi"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"stal": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_stal"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"strad": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_strad"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"ward": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_ward"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"11": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_11"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"wait": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_wait"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"creator": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_creator"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"creator_music_box": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_creator_music_box"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"precipice": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_precipice"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"otherside": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_otherside"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"relic": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_relic"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"5": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_5"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"pigstep": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_pigstep"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.adventure.play_all_discs.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.adventure.play_all_discs.description"
+		},
+		"icon": {
+			"id": "minecraft:music_disc_13"
+		},
+		"frame": "challenge"
+	}
+}

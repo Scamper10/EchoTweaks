@@ -97,6 +97,7 @@ Also smelts the same 80 items.
 - [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
 - [Flower Power](#flower-power)
+- [It's a New Record!](#its-a-new-record)
 - [One with the Wild](#one-with-the-wild)
 - [Overkill / Over-Overkill](#overkill)
 - [Rainbow Collection](#rainbow-collection)
@@ -201,6 +202,12 @@ minecraft:wither_rose
 (don't @ me)
 
 </details>
+
+#### <ins>It's a New Record!</ins>
+
+Nice one!
+
+Collect all 19 Music Discs, and play each one in a Jukebox.
 
 #### <ins>One with the Wild</ins>
 
