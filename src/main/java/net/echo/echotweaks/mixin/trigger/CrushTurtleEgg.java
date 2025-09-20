@@ -1,4 +1,4 @@
-package net.echo.echotweaks.mixin;
+package net.echo.echotweaks.mixin.trigger;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,8 +15,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 @Mixin(TurtleEggBlock.class)
-public abstract class CrushTurtleEggTrigger extends Block {
-	CrushTurtleEggTrigger(AbstractBlock.Settings settings) {
+public abstract class CrushTurtleEgg extends Block {
+	CrushTurtleEgg(AbstractBlock.Settings settings) {
 		super(settings);
 	}
 	

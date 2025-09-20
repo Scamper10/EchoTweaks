@@ -1,4 +1,4 @@
-package net.echo.echotweaks.mixin;
+package net.echo.echotweaks.mixin.trigger;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -13,7 +13,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 
 @Mixin(OcelotEntity.class)
-public abstract class GainOcelotTrustTrigger {
+public abstract class GainOcelotTrust {
 	
 	@Inject(
 		method = "interactMob("
