@@ -21,7 +21,7 @@
 			"trigger": "minecraft:tame_animal",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:llama"
+					"type": "#echotweaks:llamas"
 				}
 			}
 		},
@@ -40,14 +40,6 @@
 					"vehicle": {
 						"type": "minecraft:skeleton_horse"
 					}
-				}
-			}
-		},
-		"trader_llama": {
-			"trigger": "minecraft:tame_animal",
-			"conditions": {
-				"entity": {
-					"type": "minecraft:trader_llama"
 				}
 			}
 		},
@@ -117,21 +109,6 @@
 			}
 		}
 	},
-	"requirements": [
-		["llama", "trader_llama"],
-		["donkey"],
-		["horse"],
-		["mule"],
-		["skeleton_horse"],
-		["cat"],
-		["parrot"],
-		["wolf"],
-		["fox"],
-		["ocelot"],
-		["camel"],
-		["pig"],
-		["strider"]
-	],
 	"display": {
 		"title": {
 			"translate": "advancement.echotweaks.zoology.tame_everything.title"
