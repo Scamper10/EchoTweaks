@@ -102,6 +102,7 @@ Also smelts the same 80 items.
 - [Overkill / Over-Overkill](#overkill)
 - [Rainbow Collection](#rainbow-collection)
 - [Rein Check](#rein-check)
+- [Spitting Image](#spitting-image)
 - [Stack Overflow](#stack-overflow)
 - [The Lie](#the-lie)
 - [You Monster](#you-monster)
@@ -258,6 +259,12 @@ Collect (tame) all possible combinations of horse colors and markings.
 There are 7 colors and 5 markings, giving 35 different horse appearances.
 ![A table showing what each combination looks like, which is likely useless if you've got this text.](readmeAssets/HorseCombinations.png)<br>
 (Image via [minecraft.wiki](https://minecraft.wiki/w/Horse#Appearance))
+
+#### <ins>Spitting Image</ins>
+
+Well that was easy.
+
+Tame all 4 different colors of Llama. Trader Llamas *do* count.
 
 #### <ins>Stack Overflow</ins>
 
