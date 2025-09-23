@@ -93,6 +93,7 @@ Also smelts the same 80 items.
 - [A Dense Octette](#a-dense-octette)
 - [A Heavy Commitment / Serious Dedication](#serious-dedication)
 - [Chestful Of Cobblestone](#chestful-of-cobblestone)
+- [Conga Line](#conga-line)
 - [Diamonds To You!](#diamonds-to-you)
 - [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
@@ -137,6 +138,12 @@ That's a lot.
 Fill a single Chest with exactly 1,728 Cobblestone, and then open it.
 
 (For the uninitiated, just fill a single Chest all the way.)
+
+#### <ins>Conga Line</ins>
+
+Come and join!
+
+Create the longest possible [caravan](https://minecraft.wiki/w/Llama#Caravans), with a total of 10 Llamas.
 
 #### <ins>Diamonds To You</ins>
 
