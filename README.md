@@ -34,7 +34,7 @@ My small additions, for Minecraft 1.21.5
 ## Dependencies & Relations
 EchoTweaks **needs** [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files/6351756) to function fully.
 
-It also supports [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu/files/6347337), which is recommended for access to the config screen.
+It also supports [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu/files/7059741), which is recommended for access to the config screen.
 
 ## Additions
 
