@@ -1,6 +1,6 @@
 # EchoTweaks
 
-My small additions, for Minecraft 1.21.10
+My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/installer/)
 
 <details open>
 <summary>
