@@ -1,6 +1,6 @@
 # EchoTweaks
 
-My small additions, for Minecraft 1.21.5
+My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/installer/)
 
 <details open>
 <summary>
@@ -32,9 +32,11 @@ My small additions, for Minecraft 1.21.5
 </details>
 
 ## Dependencies & Relations
-EchoTweaks **needs** [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files/6351756) to function fully.
+EchoTweaks **needs** the following to function fully:
+- [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/7081265)
+- [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files/7060803)
 
-It also supports [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu/files/6347337), which is recommended for access to the config screen.
+It also supports [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu/files/7059741), which is recommended for access to the config screen.
 
 ## Additions
 
