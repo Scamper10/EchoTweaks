@@ -32,7 +32,9 @@ My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/in
 </details>
 
 ## Dependencies & Relations
-EchoTweaks **needs** [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files/7060803) to function fully.
+EchoTweaks **needs** the following to function fully:
+- [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/7081265)
+- [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config/files/7060803)
 
 It also supports [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu/files/7059741), which is recommended for access to the config screen.
 
