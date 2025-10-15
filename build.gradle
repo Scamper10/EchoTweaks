@@ -113,9 +113,9 @@ task buildAndReveal(dependsOn: build) {
     doLast {
         def outputDir = file("$buildDir/libs")
         println "Opening directory: ${outputDir.absolutePath}"
-        exec {
-            commandLine "explorer.exe", outputDir.absolutePath
-			ignoreExitValue = true
-        }
+        
+		new ProcessBuilder("explorer.exe", outputDir.absolutePath)
+            .inheritIO()
+            .start()
     }
 }
