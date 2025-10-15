@@ -10,9 +10,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static net.echo.echotweaks.EchoTweaks.MOD_ID;
 import net.minecraft.advancement.AdvancementDisplay;
+import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.advancement.AdvancementWidget;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 
 @Mixin(AdvancementWidget.class)
@@ -56,6 +56,6 @@ public abstract class Hinter {
 		if(hasDisplayed) return;
 		int relX = x + this.x + 9
 		,	relY = y + this.y + 7;
-		context.drawGuiTexture(RenderLayer::getGuiTextured, TEXTURE_ID, relX, relY, SIZE, SIZE);
+		context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, TEXTURE_ID, relX, relY, SIZE, SIZE);
 	}
 }
