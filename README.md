@@ -269,6 +269,12 @@ There are 7 colors and 5 markings, giving 35 different horse appearances.
 ![A table showing what each combination looks like, which is likely useless if you've got this text.](readmeAssets/HorseCombinations.png)<br>
 (Image via [minecraft.wiki](https://minecraft.wiki/w/Horse#Appearance))
 
+#### <ins>Ripped Genes</ins>
+
+Teenage Mutant Ninja.. no, never mind.
+
+Breed a Blue Axolotl `(Variant: 4)` and store it in a bucket.
+
 #### <ins>Spitting Image</ins>
 
 Well that was easy.

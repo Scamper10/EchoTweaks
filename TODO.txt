@@ -1,5 +1,4 @@
 New Advancements:
-	Ripped Genes	- Get a Variant 4 axolotl in a bucket
 	............	- All Heads
 Changed Advancements:
 	`One with the Wild` (advancement zoology/tame_everything)
@@ -34,6 +33,7 @@ Creative
 	Block updater tool
 	Remove item cooldowns (insta crossbow?)
 	Fix jukebox spitting out duplicate discs (don't spit if held is same?)
+	Infinite sponge (configurable size?)
 
 Datapack modifiers, rather than replacing whole files
 	Use datapaack directory structure (eg `<some modifier folder>/advancement/husbandry/<some vanilla advancement>.json`)
