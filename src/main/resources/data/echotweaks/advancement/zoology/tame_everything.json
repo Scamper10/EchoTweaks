@@ -1,6 +1,14 @@
 {
 	"parent": "echotweaks:zoology/root",
 	"criteria": {
+		"copper_golem": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:copper_golem"
+				}
+			}
+		},
 		"donkey": {
 			"trigger": "minecraft:tame_animal",
 			"conditions": {
@@ -9,11 +17,29 @@
 				}
 			}
 		},
+		"happy_ghast": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:happy_ghast"
+					}
+				}
+			}
+		},
 		"horse": {
 			"trigger": "minecraft:tame_animal",
 			"conditions": {
 				"entity": {
 					"type": "minecraft:horse"
+				}
+			}
+		},
+		"iron_golem": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:iron_golem"
 				}
 			}
 		},
@@ -95,6 +121,14 @@
 					"vehicle": {
 						"type": "minecraft:pig"
 					}
+				}
+			}
+		},
+		"snow_golem": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:snow_golem"
 				}
 			}
 		},

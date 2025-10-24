@@ -223,7 +223,7 @@ Collect all 19 Music Discs, and play each one in a Jukebox.
 
 Gotta catch'em all!
 
-Tame everything that is tameable, be trusted by everything that can trust, and ride every (living or undead) thing that can be ridden.
+Tame everything that is tameable, be trusted by everything that can trust, build every golem that can be built, and ride every (living or undead) thing that can be ridden.
 
 <details>
 <summary>&nbsp;(Here's the list)</summary>
@@ -231,15 +231,19 @@ Tame everything that is tameable, be trusted by everything that can trust, and r
 ```
 minecraft:camel (ride)
 minecraft:cat (tame)
+minecraft:copper_golem (build)
 minecraft:donkey (tame)
 minecraft:fox (breed)
+minecraft:happy_ghast (ride)
 minecraft:horse (tame)
+minecraft:iron_golem (build)
 minecraft:llama (tame) OR minecraft:trader_llama (tame)
 minecraft:mule (tame)
 minecraft:ocelot (tame*)
 minecraft:parrot (tame)
 minecraft:pig (ride)
 minecraft:skeleton_horse (ride)
+minecraft:snow_golem (build)
 minecraft:strider (ride)
 minecraft:wolf (tame)
 ```

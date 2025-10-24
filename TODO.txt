@@ -1,9 +1,6 @@
 New Advancements:
 	............	- All Heads
 Changed Advancements:
-	`One with the Wild` (advancement zoology/tame_everything)
-		Consider golemns
-		Add Happy Ghast
 	Fix `Caves & Cliffs` so breaking bedrock is not sometimes needed
 	Fix `This Boat has Legs` so it doesn't require a carrot-stick click, just holding one
 	move appropriate 100% advancements to zoology (Catalogue, Pack)
@@ -68,6 +65,7 @@ Something something https://minecraft.wiki/w/Old_Customized#Presets
 Fix creative default skeleton horse spawning {Tame and PersistenceRequired nbt tags}
 	Maybe change command trap spawning to protect instant-activation?
 	Maybe add egg for trap
+Way to trigger proper Wandering Trader troupe spawn
 
 BugFix - Ocelots sometimes take fish from client when feed requirements not met
 
