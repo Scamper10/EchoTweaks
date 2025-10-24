@@ -1,0 +1,90 @@
+New Advancements:
+	Ripped Genes	- Get a Variant 4 axolotl in a bucket
+	............	- All Heads
+Changed Advancements:
+	`One with the Wild` (advancement zoology/tame_everything)
+		Consider golemns
+		Add Happy Ghast
+	Fix `Caves & Cliffs` so breaking bedrock is not sometimes needed
+	Fix `This Boat has Legs` so it doesn't require a carrot-stick click, just holding one
+	move appropriate 100% advancements to zoology (Catalogue, Pack)
+	Way to view completed requirements/criteria like in BaC (with translations keys?)
+	Grey out completed advancement tabs and move them to the right side of the list
+	F3+H shows hovered advancement ids like item ids
+
+Villager inventory management
+- gifting/stealing (with gossips)
+	add button to trading menu? (would require villager to have a profession)
+	or gift via bundle? how steal?
+
+Crop replanting
+Quick composting
+More jungle saplings, dark oak too?
+
+Button to toggle tick pausing in the pause/advancement menus
+
+Difficulty change confirm button
+	Only show peaceful if already in peaceful or cheats on
+
+Gold bars? (like iron or copper bars) ((yeah they did an entire copper update))
+
+Creative
+	Instakill weapon
+	Insta-tame
+	Block updater tool
+	Remove item cooldowns (insta crossbow?)
+	Fix jukebox spitting out duplicate discs (don't spit if held is same?)
+
+Datapack modifiers, rather than replacing whole files
+	Use datapaack directory structure (eg `<some modifier folder>/advancement/husbandry/<some vanilla advancement>.json`)
+	Also add a namedModifiers file, which lists paths relative to `<modifier folder>` to a `<some named modifier>.json`
+	Need options for append ( {} or [] or maybe "" ) or replace (any type)
+	Possible format example: `{  "criteria/<criterion>/conditions/damage/dealt/min": 50.0  ,  "echotweaks:append": true  }`
+	Append would default false
+	Might need to implement `\/` -> "/" and `\\` -> "\" 
+
+README:
+	Change advancement titles into nice images
+	Advancements: Include namespaced id and parent's
+	Document advancement triggers (look for other similar undocumented things)
+
+LANG:
+	Split advancement tabs
+	Swap title-description
+
+Re-add roses?
+
+Implement zombie horses? (nvm, planned for 1.21.11)
+
+Oozing potion somehow detect silme chunks?
+
+Fix superflat world creation
+	Every world feature togglable
+	Buttons for add/remove layers (remove already exists)
+	Presets from files: already exists in datapacks, but all `features` are packed in a single toggle
+
+Something something https://minecraft.wiki/w/Old_Customized#Presets
+
+Fix creative default skeleton horse spawning {Tame and PersistenceRequired nbt tags}
+	Maybe change command trap spawning to protect instant-activation?
+	Maybe add egg for trap
+
+BugFix - Ocelots sometimes take fish from client when feed requirements not met
+
+Commands
+	/butcher [<entity selector>] - shorthand for `/kill @e[type=]`, no args uses !player, also disable dropped items?
+	/whereis <player> [<face towards>] - get coords and optionally tp ~ ~ ~ facing (need cheats)
+		- config: give compass? display coords? client-only glowing? display distance? (compass tells distance?)
+		- could maybe also be /locate player ... but that might be harder/impossible
+
+Sound for when pig zombs no longer angry (or all killed)
+
+Spore blossoms renewable
+	- Particles drop straight down onto certain blocks -> one generates underneath?
+
+1.21.1 Changes
+	Investigate fog
+	Undo lead and saddle crafts? (Nerf trader llama leads?)
+	Locator Bar ewww (make gamerule false by default)
+	Revert 'Mobs' to 'Creatures' in sound settings
+	Option to hide worldgen progress bar
