@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "echotweaks:block/fake_bedrock"
+      },
+      {
+        "model": "echotweaks:block/fake_bedrock_mirrored"
+      },
+      {
+        "model": "echotweaks:block/fake_bedrock",
+        "y": 180
+      },
+      {
+        "model": "echotweaks:block/fake_bedrock_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}

@@ -20,6 +20,7 @@ My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/in
 		- [Wrench](#wrench)
 	- [Blocks](#blocks)
 		- [Charcoal Block](#charcoal-block)
+		- [Gabbro](#gabbro)
 	- [Advancements](#advancements)
 - [Changes](#changes)
 	- [Advancements](#advancements-1)
@@ -82,6 +83,16 @@ Is purely cosmetic, can be crafted back down into three ingots.
 ![The Charcoal Block. It's pretty similar-looking to a normal Coal Block. Maybe a bit lighter and brown-er, like Charcoal is to Coal.](readmeAssets/CharcoalBlock.png)<br>
 Functionally identical to the vanilla Coal Block, but for Charcoal.<br>
 Also smelts the same 80 items.
+
+#### <ins>Gabbro</ins>
+![Gabbro. Crafted with an Obsidian surrounded by 8 Stone. It's just fake bedrock.](readmeAssets/FakeBedrockBlockCraft.png)<br>
+Purely visual.<br>
+(It's a fraction lighter than bedrock.)
+
+Requires at least a Diamond Pickaxe to drop.<br>
+The Recipe unlocks when you get to bedrock level.
+
+<br>
 
 ### Advancements
 <details>
