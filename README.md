@@ -278,7 +278,7 @@ Have all 16 differently coloured wool blocks at the same time.
 
 Quite the collection.
 
-Collect (tame) all possible combinations of horse colors and markings.
+Collect (tame) all possible combinations of (living) horse colors and markings.
 
 There are 7 colors and 5 markings, giving 35 different horse appearances.
 ![A table showing what each combination looks like, which is likely useless if you've got this text.](readmeAssets/HorseCombinations.png)<br>
