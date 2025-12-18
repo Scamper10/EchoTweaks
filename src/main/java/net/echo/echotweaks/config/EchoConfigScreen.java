@@ -44,6 +44,7 @@ public class EchoConfigScreen extends Screen {
 	protected void init() {
 		platformModeCycler = CyclingButtonWidget.builder(
 			(DefaultPlatformBehavior value) -> Text.translatable(value.getKey())
+			, config.platformNoArgBehavior
 		)
 		.values(DefaultPlatformBehavior.values())
 		.omitKeyText()
@@ -54,7 +55,6 @@ public class EchoConfigScreen extends Screen {
 				EchoConfig.save();
 		  	}
 		);
-		platformModeCycler.setValue(config.platformNoArgBehavior);
 		addDrawableChild(platformModeCycler);
 
 		platformSizeInput = new TextFieldWidget(
