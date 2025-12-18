@@ -229,7 +229,7 @@ minecraft:wither_rose
 
 Nice one!
 
-Collect all 19 Music Discs, and play each one in a Jukebox.
+Collect all 21 Music Discs, and play each one in a Jukebox.
 
 #### <ins>One with the Wild</ins>
 

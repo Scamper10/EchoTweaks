@@ -323,6 +323,40 @@
 					}
 				]
 			}
+		},
+		"tears": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_tears"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
+		},
+		"lava_chicken": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "match_tool",
+						"predicate": {
+							"items": "minecraft:music_disc_lava_chicken"
+						}
+					},
+					{
+						"condition": "block_state_property",
+						"block": "minecraft:jukebox"
+					}
+				]
+			}
 		}
 	},
 	"display": {
