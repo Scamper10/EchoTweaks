@@ -29,6 +29,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.command.argument.BlockStateArgumentType;
+import net.minecraft.command.permission.Permission;
+import net.minecraft.command.permission.PermissionLevel;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -62,7 +64,7 @@ public class PlatformCommand {
 	public static void register() {
 		ModCommands.register("platform", (argBuilder, registryAccess) -> {
 			return argBuilder
-				.requires(source -> source.hasPermissionLevel(2))
+				.requires(source -> source.getPermissions().hasPermission(new Permission.Level(PermissionLevel.GAMEMASTERS)))
 				.executes(context -> executeNoArg(context))
 				.then(CommandManager.argument(MAIN_BLOCK_ARG, BlockStateArgumentType.blockState(registryAccess))
 					.executes(context -> execute(context, false, false, false))

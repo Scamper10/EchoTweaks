@@ -6,6 +6,8 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 
 import net.minecraft.command.argument.EntityArgumentType;
+import net.minecraft.command.permission.Permission;
+import net.minecraft.command.permission.PermissionLevel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.server.command.CommandManager;
@@ -16,7 +18,7 @@ public class HealCommand {
 	public static void register() {
 		ModCommands.register("heal", argBuilder -> {
 			return argBuilder
-				.requires(source -> source.hasPermissionLevel(2))
+				.requires(source -> source.getPermissions().hasPermission(new Permission.Level(PermissionLevel.GAMEMASTERS)))
 				.executes(context -> {
 					ServerCommandSource source = context.getSource();
 					if(!(source.getEntity() instanceof LivingEntity target)) return 0;
