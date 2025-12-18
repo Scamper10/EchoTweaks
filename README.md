@@ -121,6 +121,7 @@ The Recipe unlocks when you get to bedrock level.
 - [The Lie](#the-lie)
 - [You Monster](#you-monster)
 - [Zoology](#zoology)
+- [22 Soldiers](#22-soldiers)
 
 </details>
 
@@ -323,6 +324,13 @@ The world is full of life!
 Breed animals 5 times.
 
 This is a root advancement - It creates its own tab.
+
+#### <ins>22 Soldiers</ins>
+
+in a tank.
+
+Pick up in a bucket, all 22 specially-named Tropical Fish<br>
+(Listed in [this table](https://minecraft.wiki/w/Tropical_Fish#Names))
 
 ## Changes
 

@@ -1,0 +1,303 @@
+{
+	"parent": "echotweaks:zoology/root",
+	"criteria": {
+		"anemone": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "orange",
+						"minecraft:tropical_fish/pattern_color": "gray",
+						"minecraft:tropical_fish/pattern": "stripey"
+					}
+				}
+			}
+		},
+		"black_tang": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "gray",
+						"minecraft:tropical_fish/pattern_color": "gray",
+						"minecraft:tropical_fish/pattern": "flopper"
+					}
+				}
+			}
+		},
+		"blue_tang": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "gray",
+						"minecraft:tropical_fish/pattern_color": "blue",
+						"minecraft:tropical_fish/pattern": "flopper"
+					}
+				}
+			}
+		},
+		"butterflyfish": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "white",
+						"minecraft:tropical_fish/pattern_color": "gray",
+						"minecraft:tropical_fish/pattern": "clayfish"
+					}
+				}
+			}
+		},
+		"cichlid": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "blue",
+						"minecraft:tropical_fish/pattern_color": "gray",
+						"minecraft:tropical_fish/pattern": "sunstreak"
+					}
+				}
+			}
+		},
+		"clownfish": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "orange",
+						"minecraft:tropical_fish/pattern_color": "white",
+						"minecraft:tropical_fish/pattern": "kob"
+					}
+				}
+			}
+		},
+		"cotton_candy_betta": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "pink",
+						"minecraft:tropical_fish/pattern_color": "light_blue",
+						"minecraft:tropical_fish/pattern": "spotty"
+					}
+				}
+			}
+		},
+		"dottyback": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "purple",
+						"minecraft:tropical_fish/pattern_color": "yellow",
+						"minecraft:tropical_fish/pattern": "blockfish"
+					}
+				}
+			}
+		},
+		"emperor_red_snapper": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "white",
+						"minecraft:tropical_fish/pattern_color": "red",
+						"minecraft:tropical_fish/pattern": "clayfish"
+					}
+				}
+			}
+		},
+		"goatfish": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "white",
+						"minecraft:tropical_fish/pattern_color": "yellow",
+						"minecraft:tropical_fish/pattern": "spotty"
+					}
+				}
+			}
+		},
+		"moorish_idol": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "white",
+						"minecraft:tropical_fish/pattern_color": "gray",
+						"minecraft:tropical_fish/pattern": "glitter"
+					}
+				}
+			}
+		},
+		"ornate_butterflyfish‌": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "white",
+						"minecraft:tropical_fish/pattern_color": "orange",
+						"minecraft:tropical_fish/pattern": "clayfish"
+					}
+				}
+			}
+		},
+		"parrotfish": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "cyan",
+						"minecraft:tropical_fish/pattern_color": "pink",
+						"minecraft:tropical_fish/pattern": "dasher"
+					}
+				}
+			}
+		},
+		"queen_angelfish‌": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "lime",
+						"minecraft:tropical_fish/pattern_color": "light_blue",
+						"minecraft:tropical_fish/pattern": "brinely"
+					}
+				}
+			}
+		},
+		"red_cichlid": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "red",
+						"minecraft:tropical_fish/pattern_color": "white",
+						"minecraft:tropical_fish/pattern": "betty"
+					}
+				}
+			}
+		},
+		"red_lipped_blenny": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "gray",
+						"minecraft:tropical_fish/pattern_color": "red",
+						"minecraft:tropical_fish/pattern": "snooper"
+					}
+				}
+			}
+		},
+		"red_snapper": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "red",
+						"minecraft:tropical_fish/pattern_color": "white",
+						"minecraft:tropical_fish/pattern": "blockfish"
+					}
+				}
+			}
+		},
+		"threadfin": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "white",
+						"minecraft:tropical_fish/pattern_color": "yellow",
+						"minecraft:tropical_fish/pattern": "flopper"
+					}
+				}
+			}
+		},
+		"tomato_clownfish‌": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "red",
+						"minecraft:tropical_fish/pattern_color": "white",
+						"minecraft:tropical_fish/pattern": "kob"
+					}
+				}
+			}
+		},
+		"triggerfish": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "gray",
+						"minecraft:tropical_fish/pattern_color": "white",
+						"minecraft:tropical_fish/pattern": "sunstreak"
+					}
+				}
+			}
+		},
+		"yellowtail_parrotfish‌": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "cyan",
+						"minecraft:tropical_fish/pattern_color": "yellow",
+						"minecraft:tropical_fish/pattern": "dasher"
+					}
+				}
+			}
+		},
+		"yellow_tang": {
+			"trigger": "minecraft:filled_bucket",
+			"conditions": {
+				"item": {
+					"items": "minecraft:tropical_fish_bucket",
+					"components": {
+						"minecraft:tropical_fish/base_color": "yellow",
+						"minecraft:tropical_fish/pattern_color": "yellow",
+						"minecraft:tropical_fish/pattern": "flopper"
+					}
+				}
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.zoology.all_named_tropical_fish.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.zoology.all_named_tropical_fish.description"
+		},
+		"icon": {
+			"id": "minecraft:tropical_fish_bucket"
+		},
+		"frame": "challenge"
+	}
+}
