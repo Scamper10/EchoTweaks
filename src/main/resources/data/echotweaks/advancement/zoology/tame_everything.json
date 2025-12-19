@@ -141,6 +141,40 @@
 					}
 				}
 			}
+		},
+		"nautilus": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:nautilus"
+				}
+			}
+		},
+		"zombie_nautilus": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:zombie_nautilus"
+				}
+			}
+		},
+		"camel_husk": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:camel_husk"
+					}
+				}
+			}
+		},
+		"zombie_horse": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:zombie_horse"
+				}
+			}
 		}
 	},
 	"display": {
