@@ -36,7 +36,10 @@ public abstract class AxolotlBlueChance extends AnimalEntity {
 				+ "Lnet/minecraft/server/world/ServerWorld;"
 				+ "Lnet/minecraft/entity/passive/PassiveEntity;"
 			+ ")Lnet/minecraft/entity/passive/PassiveEntity;"
-		, at=@At(value="INVOKE", target="shouldBabyBeDifferent(Lnet/minecraft/util/math/random/Random;)Z")
+		, at=@At(
+			value="INVOKE"
+			, target="Lnet/minecraft/entity/passive/AxolotlEntity;shouldBabyBeDifferent(Lnet/minecraft/util/math/random/Random;)Z"
+		)
 	)
 	private boolean shouldBeDifferent(Random random, ServerWorld world, PassiveEntity other) {
 		final int randomRange = getInverseChance();
