@@ -22,6 +22,7 @@ public abstract class LlamaJoinsCaravan extends AbstractDonkeyEntity {
 	@Inject(method = "follow(Lnet/minecraft/entity/passive/LlamaEntity;)V", at = @At("TAIL"))
 	private void trigger(LlamaEntity llama, CallbackInfo ci) {
 
+		// no @Shadow because `current` is not always `this`
 		LlamaEntity current = (LlamaEntity)(Object)this;
 
 		int length = 1;
