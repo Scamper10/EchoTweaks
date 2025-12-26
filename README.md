@@ -29,7 +29,8 @@ My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/in
 	- [Recipes](#recipes)
 		- [Dead Bush](#dead-bush)
 	- [Visual](#visual)
-	- [Swamp Oaks](#swamp-oaks)
+	- [Gameplay](#gameplay)
+		- [Swamp Oaks](#swamp-oaks)
 
 </details>
 
@@ -374,7 +375,9 @@ This makes Dead Bushes renewable.
 ![The icon that shows where a hidden advancement would be. It's a lil' octagoon-ish thing with a question mark.](src/main/resources/assets/echotweaks/textures/gui/sprites/hinter.png)<br>
 Hidden Advancements will now show a small icon in their place in the advancement tree. This allows the player to know when they still have advancements to complete.
 
-### Swamp Oaks
+### Gameplay
+
+#### Swamp Oaks
 
 When an Oak Sapling grows near swamp blocks, it will grow into a vanilla [Swamp Oak](https://minecraft.wiki/w/Oak#Swamp_Oak).
 
