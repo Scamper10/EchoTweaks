@@ -1,6 +1,7 @@
 New Advancements:
 	Coral Corral	- All living Coral blocks
 	Varied Dairy	- Milk each different cow variant
+	Pro Bono		- Kill each different skeleton variant
 	..... A Head	- All Heads
 	............	- All overworld Ores (including DEO)
 	-- Others for Encounter EVERY mob variant (get colored egg, ride pig, etc)
@@ -11,7 +12,6 @@ Changed Advancements:
 	Way to view completed requirements/criteria like in BaC (with translations keys?)
 	Grey out completed advancement tabs and move them to the right side of the list
 	F3+H shows hovered advancement ids like item ids
-	Check all discs
 	? A criterion that mutates itself into pick up all blocks (vanilla criteria) when resources are loaded
 
 Villager inventory management
@@ -51,7 +51,6 @@ Creative
 README:
 	Change advancement titles into nice images
 	Advancements: Include namespaced id and parent's
-	Document advancement triggers (look for other similar undocumented things)
 
 LANG:
 	Split advancement tabs
@@ -59,9 +58,7 @@ LANG:
 
 Re-add roses?
 
---deprecated-- planned for 1.21.11  [Implement zombie horses]
-
-Oozing potion somehow detect silme chunks?
+Oozing potion somehow show silme chunks?
 
 Fix superflat world creation
 	Every world feature togglable
@@ -74,6 +71,7 @@ Fix creative default skeleton horse spawning {Tame and PersistenceRequired nbt t
 	Maybe change command trap spawning to protect instant-activation?
 	Maybe add spawn egg for trap
 Way to trigger proper Wandering Trader troupe spawn
+^ Extend this to all sorts of troupes - camel husk, zombie horse
 
 BugFix - Ocelots sometimes take fish from client-only when feed requirements not met
 
