@@ -22,6 +22,7 @@ My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/in
 		- [Charcoal Block](#charcoal-block)
 		- [Gabbro](#gabbro)
 	- [Advancements](#advancements)
+	- [Advancement Triggers](#advancement-triggers)
 - [Changes](#changes)
 	- [Advancements](#advancements-1)
 		- [Total Beelocation](#total-beelocation)
@@ -335,6 +336,23 @@ in a tank.
 
 Pick up in a bucket, all 22 specially-named Tropical Fish<br>
 (Listed in [this table](https://minecraft.wiki/w/Tropical_Fish#Names))
+
+### Advancement Triggers
+
+[(Here's the criteria format to help understand this list)](https://minecraft.wiki/w/Advancement_definition#Criteria)s
+
+`crush_turle_egg` - No additional conditions.
+
+`gain_ocelot_trust` - No additional conditions. 
+
+`llama_joins_caravan`<br>
+|- `int`: `min_length`<br>
+|- `bool`: `requires_creamy`<br>
+|- `bool`: `requires_white`<br>
+|- `bool`: `requires_brown`<br>
+|- `bool`: `requires_gray`<br>
+
+Color checks succeed if any Llama in the caravan has the specidied color.
 
 ## Changes
 
