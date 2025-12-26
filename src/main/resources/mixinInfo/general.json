@@ -4,6 +4,7 @@
 	"package": "net.echo.echotweaks.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"PerEntityBredStat",
 		"SwampTree"
 	],
 	"client": [],

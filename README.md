@@ -23,6 +23,8 @@ My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/in
 		- [Gabbro](#gabbro)
 	- [Advancements](#advancements)
 	- [Advancement Triggers](#advancement-triggers)
+	- [Statistics](#statistics)
+		- [Per-Entity Bred](#per-entity-bred)
 - [Changes](#changes)
 	- [Advancements](#advancements-1)
 		- [Total Beelocation](#total-beelocation)
@@ -354,6 +356,13 @@ Pick up in a bucket, all 22 specially-named Tropical Fish<br>
 |- `bool`: `requires_gray`<br>
 
 Color checks succeed if any Llama in the caravan has the specidied color.
+
+### Statistics
+
+#### Per-Entity Bred
+The statistic type `echotweaks.bred` counts how many times the player has successfully caused two entities to breed, for each entity type.
+
+This is as opposed to the vanilla joint `animals_bred` stat.
 
 ## Changes
 
