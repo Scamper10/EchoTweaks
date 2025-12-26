@@ -32,6 +32,7 @@ My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/in
 		- [Dead Bush](#dead-bush)
 	- [Visual](#visual)
 	- [Gameplay](#gameplay)
+		- [Blue Axolotls](#blue-axolotls)
 		- [Swamp Oaks](#swamp-oaks)
 
 </details>
@@ -385,6 +386,10 @@ This makes Dead Bushes renewable.
 Hidden Advancements will now show a small icon in their place in the advancement tree. This allows the player to know when they still have advancements to complete.
 
 ### Gameplay
+
+#### Blue Axolotls
+
+The chance for a baby Axolotl to be blue increases depending on how many axolotls the player has previously bred. It has a maximum of ⅒ at 600 breeds.
 
 #### Swamp Oaks
 
