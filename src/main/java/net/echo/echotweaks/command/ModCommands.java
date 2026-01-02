@@ -15,8 +15,8 @@ public class ModCommands {
 
 	public static void registerAll() {
 		HealCommand.register();
-		UnbreakableCommand.register();
 		PlatformCommand.register();
+		UnbreakableCommand.register();
 	}
 
 	public static void register(String command, Function<LiteralArgumentBuilder<ServerCommandSource>, LiteralArgumentBuilder<ServerCommandSource>> listener) {
