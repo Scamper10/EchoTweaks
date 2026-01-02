@@ -28,6 +28,8 @@ Button to toggle tick pausing in the pause/advancement menus
 Difficulty change apply button
 	Only show peaceful if already in peaceful or cheats on
 
+End Crystals placeable on fake_bedrock (In EndCrystalItem#useOnBlock)
+
 Gold bars? (like iron or copper bars) ((yeah they did an entire copper update))
 
 Lava'd items bounce once (random more?) like old versions
