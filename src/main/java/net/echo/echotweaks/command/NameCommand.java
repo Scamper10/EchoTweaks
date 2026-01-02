@@ -20,7 +20,6 @@ public class NameCommand {
 				.requires(source -> source.getPermissions().hasPermission(new Permission.Level(PermissionLevel.GAMEMASTERS)))
 				.then(CommandManager.literal("item").then(CommandManager.argument(NAME_TEXT_ARG, TextArgumentType.text(registryAccess))
 					.executes(context -> {
-						// ... maybe check with itemstack.isdamageable
 						ServerCommandSource source = context.getSource();
 						ItemStack heldStack = source.getEntity().getWeaponStack();
 						heldStack.set(DataComponentTypes.ITEM_NAME, Text.of(TextArgumentType.parseTextArgument(context, NAME_TEXT_ARG)));
