@@ -15,6 +15,7 @@ public class ModCommands {
 
 	public static void registerAll() {
 		HealCommand.register();
+		NameCommand.register();
 		PlatformCommand.register();
 		UnbreakableCommand.register();
 	}
