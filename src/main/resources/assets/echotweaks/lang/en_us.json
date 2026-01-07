@@ -46,6 +46,9 @@
 	"commands.echotweaks.heal.maximum": "Healed %s",
 	"commands.echotweaks.heal.specific": "Healed %1$s by %2$s points",
 
+	"commands.echotweaks.name.entity.fail.prohibit_players": "Players cannot be renamed",
+	"commands.echotweaks.name.item.success": "Successfully renamed %s",
+
 	"commands.echotweaks.platform.fail.invalid_item": "Held item could not be recognized as a block",
 	"commands.echotweaks.platform.fail.not_set": "Platform block could not be created",
 	"commands.echotweaks.platform.fail.none_filled": "No blocks were filled",
