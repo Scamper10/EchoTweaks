@@ -13,7 +13,6 @@
 package net.echo.echotweaks.command;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
-import static net.echo.echotweaks.command.ModCommands.sendFeedback;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
@@ -29,8 +28,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.command.argument.BlockStateArgumentType;
-import net.minecraft.command.permission.Permission;
-import net.minecraft.command.permission.PermissionLevel;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -64,8 +61,8 @@ public class PlatformCommand {
 	public static void register() {
 		ModCommands.register("platform", (argBuilder, registryAccess) -> {
 			return argBuilder
-				.requires(source -> source.getPermissions().hasPermission(new Permission.Level(PermissionLevel.GAMEMASTERS)))
-				.executes(context -> executeNoArg(context))
+				.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
+				.executes(PlatformCommand::executeNoArg)
 				.then(CommandManager.argument(MAIN_BLOCK_ARG, BlockStateArgumentType.blockState(registryAccess))
 					.executes(context -> execute(context, false, false, false))
 					.then(buildSizeArgTree(registryAccess, false))
@@ -138,7 +135,7 @@ public class PlatformCommand {
 		ServerCommandSource source = context.getSource();
 		boolean success = setSingle(source, pos, block);
 		if(success) {
-			sendFeedback(source, true, SET_SUCCESS);
+			ModCommands.sendFeedback(source, true, SET_SUCCESS);
 			return SINGLE_SUCCESS;
 		}
 		throw SET_FAIL.create();
@@ -155,10 +152,10 @@ public class PlatformCommand {
 
 		if(totalSet == 0) throw NONE_FILLED.create();
 		if(totalSet == totalPossible) {
-			sendFeedback(source, true, FILL_ALL, totalPossible);
+			ModCommands.sendFeedback(source, true, FILL_ALL, totalPossible);
 			return totalPossible;
 		}
-		sendFeedback(source, true, FILL_SOME, totalSet, totalPossible);
+		ModCommands.sendFeedback(source, true, FILL_SOME, totalSet, totalPossible);
 		return totalSet;
 	}
 	private static int fillMany(ServerCommandSource source, BlockPos origin, BlockState main, int size, BlockState center) {
