@@ -13,6 +13,7 @@ My small additions, for Minecraft 1.21.10 [(Fabric)](https://fabricmc.net/use/in
 - [Additions](#additions)
 	- [Commands](#commands)
 		- [heal](#heal)
+		- [name](#name)
 		- [platform](#platform)
 		- [unbreakable](#unbreakable)
 	- [Items](#items)
@@ -55,6 +56,18 @@ heal [<entity>] [<amount>]
 Heals `entity` by `amount` health points.  
 \- If `entity` is omitted, targets the executing entity.  
 \- If `amount` is omitted, restores max health.
+
+#### <ins>Name</ins>
+```
+name item <name>
+```
+Sets the `item_name` component for the Player's held item<br>
+<br>
+```
+name entity <target> <name> [display]
+```
+Sets the `CustomName` and optionally `CustomNameVisible` NBT values<br>
+<br>
 
 #### <ins>Platform</ins>
 ```
