@@ -4,6 +4,7 @@ import static net.echo.echotweaks.EchoTweaks.MOD_ID;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
+import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
@@ -25,7 +26,8 @@ public class NameCommand {
 		, ITEM_SUBCOMMAND = "item"
 		, ENTITY_SUBCOMMAND = "entity"
 		, TARGET_ENTITY_ARG = "target"
-		, NAME_TEXT_ARG = "name";
+		, NAME_TEXT_ARG = "name"
+		, VISIBLE_ARG = "display";
 
 	private static final String TRANSLATE_PREFIX = "commands."+MOD_ID+"."+COMMAND+".";
 
@@ -44,25 +46,37 @@ public class NameCommand {
 				))
 				.then(CommandManager.literal(ENTITY_SUBCOMMAND)
 					.then(CommandManager.argument(TARGET_ENTITY_ARG, EntityArgumentType.entity())
-						.then(createNameTextArgument(registryAccess).executes(context -> {
-							Entity targeted = EntityArgumentType.getEntity(context, TARGET_ENTITY_ARG);
-
-							if(!targeted.getType().isSaveable())
-								throw createEntityNameFailed(targeted.getStyledDisplayName()).create();
-
-							Text oldName = targeted.getStyledDisplayName();
-							targeted.setCustomName(getNameTextArgumentValue(context));
-							context.getSource().sendFeedback(() -> Text.translatable(
-								TRANSLATE_PREFIX+ENTITY_SUBCOMMAND+".success"
-								, oldName
-								, targeted.getStyledDisplayName()
-							), false);
-
-							return SINGLE_SUCCESS;
-						}))
+						.then(createNameTextArgument(registryAccess)
+							.executes(context -> {
+								Entity target = EntityArgumentType.getEntity(context, TARGET_ENTITY_ARG);
+								return executeNameEntity(context, target);
+							})
+							.then(CommandManager.argument(VISIBLE_ARG, BoolArgumentType.bool())
+								.executes(context -> {
+									Entity target = EntityArgumentType.getEntity(context, TARGET_ENTITY_ARG);
+									target.setCustomNameVisible(BoolArgumentType.getBool(context, VISIBLE_ARG));
+									return executeNameEntity(context, target);
+								})
+							)
+						)
 					)
 				);
 		});
+	}
+
+	private static int executeNameEntity(CommandContext<ServerCommandSource> context, Entity target) throws CommandSyntaxException {
+		if(!target.getType().isSaveable())
+			throw createEntityNameFailed(target.getStyledDisplayName()).create();
+
+		Text oldName = target.getStyledDisplayName();
+		target.setCustomName(getNameTextArgumentValue(context));
+		context.getSource().sendFeedback(() -> Text.translatable(
+			TRANSLATE_PREFIX+ENTITY_SUBCOMMAND+".success"
+			, oldName
+			, target.getStyledDisplayName()
+		), false);
+
+		return SINGLE_SUCCESS;
 	}
 
 	private static RequiredArgumentBuilder<ServerCommandSource, Text> createNameTextArgument(CommandRegistryAccess registryAccess) {
