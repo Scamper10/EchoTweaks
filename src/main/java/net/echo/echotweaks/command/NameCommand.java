@@ -1,6 +1,7 @@
 package net.echo.echotweaks.command;
 
 import static net.echo.echotweaks.EchoTweaks.MOD_ID;
+
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
@@ -13,7 +14,6 @@ import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.command.argument.TextArgumentType;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
@@ -28,8 +28,6 @@ public class NameCommand {
 		, NAME_TEXT_ARG = "name";
 
 	private static final String TRANSLATE_PREFIX = "commands."+MOD_ID+"."+COMMAND+".";
-
-	private static final SimpleCommandExceptionType PROHIBIT_PLAYERS = new SimpleCommandExceptionType(Text.translatable(TRANSLATE_PREFIX.concat(ENTITY_SUBCOMMAND+".fail.prohibit_players")));
 
 	public static void register() {
 		ModCommands.register(COMMAND, (argBuilder, registryAccess) -> {
@@ -49,13 +47,16 @@ public class NameCommand {
 						.then(createNameTextArgument(registryAccess).executes(context -> {
 							Entity targeted = EntityArgumentType.getEntity(context, TARGET_ENTITY_ARG);
 
-							if(targeted instanceof PlayerEntity)
-								throw PROHIBIT_PLAYERS.create();
-
 							if(!targeted.getType().isSaveable())
-								throw new SimpleCommandExceptionType(Text.of("(echotweaks) IDK how you get this")).create();
+								throw createEntityNameFailed(targeted.getStyledDisplayName()).create();
 
+							Text oldName = targeted.getStyledDisplayName();
 							targeted.setCustomName(getNameTextArgumentValue(context));
+							context.getSource().sendFeedback(() -> Text.translatable(
+								TRANSLATE_PREFIX+ENTITY_SUBCOMMAND+".success"
+								, oldName
+								, targeted.getStyledDisplayName()
+							), false);
 
 							return SINGLE_SUCCESS;
 						}))
@@ -69,5 +70,9 @@ public class NameCommand {
 	}
 	private static Text getNameTextArgumentValue(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
 		return TextArgumentType.parseTextArgument(context, NAME_TEXT_ARG);
+	}
+
+	private static SimpleCommandExceptionType createEntityNameFailed(Text entity) {
+		return new SimpleCommandExceptionType(Text.translatable(TRANSLATE_PREFIX+ENTITY_SUBCOMMAND+".fail", entity));
 	}
 }
