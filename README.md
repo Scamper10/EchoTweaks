@@ -356,7 +356,7 @@ Pick up in a bucket, all 22 specially-named Tropical Fish<br>
 
 ### Advancement Triggers
 
-[(Here's the criteria format to help understand this list)](https://minecraft.wiki/w/Advancement_definition#Criteria)s
+[(Here's the criteria format to help understand this list)](https://minecraft.wiki/w/Advancement_definition#Criteria)
 
 `crush_turle_egg` - No additional conditions.
 
