@@ -104,10 +104,10 @@ Also smelts the same 80 items.
 
 #### <ins>Gabbro</ins>
 ![Gabbro. Crafted with an Obsidian surrounded by 8 Stone. It's just fake bedrock.](readmeAssets/FakeBedrockBlockCraft.png)<br>
-Purely visual.<br>
-(It's a fraction lighter than bedrock.)
+Mostly just a Bedrock lookalike. End Crystals can be placed on it by default, and they can blow it up.<br>
+(It's a fraction lighter than Bedrock.)
 
-Requires at least a Diamond Pickaxe to drop.<br>
+It's very strong, and requires at least a Diamond Pickaxe to drop.<br>
 The Recipe unlocks when you get to bedrock level.
 
 <br>
