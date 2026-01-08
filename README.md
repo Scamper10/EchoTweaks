@@ -104,7 +104,7 @@ Also smelts the same 80 items.
 
 #### <ins>Gabbro</ins>
 ![Gabbro. Crafted with an Obsidian surrounded by 8 Stone. It's just fake bedrock.](readmeAssets/FakeBedrockBlockCraft.png)<br>
-Mostly just a Bedrock lookalike. End Crystals can be placed on it by default, and they can blow it up.<br>
+Mostly just a Bedrock lookalike. End Crystals can be placed on it [by default](#tags-block-end_crystal_placeable), and they can blow it up.<br>
 (It's a fraction lighter than Bedrock.)
 
 It's very strong, and requires at least a Diamond Pickaxe to drop.<br>
@@ -377,6 +377,16 @@ Color checks succeed if any Llama in the caravan has the specidied color.
 The statistic type `echotweaks.bred` counts how many times the player has successfully caused two entities to breed, for each entity type.
 
 This is as opposed to the vanilla joint `animals_bred` stat.
+
+### Tags
+
+#### Block
+<span id="tags-block-end_crystal_placeable"></span>`#echotweaks:end_crystal_placeable`<br>
+`#echotweaks:grows_swamp_oaks` ([*](#swamp-oaks))
+
+#### Entity Type
+
+`#echotweaks:llamas` (just Llama and Trader Llama)
 
 ## Changes
 
