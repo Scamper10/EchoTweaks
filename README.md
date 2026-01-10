@@ -34,6 +34,7 @@ My small additions, for Minecraft 1.21.11 [(Fabric)](https://fabricmc.net/use/in
 		- [Total Beelocation](#total-beelocation)
 	- [Recipes](#recipes)
 		- [Dead Bush](#dead-bush)
+	- [Default Game Rules](#default-game-rules)
 	- [Visual](#visual)
 	- [Gameplay](#gameplay)
 		- [Blue Axolotls](#blue-axolotls)
