@@ -14,6 +14,9 @@ Changed Advancements:
 	F3+H shows hovered advancement ids like item ids
 	? A criterion that mutates itself into pick up all blocks (vanilla criteria) when resources are loaded
 
+Per-Player phantoms (invisible to others, won't attack them either)
+Disable phantoms for Creative players
+
 Villager inventory management
 - gifting/stealing (with gossips)
 	add button to trading menu? (would require villager to have a profession)
@@ -31,6 +34,14 @@ Difficulty change apply button
 Gold bars? (like iron or copper bars) ((yeah they did an entire copper update))
 
 Lava'd items bounce once (random more?) like old versions
+
+lava_source_conversion per dimension
+keep_inventory default true when cheats enabled / when creative
+
+Go through portals in spectator mode
+(Dimension selector?? Probably not)
+
+Seperate locator bar gamerule for spectators?
 
 Creative
 	Instakill weapon
