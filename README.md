@@ -406,6 +406,14 @@ The game now correctly grants the advancement with Beehives, as well as Bee Nest
 ![You can smelt a Bush to obtain a Dead Bush.](readmeAssets/BushSmelt.png)<br>
 This makes Dead Bushes renewable.
 
+### Default Game Rules
+|Game Rule|New Default|
+|---|---|
+|`command_block_output`|`false`|
+|`locator_bar`|`false`|
+|`max_snow_accumulation_height`|`3`|
+|`players_nether_portal_creative_delay`|`10` (`0.5s`)|
+
 ### Visual
 
 ![The icon that shows where a hidden advancement would be. It's a lil' octagoon-ish thing with a question mark.](src/main/resources/assets/echotweaks/textures/gui/sprites/hinter.png)<br>
