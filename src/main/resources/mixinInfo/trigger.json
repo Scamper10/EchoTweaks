@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.echo.echotweaks.mixin.trigger",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"CrushTurtleEgg",
+		"GainOcelotTrust",
+		"LlamaJoinsCaravan"
+	],
+	"client": [],
+	"server": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -16,7 +16,7 @@ public class HealCommand {
 	public static void register() {
 		ModCommands.register("heal", argBuilder -> {
 			return argBuilder
-				.requires(source -> source.hasPermissionLevel(2))
+				.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
 				.executes(context -> {
 					ServerCommandSource source = context.getSource();
 					if(!(source.getEntity() instanceof LivingEntity target)) return 0;

@@ -1,21 +1,3 @@
-/* TODO
- * Advancements:
- * 	- Say Again? 			- Tame every color of parrot
- * 	- (need a name) 		- Tame everything that can be tamed, and ride everything that can be ridden [https://minecraft.wiki/w/Taming]
- * 	- Caves & Cliffs (V) 	- Fix so breaking bedrock is not needed
- * 	- (need a name)			- Use every goat horn
- * 	- (need a name)			- Get every horse color (pattern?)
- * Villager inventory management
- * 	- gifting/stealing (with gossips)
- * 	- add button to trading menu? (would require villager to have a profession)
- * 	- gift via bundle? how steal?
- * Crop replanting
- * Button to toggle tick pausing in the pause/advancement menus
- * Quick composting
- * More jungle saplings, dark oak too
- * Something about accidental peaceful difficulty when ticking is not paused
- */
-
 package net.echo.echotweaks;
 
 import net.echo.echotweaks.block.ModBlocks;
@@ -23,6 +5,7 @@ import net.echo.echotweaks.command.ModCommands;
 import net.echo.echotweaks.config.EchoConfig;
 import net.echo.echotweaks.criterion.ModCriteria;
 import net.echo.echotweaks.item.ModItems;
+import net.echo.echotweaks.statistic.ModStats;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -46,6 +29,7 @@ public class EchoTweaks implements ModInitializer {
 		ModBlocks.init();
 		ModCommands.registerAll();
 		ModCriteria.init();
+		ModStats.init();
 
 		LOGGER.log("My Mod Loaded :3");
 		// LOGGER.log("IT COMPILES"); // toggle this to check

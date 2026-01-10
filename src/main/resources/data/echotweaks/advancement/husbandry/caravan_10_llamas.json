@@ -1,0 +1,23 @@
+{
+	"parent": "minecraft:husbandry/root",
+	"criteria": {
+		"caravan_10_llamas": {
+			"trigger": "echotweaks:llama_joins_caravan",
+			"conditions": {
+				"min_length": 10
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.husbandry.caravan_10_llamas.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.caravan_10_llamas.description"
+		},
+		"icon": {
+			"id": "minecraft:brown_carpet"
+		},
+		"frame": "goal"
+	}
+}

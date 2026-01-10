@@ -1,0 +1,23 @@
+{
+	"criteria": {
+		"go_very_deep": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"position": {
+							"y": {
+								"max": -59
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"recipes": [
+			"echotweaks:fake_bedrock"
+		]
+	}
+}

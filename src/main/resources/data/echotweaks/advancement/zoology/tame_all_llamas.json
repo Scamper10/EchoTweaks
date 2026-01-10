@@ -1,0 +1,53 @@
+{
+	"parent": "echotweaks:zoology/root",
+	"criteria": {
+		"creamy": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "#echotweaks:llamas",
+					"nbt": "{Variant:0}"
+				}
+			}
+		},
+		"white": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "#echotweaks:llamas",
+					"nbt": "{Variant:1}"
+				}
+			}
+		},
+		"brown": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "#echotweaks:llamas",
+					"nbt": "{Variant:2}"
+				}
+			}
+		},
+		"gray": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "#echotweaks:llamas",
+					"nbt": "{Variant:3}"
+				}
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.zoology.tame_all_llamas.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.zoology.tame_all_llamas.description"
+		},
+		"icon": {
+			"id": "minecraft:cyan_carpet"
+		},
+		"frame": "challenge"
+	}
+}
