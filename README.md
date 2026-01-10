@@ -37,6 +37,7 @@ My small additions, for Minecraft 1.21.11 [(Fabric)](https://fabricmc.net/use/in
 	- [Visual](#visual)
 	- [Gameplay](#gameplay)
 		- [Blue Axolotls](#blue-axolotls)
+		- [Oozing Slime Chunks](#oozing-slime-chunks)
 		- [Swamp Oaks](#swamp-oaks)
 
 </details>
@@ -424,6 +425,10 @@ Hidden Advancements will now show a small icon in their place in the advancement
 #### Blue Axolotls
 
 The chance for a baby Axolotl to be blue increases depending on how many axolotls the player has previously bred. It has a maximum of ⅒ at 600 breeds.
+
+#### Oozing Slime Chunks
+
+Entities with the Oozing effect will produce more particles when inside [Slime Chunks](https://minecraft.wiki/w/Slime#Slime_chunks).
 
 #### Swamp Oaks
 
