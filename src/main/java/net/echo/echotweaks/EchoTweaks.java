@@ -11,6 +11,7 @@ import net.echo.echotweaks.command.ModCommands;
 import net.echo.echotweaks.config.EchoConfig;
 import net.echo.echotweaks.criterion.ModCriteria;
 import net.echo.echotweaks.item.ModItems;
+import net.echo.echotweaks.statistic.ModStats;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -34,6 +35,7 @@ public class EchoTweaks implements ModInitializer {
 		ModBlocks.init();
 		ModCommands.registerAll();
 		ModCriteria.init();
+		ModStats.init();
 
 		LOGGER.log("My Mod Loaded :3");
 		// LOGGER.log("IT COMPILES"); // toggle this to check

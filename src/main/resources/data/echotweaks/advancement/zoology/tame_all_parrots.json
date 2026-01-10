@@ -1,0 +1,62 @@
+{
+	"parent": "echotweaks:zoology/root",
+	"criteria": {
+		"red_blue": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:parrot",
+					"nbt": "{Variant:0}"
+				}
+			}
+		},
+		"blue": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:parrot",
+					"nbt": "{Variant:1}"
+				}
+			}
+		},
+		"green": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:parrot",
+					"nbt": "{Variant:2}"
+				}
+			}
+		},
+		"yellow_blue": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:parrot",
+					"nbt": "{Variant:3}"
+				}
+			}
+		},
+		"gray": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:parrot",
+					"nbt": "{Variant:4}"
+				}
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.zoology.tame_all_parrots.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.zoology.tame_all_parrots.description"
+		},
+		"icon": {
+			"id": "minecraft:parrot_spawn_egg"
+		},
+		"frame": "challenge"
+	}
+}

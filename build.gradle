@@ -19,6 +19,8 @@ repositories {
 
 	// cloth config
 	maven { url "https://maven.shedaniel.me/" }
+
+	// modmenu
     maven { url "https://maven.terraformersmc.com/releases/" }
 
 	// modmenu
@@ -38,7 +40,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 	// Cloth config
-	modApi ("me.shedaniel.cloth:cloth-config-fabric:18.0.145") {
+	modApi ("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
@@ -62,10 +64,14 @@ java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 	// if it is present.
 	// If you remove this line, sources will not be generated.
-	withSourcesJar()
+	// withSourcesJar()
 
 	sourceCompatibility = JavaVersion.VERSION_21
 	targetCompatibility = JavaVersion.VERSION_21
+
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 jar {
@@ -94,6 +100,14 @@ publishing {
 	}
 }
 
+loom {
+	runs {
+		client {
+			runDir = "run"
+		}
+	}
+}
+
 task buildAndReveal(dependsOn: build) {
 	group = "build"
 	description = "Runs build and opens the output directory"
@@ -101,9 +115,9 @@ task buildAndReveal(dependsOn: build) {
     doLast {
         def outputDir = file("$buildDir/libs")
         println "Opening directory: ${outputDir.absolutePath}"
-        exec {
-            commandLine "explorer.exe", outputDir.absolutePath
-			ignoreExitValue = true
-        }
+        
+		new ProcessBuilder("explorer.exe", outputDir.absolutePath)
+            .inheritIO()
+            .start()
     }
 }

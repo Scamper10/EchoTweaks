@@ -44,6 +44,7 @@ public class EchoConfigScreen extends Screen {
 	protected void init() {
 		platformModeCycler = CyclingButtonWidget.builder(
 			(DefaultPlatformBehavior value) -> Text.translatable(value.getKey())
+			, config.platformNoArgBehavior
 		)
 		.values(DefaultPlatformBehavior.values())
 		.omitKeyText()
@@ -54,7 +55,6 @@ public class EchoConfigScreen extends Screen {
 				EchoConfig.save();
 		  	}
 		);
-		platformModeCycler.setValue(config.platformNoArgBehavior);
 		addDrawableChild(platformModeCycler);
 
 		platformSizeInput = new TextFieldWidget(
@@ -216,7 +216,7 @@ public class EchoConfigScreen extends Screen {
 					INVALID_ACTIVE_COLOR
 				  :	INVALID_INACTTIVE_COLOR
 			  :	DEFAULT_EDITABLE_COLOR;
-			context.drawBorder(getX(), getY(), getWidth(), getHeight(), color);
+			context.drawStrokedRectangle(getX(), getY(), getWidth(), getHeight(), color);
 
 		}
 

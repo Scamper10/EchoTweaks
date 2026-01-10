@@ -35,6 +35,12 @@ public class ModBlocks {
 			.requiresTool()
 			.strength(5.0F, 6.0F)
 	);
+	public static final Block FAKE_BEDROCK = registerBasic(
+		"fake_bedrock",
+		AbstractBlock.Settings.create()
+			.requiresTool()
+			.strength(40.0F, 24.0F)
+	);
 
 
 
@@ -68,6 +74,7 @@ public class ModBlocks {
 
 	private static void registerInventoryEntries() {
 		registerInventoryEntry(CHARCOAL_BLOCK, ItemGroups.BUILDING_BLOCKS, Items.COAL_BLOCK);
+		registerInventoryEntry(FAKE_BEDROCK, ItemGroups.BUILDING_BLOCKS, Items.POLISHED_BLACKSTONE_BRICK_WALL);
 	}
 	private static void registerInventoryEntry(Block modBlock, RegistryKey<ItemGroup> group, Item addAfterItem) {
 		ItemGroupEvents.modifyEntriesEvent(group)

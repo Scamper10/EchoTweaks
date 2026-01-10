@@ -1,0 +1,192 @@
+{
+	"parent": "echotweaks:zoology/root",
+	"criteria": {
+		"copper_golem": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:copper_golem"
+				}
+			}
+		},
+		"donkey": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:donkey"
+				}
+			}
+		},
+		"happy_ghast": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:happy_ghast"
+					}
+				}
+			}
+		},
+		"horse": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:horse"
+				}
+			}
+		},
+		"iron_golem": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:iron_golem"
+				}
+			}
+		},
+		"llama": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "#echotweaks:llamas"
+				}
+			}
+		},
+		"mule": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:mule"
+				}
+			}
+		},
+		"skeleton_horse": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:skeleton_horse"
+					}
+				}
+			}
+		},
+		"cat": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:cat"
+				}
+			}
+		},
+		"parrot": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:parrot"
+				}
+			}
+		},
+		"wolf": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:wolf"
+				}
+			}
+		},
+		"fox": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:fox"
+				}
+			}
+		},
+		"ocelot": {
+			"trigger": "echotweaks:gain_ocelot_trust"
+		},
+		"camel": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:camel"
+					}
+				}
+			}
+		},
+		"pig": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:pig"
+					}
+				}
+			}
+		},
+		"snow_golem": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:snow_golem"
+				}
+			}
+		},
+		"strider": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:strider"
+					}
+				}
+			}
+		},
+		"nautilus": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:nautilus"
+				}
+			}
+		},
+		"zombie_nautilus": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:zombie_nautilus"
+				}
+			}
+		},
+		"camel_husk": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:camel_husk"
+					}
+				}
+			}
+		},
+		"zombie_horse": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:zombie_horse"
+				}
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.zoology.tame_everything.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.zoology.tame_everything.description"
+		},
+		"icon": {
+			"id": "minecraft:poppy"
+		},
+		"frame": "challenge"
+	}
+}

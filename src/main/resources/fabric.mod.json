@@ -24,11 +24,12 @@
 	},
 	"mixins": [
 		"mixinInfo/general.json",
-		"mixinInfo/hiddenAdvancement.json"
+		"mixinInfo/hiddenAdvancement.json",
+		"mixinInfo/trigger.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.5",
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*",
 		"cloth-config": ">=18.0.145"
