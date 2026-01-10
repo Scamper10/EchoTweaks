@@ -14,7 +14,8 @@ Changed Advancements:
 	F3+H shows hovered advancement ids like item ids
 	? A criterion that mutates itself into pick up all blocks (vanilla criteria) when resources are loaded
 
-Per-Player phantoms (invisible to others, won't attack them either)
+Per-Player phantoms (invisible to others, won't attack others)
+	^ can't find a way to link spawn-causing player when entity is created
 Disable phantoms for Creative players
 
 Villager inventory management
