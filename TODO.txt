@@ -17,7 +17,6 @@ Changed Advancements:
 
 Per-Player phantoms (invisible to others, won't attack others)
 	^ can't find a way to link spawn-causing player when entity is created
-Disable phantoms for Creative players
 
 Villager inventory management
 - gifting/stealing (with gossips)
