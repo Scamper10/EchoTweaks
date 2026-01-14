@@ -40,7 +40,7 @@ lava_source_conversion per dimension
 keep_inventory default true when cheats enabled / when creative
 
 Go through portals in spectator mode
-(Dimension selector?? Probably not)
+(Spectator Dimension selector?? Probably not)
 
 Seperate locator bar gamerule for spectators?
 
@@ -70,8 +70,6 @@ LANG:
 
 Re-add roses?
 
-Oozing potion somehow show silme chunks?
-
 Fix superflat world creation
 	Every world feature togglable
 	Buttons for add/remove layers (remove already exists)
@@ -98,6 +96,6 @@ Spore blossoms renewable
 
 1.21.10 Changes
 	Investigate fog
-	Undo lead and saddle crafts? (Nerf trader llama leads?)
+	Undo lead and saddle crafts? (Nerf trader llama leads?) (NAME TAG in 26.1)
 	Revert 'Mobs' to 'Creatures' in sound settings
 	Option to hide worldgen progress bar
