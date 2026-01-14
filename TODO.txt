@@ -10,7 +10,8 @@ Changed Advancements:
 	Fix `This Boat has Legs` so it doesn't require a carrot-stick click, just holding one
 	move appropriate 100% advancements to zoology (Complete Catalogue, Whole Pack)
 	Way to view completed requirements/criteria like in BaC (with translations keys?)
-	Grey out completed advancement tabs and move them to the right side of the list
+	Grey out completed advancement tabs and move them to the end of the list
+		(AdvancementTabType and AdvancementTab, textures are hardcoded to be dependant on if the tab is selected)
 	F3+H shows hovered advancement ids like item ids
 	? A criterion that mutates itself into pick up all blocks (vanilla criteria) when resources are loaded
 
