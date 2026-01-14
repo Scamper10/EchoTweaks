@@ -40,6 +40,7 @@ My small additions, for Minecraft 1.21.11 [(Fabric)](https://fabricmc.net/use/in
 		- [Blue Axolotls](#blue-axolotls)
 		- [No Creative Phantoms](#no-creative-phantoms)
 		- [Oozing Slime Chunks](#oozing-slime-chunks)
+		- [Pickaxe-able Beacons](#pickaxe-able-beacons)
 		- [Swamp Oaks](#swamp-oaks)
 
 </details>
@@ -435,6 +436,10 @@ Phantoms will no longer naturally spawn for players in Creative Mode
 #### Oozing Slime Chunks
 
 Entities with the Oozing effect will produce more particles when inside [Slime Chunks](https://minecraft.wiki/w/Slime#Slime_chunks).
+
+#### Pickaxe-able Beacons
+
+Beacons are now in `#minecraft:mineable/pickaxe`, so they break faster when a Pickaxe is used. They can still be picked up with an empty hand.
 
 #### Swamp Oaks
 
