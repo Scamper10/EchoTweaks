@@ -99,6 +99,5 @@ Spore blossoms renewable
 1.21.10 Changes
 	Investigate fog
 	Undo lead and saddle crafts? (Nerf trader llama leads?)
-	Locator Bar ewww (make gamerule false by default)
 	Revert 'Mobs' to 'Creatures' in sound settings
 	Option to hide worldgen progress bar
