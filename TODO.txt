@@ -1,12 +1,14 @@
 New Advancements:
-	Coral Corral	- All living Coral blocks
-	Varied Dairy	- Milk each different cow variant
-	Pro Bono		- Kill each different skeleton variant
-	Getting A Head	- All Heads
-	............	- All overworld Ores (including DEO)
+	Goose on the Loose - Have a chicken snap a lead
+	Coral Corral - All living Coral blocks
+	Varied Dairy - Milk each different cow variant
+	Pro Bono - Kill each different skeleton variant
+	Getting A Head - All Heads
+	............ - All overworld Ores (including DEO)
 	-- Others for Encounter EVERY mob variant (get colored egg, ride pig, etc)
 Changed Advancements:
 	Fix `Caves & Cliffs` so breaking bedrock is not sometimes needed
+		- (or just change hint to "above the build limit")
 	Fix `This Boat has Legs` so it doesn't require a carrot-stick click, just holding one
 	move appropriate 100% advancements to zoology (Complete Catalogue, Whole Pack)
 	Way to view completed requirements/criteria like in BaC (with translations keys?)
@@ -14,6 +16,8 @@ Changed Advancements:
 		(AdvancementTabType and AdvancementTab, textures are hardcoded to be dependant on if the tab is selected)
 	F3+H shows hovered advancement ids like item ids
 	? A criterion that mutates itself into pick up all blocks (vanilla criteria) when resources are loaded
+
+Change "height limit for building is" to "you have reached the height limit for building"
 
 Per-Player phantoms (invisible to others, won't attack others)
 	^ can't find a way to link spawn-causing player when entity is created
