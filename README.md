@@ -136,6 +136,7 @@ The Recipe unlocks when you get to bedrock level.
 - [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
 - [Flower Power](#flower-power)
+- [Goose on the Loose!](#goose-on-the-loose)
 - [It's a New Record!](#its-a-new-record)
 - [One with the Wild](#one-with-the-wild)
 - [Overkill / Over-Overkill](#overkill)
@@ -249,6 +250,12 @@ minecraft:wither_rose
 (don't @ me)
 
 </details>
+
+#### <ins>Goose on the Loose!</ins>
+
+House House.
+
+Have a Chicken break free from a Lead.
 
 #### <ins>It's a New Record!</ins>
 
