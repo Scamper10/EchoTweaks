@@ -367,14 +367,17 @@ Pick up in a bucket, all 22 specially-named Tropical Fish<br>
 
 `crush_turle_egg` - No additional conditions.
 
-`gain_ocelot_trust` - No additional conditions. 
+`gain_ocelot_trust` - No additional conditions.
+
+`lead_snaps`<br>
+| - `entity` - The entity that was on the lead.
 
 `llama_joins_caravan`<br>
 |- `int`: `min_length`<br>
 |- `bool`: `requires_creamy`<br>
 |- `bool`: `requires_white`<br>
 |- `bool`: `requires_brown`<br>
-|- `bool`: `requires_gray`<br>
+|- `bool`: `requires_gray`
 
 Color checks succeed if any Llama in the caravan has the specidied color.
 
