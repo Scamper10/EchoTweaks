@@ -1,3 +1,4 @@
 {
-	"item.minecraft.egg": "Pale Egg"
+	"item.minecraft.egg": "Pale Egg",
+	"build.tooHigh": "You have reached the height limit for building"
 }

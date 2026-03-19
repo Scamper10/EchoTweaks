@@ -16,8 +16,6 @@ Changed Advancements:
 	F3+H shows hovered advancement ids like item ids
 	? A criterion that mutates itself into pick up all blocks (vanilla criteria) when resources are loaded
 
-Change "height limit for building is" to "you have reached the height limit for building"
-
 Nether sus gravel for blaze rods
 
 Per-Player phantoms (invisible to others, won't attack others)
