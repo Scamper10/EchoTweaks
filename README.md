@@ -84,6 +84,8 @@ Fills `main_block` (or the block in your hand) in a square around you.<br>
 \- Uses config if no arguments are given, or if `size` is missing.<br>
 \- Each `size` correlates to a square of side-length `2*size + 1` centred on the player.
 
+This is bounded by the gamerule `max_block_modifications`.
+
 #### <ins>Unbreakable</ins>
 ```
 unbreakable

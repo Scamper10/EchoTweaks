@@ -38,6 +38,7 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.rule.GameRules;
 
 public class PlatformCommand {
 
@@ -49,15 +50,16 @@ public class PlatformCommand {
 
 	private static final String TRANSLATE_PREFIX = "commands.echotweaks.platform.";
 
-	private static final SimpleCommandExceptionType
-		INVALID_ITEM	= new SimpleCommandExceptionType(Text.translatable(TRANSLATE_PREFIX.concat("fail.invalid_item")))
-	  ,	SET_FAIL		= new SimpleCommandExceptionType(Text.translatable(TRANSLATE_PREFIX.concat("fail.not_set")))
-	  ,	NONE_FILLED		= new SimpleCommandExceptionType(Text.translatable(TRANSLATE_PREFIX.concat("fail.none_filled")));
+	private static final String
+		INVALID_ITEM_SUFFIX = "fail.invalid_item"
+	  ,	SET_FAIL_SUFFIX	 = "fail.not_set"
+	  ,	NONE_FILLED_SUFFIX	 = "fail.none_filled"
+	  ,	TOO_BIG_SUFFIX		 = "fail.too_big";
 	
 	private static final String
-		SET_SUCCESS	= TRANSLATE_PREFIX.concat("success.one_filled")
-	  ,	FILL_SOME	= TRANSLATE_PREFIX.concat("success.some_filled")
-	  ,	FILL_ALL	= TRANSLATE_PREFIX.concat("success.all_filled");
+		SET_SUCCESS_KEY	= tranlationKey("success.one_filled")
+	  ,	FILL_SOME_KEY	= tranlationKey("success.some_filled")
+	  ,	FILL_ALL_KEY	= tranlationKey("success.all_filled");
 
 	public static void register() {
 		ModCommands.register("platform", (argBuilder, registryAccess) -> {
@@ -136,10 +138,10 @@ public class PlatformCommand {
 		ServerCommandSource source = context.getSource();
 		boolean success = setSingle(source, pos, block);
 		if(success) {
-			ModCommands.sendFeedback(source, true, SET_SUCCESS);
+			ModCommands.sendFeedback(source, true, SET_SUCCESS_KEY);
 			return SINGLE_SUCCESS;
 		}
-		throw SET_FAIL.create();
+		throw createException(SET_FAIL_SUFFIX);
 	}
 	private static boolean setSingle(ServerCommandSource source, BlockPos pos, BlockState block) {
 		return source.getWorld().setBlockState(pos, block, Block.NOTIFY_LISTENERS | Block.SKIP_BLOCK_ADDED_CALLBACK);
@@ -147,16 +149,21 @@ public class PlatformCommand {
 
 	private static int handleMany(CommandContext<ServerCommandSource> context, BlockPos pos, BlockState main, int size, BlockState center) throws CommandSyntaxException {
 		final ServerCommandSource source = context.getSource();
-		final int
-			totalPossible = (int) Math.pow((size * 2) + 1, 2)
-		  ,	totalSet = fillMany(source, pos, main, size, center);
+		final int totalPossible = sizeToBlocks(size);
+		final int maxAllowedBlocks = context.getSource().getWorld().getGameRules().getValue(GameRules.MAX_BLOCK_MODIFICATIONS);
+		if(totalPossible > maxAllowedBlocks) {
+			final int maxAllowedSize = blocksToSizeFloored(maxAllowedBlocks);
+			throw createException(TOO_BIG_SUFFIX, maxAllowedSize);
+		}
+		final int totalSet = fillMany(source, pos, main, size, center);
 
-		if(totalSet == 0) throw NONE_FILLED.create();
+		if(totalSet == 0)
+			throw createException(NONE_FILLED_SUFFIX);
 		if(totalSet == totalPossible) {
-			ModCommands.sendFeedback(source, true, FILL_ALL, totalPossible);
+			ModCommands.sendFeedback(source, true, FILL_ALL_KEY, totalPossible);
 			return totalPossible;
 		}
-		ModCommands.sendFeedback(source, true, FILL_SOME, totalSet, totalPossible);
+		ModCommands.sendFeedback(source, true, FILL_SOME_KEY, totalSet, totalPossible);
 		return totalSet;
 	}
 	private static int fillMany(ServerCommandSource source, BlockPos origin, BlockState main, int size, BlockState center) {
@@ -173,6 +180,14 @@ public class PlatformCommand {
 		return successCount;
 	}
 
+	private static int sizeToBlocks(int size) {
+		return (int) Math.pow((size * 2) + 1, 2);
+	}
+	private static int blocksToSizeFloored(int blocks) {
+		return (int) ((Math.sqrt(blocks) - 1) / 2);
+	}
+
+
 	private static int handleUnknownSize(CommandContext<ServerCommandSource> context, BlockPos pos, BlockState main, int size, BlockState center) throws CommandSyntaxException {
 		if(size == 0) return handleSingle(context, pos, main);
 		return handleMany(context, pos, main, size, center);
@@ -184,11 +199,18 @@ public class PlatformCommand {
 
 	private static BlockState getHeldBlock(PlayerEntity player) throws CommandSyntaxException {
 		final Item item = player.getWeaponStack().getItem();
-		if(!(item instanceof BlockItem blockItem)) throw INVALID_ITEM.create();
+		if(!(item instanceof BlockItem blockItem)) throw createException(INVALID_ITEM_SUFFIX);
 		return blockItem.getBlock().getDefaultState();
 	}
 
 	private static BlockPos getPosUnder(PlayerEntity player) {
 		return player.getBlockPos().down();
+	}
+
+	private static String tranlationKey(String suffix) {
+		return TRANSLATE_PREFIX.concat(suffix);
+	}
+	private static CommandSyntaxException createException(String translationSuffix, Object ...args) {
+		return (new SimpleCommandExceptionType(Text.translatable(TRANSLATE_PREFIX.concat(translationSuffix), args))).create();
 	}
 }

@@ -55,6 +55,7 @@
 	"commands.echotweaks.platform.fail.invalid_item": "Held item could not be recognized as a block",
 	"commands.echotweaks.platform.fail.not_set": "Platform block could not be created",
 	"commands.echotweaks.platform.fail.none_filled": "No blocks were filled",
+	"commands.echotweaks.platform.fail.too_big": "Platform size cannot exceed %s",
 	"commands.echotweaks.platform.success.one_filled": "Platform block created",
 	"commands.echotweaks.platform.success.some_filled": "Filled %1$s blocks (out of %2$s)",
 	"commands.echotweaks.platform.success.all_filled": "Filled %s blocks",
