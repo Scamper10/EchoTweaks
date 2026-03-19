@@ -5,6 +5,7 @@
  * 
  * config?
  * 	  map items -> blocks (eg water bucket to water)
+ * 	  offhand for center block when using held item
  * 
  * reconsider survival mode access - maybe some new item (sources block from offhand) instead
  */
