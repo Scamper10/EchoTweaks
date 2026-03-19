@@ -14,5 +14,6 @@
 		"settings.gradle": true,
 		".gradle/**": true
 	},
-	"java.debug.settings.onBuildFailureProceed": true
+	"java.debug.settings.onBuildFailureProceed": true,
+	"echo.workspaceKeybindings.openVanillaDatapack.enabled": true
 }

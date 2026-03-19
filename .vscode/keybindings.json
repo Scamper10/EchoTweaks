@@ -1,0 +1,5 @@
+[{
+	"key": "ctrl+alt+f3 ctrl+alt+f6",
+	"command": "workbench.action.tasks.runTask",
+	"args": "Open vanilla datapack"
+}]

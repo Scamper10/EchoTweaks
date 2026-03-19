@@ -1,23 +1,26 @@
 {
 	"version": "2.0.0",
-	"tasks": [
-		{
-			"group": "build",
-			"type": "gradle",
-			"id": "c:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaksbuildAndRevealEchoTweaks",
-			"script": "buildAndReveal",
-			"description": "Runs build and opens the output directory",
-			"project": "EchoTweaks",
-			"buildFile": "C:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks\\build.gradle",
-			"rootProject": "EchoTweaks",
-			"projectFolder": "c:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks",
-			"workspaceFolder": "c:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks",
-			"args": "",
-			"javaDebug": false,
-			"problemMatcher": [
-				"$gradle"
-			],
-			"label": "gradle: buildAndReveal"
-		}
-	]
+	"tasks": [{
+		"group": "build",
+		"type": "gradle",
+		"id": "c:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaksbuildAndRevealEchoTweaks",
+		"script": "buildAndReveal",
+		"description": "Runs build and opens the output directory",
+		"project": "EchoTweaks",
+		"buildFile": "C:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks\\build.gradle",
+		"rootProject": "EchoTweaks",
+		"projectFolder": "c:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks",
+		"workspaceFolder": "c:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks",
+		"args": "",
+		"javaDebug": false,
+		"problemMatcher": [
+			"$gradle"
+		],
+		"label": "gradle: buildAndReveal"
+	},{
+		"label": "Open vanilla datapack",
+		"type": "shell",
+		"command": "C:\\Program Files\\WinRAR\\WinRar.exe",
+		"args": ["C:\\Users\\jayhe\\AppData\\Roaming\\.minecraft\\versions\\1.21.11\\1.21.11.jar"]
+	}]
 }
