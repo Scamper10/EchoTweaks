@@ -430,6 +430,8 @@ This makes Dead Bushes renewable.
 
 ### Visual
 
+`Egg` is now `Pale Egg` for consistency with `Brown Egg` and `Blue Egg`
+
 ![The icon that shows where a hidden advancement would be. It's a lil' octagoon-ish thing with a question mark.](src/main/resources/assets/echotweaks/textures/gui/sprites/hinter.png)<br>
 Hidden Advancements will now show a small icon in their place in the advancement tree. This allows the player to know when they still have advancements to complete.
 
