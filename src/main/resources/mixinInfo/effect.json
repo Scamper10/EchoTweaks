@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.echo.echotweaks.mixin.effect",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"OozingSlimeChunks"
+	],
+	"client": [],
+	"server": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

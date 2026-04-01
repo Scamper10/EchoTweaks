@@ -25,6 +25,7 @@
 	"mixins": [
 		"mixinInfo/general.json",
 		"mixinInfo/hiddenAdvancement.json",
+		"mixinInfo/effect.json",
 		"mixinInfo/trigger.json"
 	],
 	"depends": {

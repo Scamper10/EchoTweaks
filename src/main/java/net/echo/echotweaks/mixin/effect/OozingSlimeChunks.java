@@ -1,4 +1,4 @@
-package net.echo.echotweaks.mixin;
+package net.echo.echotweaks.mixin.effect;
 
 import org.spongepowered.asm.mixin.Mixin;
 
@@ -13,7 +13,7 @@ import net.minecraft.util.math.random.ChunkRandom;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.StructureWorldAccess;
 
-@Mixin(targets = "net.minecraft.entity.effect.OozingStatusEffect")
+@Mixin(targets = "net.minecraft.entity.effect.OozingStatusEffect") // full name needed for visibility
 public abstract class OozingSlimeChunks extends StatusEffect {
 	protected OozingSlimeChunks(StatusEffectCategory category, int color) {
 		super(category, color);
@@ -46,7 +46,7 @@ public abstract class OozingSlimeChunks extends StatusEffect {
 		world.spawnParticles(
 			ParticleTypes.ITEM_SLIME
 			, pos.x, pos.y+entityHeight*random.nextDouble(), pos.z
-			, 1
+			, 1 // count:1 uses <delta> as position variance
 			, 0.15, 0.1, 0.15
 			, 0 // <speed> does nothing as <count> more than zero?
 		);
