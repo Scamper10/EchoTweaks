@@ -4,7 +4,8 @@
 	"package": "net.echo.echotweaks.mixin.effect",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"OozingSlimeChunks"
+		"OozingSlimeChunks",
+		"BlindnessAncientCities"
 	],
 	"client": [],
 	"server": [],
