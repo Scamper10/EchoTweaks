@@ -1,0 +1,59 @@
+{
+	"parent": "echotweaks:husbandry/obtain_cake",
+	"criteria": {
+		"cold": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": "minecraft:bucket"
+				},
+				"entity": {
+					"type": "minecraft:cow",
+					"components": {
+						"minecraft:cow/variant": "minecraft:cold"
+					}
+				}
+			}
+		},
+		"temperate": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": "minecraft:bucket"
+				},
+				"entity": {
+					"type": "minecraft:cow",
+					"components": {
+						"minecraft:cow/variant": "minecraft:temperate"
+					}
+				}
+			}
+		},
+		"warm": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": "minecraft:bucket"
+				},
+				"entity": {
+					"type": "minecraft:cow",
+					"components": {
+						"minecraft:cow/variant": "minecraft:temperate"
+					}
+				}
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.husbandry.milk_all_cows.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.milk_all_cows.description"
+		},
+		"icon": {
+			"id": "minecraft:milk_bucket"
+		},
+		"frame": "challenge"
+	}
+}

@@ -147,6 +147,7 @@ The Recipe unlocks when you get to bedrock level.
 - [Spitting Image](#spitting-image)
 - [Stack Overflow](#stack-overflow)
 - [The Lie](#the-lie)
+- [Varied Dairy](#varied-dairy)
 - [You Monster](#you-monster)
 - [Zoology](#zoology)
 - [22 Soldiers](#22-soldiers)
@@ -348,6 +349,13 @@ Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle in
 You will be baked. And then there will be cake.
 
 Get together all the ingredients, combine then in just the right way, et voilà! A cake.
+
+#### <ins>Varied Dairy</ins>
+
+What do you call a cow on a trampoline?
+
+Use a Bucket on each of the three different [temperature variants of Cow](https://minecraft.wiki/w/Cow#Variants)
+
 
 #### <ins>You Monster</ins>
 

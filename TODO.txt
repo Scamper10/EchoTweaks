@@ -1,6 +1,5 @@
 New Advancements:
 	Coral Corral - All living Coral blocks
-	Varied Dairy - Milk each different cow variant
 	Pro Bono - Kill each different skeleton variant
 	Getting A Head - All Heads
 	............ - All overworld Ores (including DEO)
