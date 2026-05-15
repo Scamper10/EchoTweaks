@@ -9,7 +9,7 @@ Changed Advancements:
 	Fix `Caves & Cliffs` so breaking bedrock is not sometimes needed
 		- (or just change hint to "above the build limit")
 	Fix `This Boat has Legs` so it doesn't require a carrot-stick click, just holding one
-	move appropriate 100% advancements to zoology (Complete Catalogue, Whole Pack)
+	Move 100% advancements to zoology (Complete Catalogue, Whole Pack, Two by Two)
 	Way to view completed requirements/criteria like in BaC (with translations keys?)
 	Grey out completed advancement tabs and move them to the end of the list
 		(AdvancementTabType and AdvancementTab, textures are hardcoded to be dependant on if the tab is selected)
