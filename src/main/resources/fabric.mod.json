@@ -18,6 +18,9 @@
 		"main": [
 			"net.echo.echotweaks.EchoTweaks"
 		],
+		"client": [
+			"net.echo.echotweaks.client.EchoTweaksClient"
+		],
 		"modmenu": [
 			"net.echo.echotweaks.config.EchoModMenu"
 		]
@@ -25,7 +28,11 @@
 	"mixins": [
 		"mixins/general.json",
 		"mixins/hiddenAdvancement.json",
-		"mixins/trigger.json"
+		"mixins/trigger.json",
+		{
+			"config": "client_mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
