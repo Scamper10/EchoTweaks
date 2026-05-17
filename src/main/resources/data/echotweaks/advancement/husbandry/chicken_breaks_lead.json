@@ -1,0 +1,25 @@
+{
+	"parent": "minecraft:husbandry/plant_seed",
+	"criteria": {
+		"chicken_breaks_lead": {
+			"trigger": "echotweaks:lead_snaps",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:chicken"
+				}
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.husbandry.chicken_breaks_lead.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.husbandry.chicken_breaks_lead.description"
+		},
+		"icon": {
+			"id": "minecraft:lead"
+		},
+		"frame": "task"
+	}
+}

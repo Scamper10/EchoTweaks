@@ -84,6 +84,8 @@ Fills `main_block` (or the block in your hand) in a square around you.<br>
 \- Uses config if no arguments are given, or if `size` is missing.<br>
 \- Each `size` correlates to a square of side-length `2*size + 1` centred on the player.
 
+This is bounded by the gamerule `max_block_modifications`.
+
 #### <ins>Unbreakable</ins>
 ```
 unbreakable
@@ -136,6 +138,7 @@ The Recipe unlocks when you get to bedrock level.
 - [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
 - [Flower Power](#flower-power)
+- [Goose on the Loose!](#goose-on-the-loose)
 - [It's a New Record!](#its-a-new-record)
 - [One with the Wild](#one-with-the-wild)
 - [Overkill / Over-Overkill](#overkill)
@@ -144,6 +147,7 @@ The Recipe unlocks when you get to bedrock level.
 - [Spitting Image](#spitting-image)
 - [Stack Overflow](#stack-overflow)
 - [The Lie](#the-lie)
+- [Varied Dairy](#varied-dairy)
 - [You Monster](#you-monster)
 - [Zoology](#zoology)
 - [22 Soldiers](#22-soldiers)
@@ -250,6 +254,12 @@ minecraft:wither_rose
 
 </details>
 
+#### <ins>Goose on the Loose!</ins>
+
+House House.
+
+Have a Chicken break free from a Lead.
+
 #### <ins>It's a New Record!</ins>
 
 Nice one!
@@ -340,6 +350,13 @@ You will be baked. And then there will be cake.
 
 Get together all the ingredients, combine then in just the right way, et voilà! A cake.
 
+#### <ins>Varied Dairy</ins>
+
+What do you call a cow on a trampoline?
+
+Use a Bucket on each of the three different [temperature variants of Cow](https://minecraft.wiki/w/Cow#Variants)
+
+
 #### <ins>You Monster</ins>
 
 Eh. It was bound to happen.
@@ -367,14 +384,17 @@ Pick up in a bucket, all 22 specially-named Tropical Fish<br>
 
 `crush_turle_egg` - No additional conditions.
 
-`gain_ocelot_trust` - No additional conditions. 
+`gain_ocelot_trust` - No additional conditions.
+
+`lead_snaps`<br>
+| - `entity` - The entity that was on the lead.
 
 `llama_joins_caravan`<br>
 |- `int`: `min_length`<br>
 |- `bool`: `requires_creamy`<br>
 |- `bool`: `requires_white`<br>
 |- `bool`: `requires_brown`<br>
-|- `bool`: `requires_gray`<br>
+|- `bool`: `requires_gray`
 
 Color checks succeed if any Llama in the caravan has the specidied color.
 
@@ -419,6 +439,10 @@ This makes Dead Bushes renewable.
 |`players_nether_portal_creative_delay`|`10` (`0.5s`)|
 
 ### Visual
+
+`Egg` is now `Pale Egg` for consistency with `Brown Egg` and `Blue Egg`.
+
+The build height limit message has been made slightly more vague.
 
 ![The icon that shows where a hidden advancement would be. It's a lil' octagoon-ish thing with a question mark.](src/main/resources/assets/echotweaks/textures/gui/sprites/hinter.png)<br>
 Hidden Advancements will now show a small icon in their place in the advancement tree. This allows the player to know when they still have advancements to complete.

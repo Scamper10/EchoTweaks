@@ -12,7 +12,7 @@
       "vmArgs": "-Dfabric.dli.config\u003dC:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks\\.gradle\\loom-cache\\launch.cfg -Dfabric.dli.env\u003dclient -Dfabric.dli.main\u003dnet.fabricmc.loader.impl.launch.knot.KnotClient",
       "args": "",
       "env": {},
-      "projectName": "EchoTweaks"
+      "projectName": "echotweaks"
     },
     {
       "type": "java",
@@ -25,7 +25,7 @@
       "vmArgs": "-Dfabric.dli.config\u003dC:\\Users\\jayhe\\Documents\\GitHub\\EchoTweaks\\.gradle\\loom-cache\\launch.cfg -Dfabric.dli.env\u003dserver -Dfabric.dli.main\u003dnet.fabricmc.loader.impl.launch.knot.KnotServer",
       "args": "nogui",
       "env": {},
-      "projectName": "EchoTweaks"
+      "projectName": "echotweaks"
     }
   ]
 }

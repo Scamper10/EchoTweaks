@@ -7,6 +7,7 @@
 		"**/.DS_Store": true,
 		"**/Thumbs.db": true,
 		"build/**": true,
+		"bin/**": true,
 		"run/**": true,
 		"gradle/**": true,
 		"gradlew": true,
@@ -14,5 +15,6 @@
 		"settings.gradle": true,
 		".gradle/**": true
 	},
-	"java.debug.settings.onBuildFailureProceed": true
+	"java.debug.settings.onBuildFailureProceed": true,
+	"echo.workspaceKeybindings.openVanillaDatapack.enabled": true
 }
