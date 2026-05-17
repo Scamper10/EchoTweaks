@@ -41,6 +41,12 @@ public class ModBlocks {
 			.requiresTool()
 			.strength(40.0F, 24.0F)
 	);
+	public static final Block IRON_MESH = register(
+		"iron_mesh",
+		IronMeshBlock.createSettings(),
+		ItemSettingsHelper.DEFAULT_ITEM,
+		IronMeshBlock::new
+	);
 
 
 
