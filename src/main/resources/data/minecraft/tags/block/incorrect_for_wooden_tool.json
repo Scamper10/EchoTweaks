@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"echotweaks:fake_bedrock"
+		  "echotweaks:fake_bedrock"
+		, "echotweaks:iron_mesh"
 	]
 }

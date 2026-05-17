@@ -1,8 +1,9 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:beacon"
+		  "minecraft:beacon"
 		, "echotweaks:charcoal_block"
 		, "echotweaks:fake_bedrock"
+		, "echotweaks:iron_mesh"
 	]
 }
