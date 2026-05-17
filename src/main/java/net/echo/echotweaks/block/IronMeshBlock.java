@@ -38,6 +38,7 @@ public class IronMeshBlock extends Block implements Waterloggable {
 		return Settings.create()
 			.requiresTool()
 			.hardness(5)
+			.resistance(5)
 			.nonOpaque(); //TODO figure out how to properly do this
 	}
 
