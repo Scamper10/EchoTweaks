@@ -1,3 +1,7 @@
+//TODO
+// literally the whole original purpose of this
+// make bubble columns transfer through it
+
 package net.echo.echotweaks.block;
 
 import com.mojang.serialization.MapCodec;
