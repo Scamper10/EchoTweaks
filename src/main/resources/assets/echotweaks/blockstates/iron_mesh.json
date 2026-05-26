@@ -1,7 +1,19 @@
 {
 	"variants": {
-		"": {
+		"facing=north": {
 			"model": "echotweaks:block/iron_mesh"
+		},
+		"facing=east": {
+			"model": "echotweaks:block/iron_mesh",
+			"y": 90
+		},
+		"facing=south": {
+			"model": "echotweaks:block/iron_mesh",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "echotweaks:block/iron_mesh",
+			"y": 270
 		}
 	}
 }

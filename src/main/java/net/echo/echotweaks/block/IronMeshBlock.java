@@ -8,9 +8,12 @@ import com.mojang.serialization.MapCodec;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Waterloggable;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
@@ -24,15 +27,7 @@ public class IronMeshBlock extends Block implements Waterloggable {
 	public static final int MAX_DISTANCE = 2;
 	public static final IntProperty DISTANCE = IntProperty.of("distance", 0, MAX_DISTANCE); //TODO make this work
 	public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED; //TODO make this work
-	//TODO Facing Property
-
-	public IronMeshBlock(Settings settings) {
-		super(settings);
-		setDefaultState(stateManager.getDefaultState()
-			.with(DISTANCE, MAX_DISTANCE)
-			.with(WATERLOGGED, false)
-		);
-	}
+	public static final EnumProperty<Direction> FACING = HorizontalFacingBlock.FACING;
 
 	public static Settings createSettings() {
 		return Settings.create()
@@ -41,15 +36,22 @@ public class IronMeshBlock extends Block implements Waterloggable {
 			.resistance(5)
 			.nonOpaque(); //TODO figure out how to properly do this
 	}
-
-	public MapCodec<IronMeshBlock> getCodec() {
-		return CODEC;
+	public IronMeshBlock(Settings settings) {
+		super(settings);
+		setDefaultState(stateManager.getDefaultState()
+			.with(DISTANCE, MAX_DISTANCE)
+			.with(WATERLOGGED, false)
+			.with(FACING, Direction.NORTH)
+		);
 	}
-
 	protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-		builder.add(new Property[]{DISTANCE, WATERLOGGED});
+		builder.add(new Property[]{DISTANCE, WATERLOGGED, FACING});
 	}
 
+	public BlockState getPlacementState(ItemPlacementContext ctx) {
+		return getDefaultState()
+			.with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+	}
 	protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
 		if(!world.isClient()) {
 			world.scheduleBlockTick(pos, this, 1);
@@ -78,5 +80,10 @@ public class IronMeshBlock extends Block implements Waterloggable {
 		}
 
 		return i;
+	}
+
+
+	public MapCodec<IronMeshBlock> getCodec() {
+		return CODEC;
 	}
 }
