@@ -10,7 +10,14 @@
 		"NoCreativePhantoms",
 		"OozingSlimeChunks",
 		"PerEntityBredStat",
-		"SwampTree"
+		"SwampTree",
+
+		"hiddenAdvancement.Revealer",
+
+		"trigger.CrushTurtleEgg",
+		"trigger.GainOcelotTrust",
+		"trigger.LlamaJoinsCaravan",
+		"trigger.LeadSnaps"
 	],
 	"client": [],
 	"server": [],

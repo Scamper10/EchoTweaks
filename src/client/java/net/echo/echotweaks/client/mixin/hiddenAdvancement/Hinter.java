@@ -1,4 +1,4 @@
-package net.echo.echotweaks.mixin.hiddenAdvancement;
+package net.echo.echotweaks.client.mixin.hiddenAdvancement;
 
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
