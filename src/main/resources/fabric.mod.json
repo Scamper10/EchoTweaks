@@ -22,13 +22,11 @@
 			"net.echo.echotweaks.client.EchoTweaksClient"
 		],
 		"modmenu": [
-			"net.echo.echotweaks.config.EchoModMenu"
+			"net.echo.echotweaks.client.config.EchoModMenu"
 		]
 	},
 	"mixins": [
-		"mixins/general.json",
-		"mixins/hiddenAdvancement.json",
-		"mixins/trigger.json",
+		"mixins.json",
 		{
 			"config": "client_mixins.json",
 			"environment": "client"

@@ -1,8 +1,6 @@
 package net.echo.echotweaks.config;
 
-import me.shedaniel.clothconfig2.gui.entries.SelectionListEntry.Translatable;
-
-public enum DefaultPlatformBehavior implements Translatable {
+public enum DefaultPlatformBehavior {
 	USE_HELD,
 	VOID_WORLD,
 	CUSTOM;
