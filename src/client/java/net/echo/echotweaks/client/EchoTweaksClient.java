@@ -8,6 +8,7 @@ import net.minecraft.client.render.BlockRenderLayer;
 public class EchoTweaksClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
+		// allow transparency
 		BlockRenderLayerMap.putBlock(ModBlocks.IRON_MESH, BlockRenderLayer.CUTOUT);
 	}
 }
