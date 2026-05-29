@@ -1,4 +1,4 @@
-package net.echo.echotweaks.config;
+package net.echo.echotweaks.client.config;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

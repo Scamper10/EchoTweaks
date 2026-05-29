@@ -1,9 +1,9 @@
-package net.echo.echotweaks.config;
+package net.echo.echotweaks.client.config;
 
 import java.util.function.Consumer;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
+import net.echo.echotweaks.config.DefaultPlatformBehavior;
+import net.echo.echotweaks.config.EchoConfig;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ClickableWidget;
@@ -14,7 +14,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.InvalidIdentifierException;
 
-@Environment(EnvType.CLIENT)
 public class EchoConfigScreen extends Screen {
 
 	private final EchoConfig config = EchoConfig.getConfig();
