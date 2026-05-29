@@ -2,6 +2,8 @@
 // literally the whole original purpose of this
 // make bubble columns transfer through it
 
+// make collision the right shape
+
 package net.echo.echotweaks.block;
 
 import com.mojang.serialization.MapCodec;
@@ -81,7 +83,7 @@ public class IronMeshBlock extends Block implements Waterloggable {
 			// if adjacent block has supporting top edge
 			// return 0;
 
-			if (!checkingBlockState.isOf(ModBlocks.IRON_MESH)) 
+			if (!checkingBlockState.isOf(ModBlocks.IRON_MESH)) // or facing different axis
 				continue;
 
 			i = Math.min(i, checkingBlockState.get(DISTANCE) + 1);
