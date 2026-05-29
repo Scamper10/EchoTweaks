@@ -81,6 +81,7 @@ public class ModBlocks {
 	private static void registerInventoryEntries() {
 		registerInventoryEntry(CHARCOAL_BLOCK, ItemGroups.BUILDING_BLOCKS, Items.COAL_BLOCK);
 		registerInventoryEntry(FAKE_BEDROCK, ItemGroups.BUILDING_BLOCKS, Items.POLISHED_BLACKSTONE_BRICK_WALL);
+		registerInventoryEntry(IRON_MESH, ItemGroups.BUILDING_BLOCKS, Items.IRON_BARS);
 	}
 	private static void registerInventoryEntry(Block modBlock, RegistryKey<ItemGroup> group, Item addAfterItem) {
 		ItemGroupEvents.modifyEntriesEvent(group)
