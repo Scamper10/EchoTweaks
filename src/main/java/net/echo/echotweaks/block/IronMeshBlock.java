@@ -10,6 +10,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.Waterloggable;
+import net.minecraft.fluid.FluidState;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -26,7 +28,7 @@ public class IronMeshBlock extends Block implements Waterloggable {
 	public static final MapCodec<IronMeshBlock> CODEC = createCodec(IronMeshBlock::new);  
 	public static final int MAX_DISTANCE = 2;
 	public static final IntProperty DISTANCE = IntProperty.of("distance", 0, MAX_DISTANCE); //TODO make this work
-	public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED; //TODO make this work
+	public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 	public static final EnumProperty<Direction> FACING = HorizontalFacingBlock.FACING;
 
 	public static Settings createSettings() {
@@ -49,13 +51,21 @@ public class IronMeshBlock extends Block implements Waterloggable {
 	}
 
 	public BlockState getPlacementState(ItemPlacementContext ctx) {
+		FluidState fluidState = ctx.getWorld().getFluidState(ctx.getBlockPos());
+
 		return getDefaultState()
-			.with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+			.with(FACING, ctx.getHorizontalPlayerFacing().getOpposite())
+			.with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER)
+			;
 	}
 	protected void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
 		if(!world.isClient()) {
 			world.scheduleBlockTick(pos, this, 1);
 		}
+	}
+
+	protected FluidState getFluidState(BlockState state) {
+		return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
 	}
 
 	public static int calculateDistance(BlockView world, BlockPos pos) {
