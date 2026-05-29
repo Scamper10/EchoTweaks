@@ -2,7 +2,7 @@
 // literally the whole original purpose of this
 // make bubble columns transfer through it
 
-// make collision the right shape
+// behave like a cattle grid?
 
 package net.echo.echotweaks.block;
 
@@ -87,7 +87,11 @@ public class IronMeshBlock extends Block implements Waterloggable {
 			// if adjacent block has supporting top edge
 			// return 0;
 
-			if (!checkingBlockState.isOf(ModBlocks.IRON_MESH)) // or facing different axis
+			//TODO rewrite this this with rules:
+			// solid block can always support
+			// same `facing` can always support
+			// exactly opposite `facing` can only support parallel
+			if (!checkingBlockState.isOf(ModBlocks.IRON_MESH)) 
 				continue;
 
 			i = Math.min(i, checkingBlockState.get(DISTANCE) + 1);
