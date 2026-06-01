@@ -59,7 +59,11 @@ public class ModBlocks {
 	private static Block registerBasic(String name, AbstractBlock.Settings blockSettings) {
 		return register(name, blockSettings, ItemSettingsHelper.DEFAULT_ITEM, Block::new);
 	}
-	private static Block register(String name, AbstractBlock.Settings blockSettings, Optional<Item.Settings> itemSettings, Function<AbstractBlock.Settings, Block> blockFactory) {
+	private static Block register(
+		  String name
+		, AbstractBlock.Settings blockSettings, Optional<Item.Settings> itemSettings
+		, Function<AbstractBlock.Settings, Block> blockFactory
+	) {
 		RegistryKey<Block> blockKey = keyOf(name);
 		Block block = blockFactory.apply(blockSettings.registryKey(blockKey));
 
