@@ -141,6 +141,7 @@ The Recipe unlocks when you get to bedrock level.
 - [Goose on the Loose!](#goose-on-the-loose)
 - [It's a New Record!](#its-a-new-record)
 - [One with the Wild](#one-with-the-wild)
+- [Oresome!](#oresome)
 - [Overkill / Over-Overkill](#overkill)
 - [Rainbow Collection](#rainbow-collection)
 - [Rein Check](#rein-check)
@@ -301,6 +302,12 @@ minecraft:zombie_nautilus (tame)
 
 \* Ocelots cannot be tamed, but the can gain player "Trust" in a similar way
 </details>
+
+#### <ins>Oresome!</ins>
+
+Yes, I'm evil.
+
+Pick up, individually, each Overworld Ore: both the Stone and Deepslate variants.
 
 #### <ins>Overkill</ins>
 
