@@ -18,6 +18,7 @@ My small additions, for Minecraft 1.21.11 [(Fabric)](https://fabricmc.net/use/in
 		- [unbreakable](#unbreakable)
 	- [Items](#items)
 		- [Big Stick](#big-stick)
+		- [Music Disc - Evening Shifts](#music-disc---evening-shifts)
 		- [Wrench](#wrench)
 	- [Blocks](#blocks)
 		- [Charcoal Block](#charcoal-block)
@@ -99,6 +100,11 @@ Applies the `minecraft:unbreakable` component to the player's currently held ite
 Only hits as well as a boring normal stick.<br>
 Knocks attacked enemies very far away.<br>
 Has 60 durability, loses 1 on attack, 2 on block break
+
+#### <ins>Music Disc - Evening Shifts</ins>
+![The Evening Shifts Disc. It's the same shape as the other Discs. The main part is boring and gray, but the middle has a cool rainbow look going around the Disc's pivot.](readmeAssets/EveningShiftsDisc.png)<br>
+Composed by the famous [Oriented Icon](https://en.wikipedia.org/wiki/One_Direction "spoilers here"), and perfected by [
+aesthetic acapellas](https://www.youtube.com/@aestheticacapellas "YouTube"), this record is dropped by Creepers when killed by Witches.
 
 #### <ins>Wrench</ins>
 ![The Wrench. You craft it with 3 Iron Ingots placed diagonally. It's got a handle bit and a claw bit. That's it. It's useless. Move on.](readmeAssets/WrenchCraft.png "echotweaks:wrench")<br>

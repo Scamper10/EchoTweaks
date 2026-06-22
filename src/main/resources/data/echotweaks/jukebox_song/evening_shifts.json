@@ -1,0 +1,10 @@
+{
+	"sound_event": {
+		"sound_id": "echotweaks:music_disc.evening_shifts"
+	},
+	"length_in_seconds": 167,
+	"comparator_output": 4,
+	"description": {
+		"translate": "jukebox_song.echotweaks.evening_shifts"
+	}
+}

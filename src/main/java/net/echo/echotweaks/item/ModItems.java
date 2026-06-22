@@ -9,7 +9,9 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
-import net.echo.echotweaks.EchoTweaks;
+import net.minecraft.util.Rarity;
+
+import static net.echo.echotweaks.EchoTweaks.MOD_ID;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 
@@ -37,7 +39,7 @@ public class ModItems {
 	}
 
 	public static RegistryKey<Item> keyOf(String name) {
-		return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EchoTweaks.MOD_ID, name));
+		return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, name));
 	}
 
 	public static final Item BIG_STICK = ModItems.register(
@@ -49,5 +51,13 @@ public class ModItems {
 	public static final Item WRENCH = ModItems.register(
 		"wrench",
 		COSMETIC_SETTINGS
+	);
+
+	public static final Item MUSIC_DISC_EVENING_SHIFTS = ModItems.register(
+		"music_disc_evening_shifts",
+		new Item.Settings()
+			.maxCount(1)
+			.rarity(Rarity.RARE)
+			.jukeboxPlayable(RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(MOD_ID, "evening_shifts")))
 	);
 }

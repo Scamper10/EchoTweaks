@@ -69,7 +69,10 @@
 	"item.echotweaks.big_stick": "Big Stick",
 	"item.echotweaks.charcoal_block": "Block of Charcoal",
 	"item.echotweaks.fake_bedrock": "Gabbro",
+	"item.echotweaks.music_disc_evening_shifts": "Music Disc",
 	"item.echotweaks.wrench": "Wrench",
+
+	"jukebox_song.echotweaks.evening_shifts": "Oriented Icon - Evening Shifts",
 
 	"text.echotweaks.config.title": "EchoTweaks Settings",
 	"text.echotweaks.config.label.platformNoArgBehavior": "Default Platform Behavior",
