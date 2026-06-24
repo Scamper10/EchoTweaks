@@ -1,0 +1,9 @@
+{
+	"music_disc.evening_shifts": {
+		"sounds": [{
+			"type": "file",
+			"name": "echotweaks:music_disc/evening_shifts",
+			"stream": true
+		}]
+	}
+}

@@ -24,6 +24,8 @@
 	"advancement.echotweaks.husbandry.obtain_cake.description": "Wheat, Sugar, Milk, and Egg!",
 	"advancement.echotweaks.husbandry.obtain_cake.title": "The Lie",
 	"advancement.echotweaks.husbandry.break_netherite_hoe.description": "Use a Netherite Hoe until it breaks, and then reevaluate your life choices",
+	"advancement.echotweaks.story.dig_all_ores.description": "Carefully remove each type of Ore from the earth",
+	"advancement.echotweaks.story.dig_all_ores.title": "Oresome!",
 	"advancement.echotweaks.story.fill_cobblestone_chest.description": "Open a single Chest to be greeted by 1,728 Cobblestone",
 	"advancement.echotweaks.story.fill_cobblestone_chest.title": "Chestful Of Cobblestone",
 	"advancement.echotweaks.story.fill_furnace_inventory.description": "Completely fill your Inventory with Furnaces",
@@ -67,7 +69,10 @@
 	"item.echotweaks.big_stick": "Big Stick",
 	"item.echotweaks.charcoal_block": "Block of Charcoal",
 	"item.echotweaks.fake_bedrock": "Gabbro",
+	"item.echotweaks.music_disc_evening_shifts": "Music Disc",
 	"item.echotweaks.wrench": "Wrench",
+
+	"jukebox_song.echotweaks.evening_shifts": "Oriented Icon - Evening Shifts",
 
 	"text.echotweaks.config.title": "EchoTweaks Settings",
 	"text.echotweaks.config.label.platformNoArgBehavior": "Default Platform Behavior",

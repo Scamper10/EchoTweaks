@@ -2,7 +2,6 @@ New Advancements:
 	Coral Corral - All living Coral blocks
 	Pro Bono - Kill each different skeleton variant
 	Getting A Head - All Heads
-	............ - All overworld Ores (including DEO)
 	-- Others for Encounter EVERY mob variant (get colored egg, ride pig, etc)
 Changed Advancements:
 	Fix `Caves & Cliffs` so breaking bedrock is not sometimes needed
