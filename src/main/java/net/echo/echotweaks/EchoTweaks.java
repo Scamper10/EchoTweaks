@@ -5,6 +5,7 @@ import net.echo.echotweaks.command.ModCommands;
 import net.echo.echotweaks.config.EchoConfig;
 import net.echo.echotweaks.criterion.ModCriteria;
 import net.echo.echotweaks.item.ModItems;
+import net.echo.echotweaks.loot.LootTableModifications;
 import net.echo.echotweaks.statistic.ModStats;
 import net.fabricmc.api.ModInitializer;
 
@@ -30,6 +31,7 @@ public class EchoTweaks implements ModInitializer {
 		ModCommands.registerAll();
 		ModCriteria.init();
 		ModStats.init();
+		LootTableModifications.apply();
 
 		LOGGER.log("My Mod Loaded :3");
 		// LOGGER.log("IT COMPILES"); // toggle this to check

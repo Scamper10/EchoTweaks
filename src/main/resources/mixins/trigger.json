@@ -6,7 +6,8 @@
 	"mixins": [
 		"CrushTurtleEgg",
 		"GainOcelotTrust",
-		"LlamaJoinsCaravan"
+		"LlamaJoinsCaravan",
+		"LeadSnaps"
 	],
 	"client": [],
 	"server": [],

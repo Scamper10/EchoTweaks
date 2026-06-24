@@ -6,6 +6,9 @@
 	"mixins": [
 		"AxolotlBlueChance",
 		"EndCrystalPlaceable",
+		"GameRuleDefaults",
+		"NoCreativePhantoms",
+		"OozingSlimeChunks",
 		"PerEntityBredStat",
 		"SwampTree"
 	],
