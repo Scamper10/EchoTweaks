@@ -39,6 +39,7 @@ My small additions, for Minecraft 1.21.11 [(Fabric)](https://fabricmc.net/use/in
 	- [Visual](#visual)
 	- [Gameplay](#gameplay)
 		- [Blue Axolotls](#blue-axolotls)
+		- [Imposter Zombies](#imposter-zombies)
 		- [No Creative Phantoms](#no-creative-phantoms)
 		- [Oozing Slime Chunks](#oozing-slime-chunks)
 		- [Pickaxe-able Beacons](#pickaxe-able-beacons)
@@ -465,6 +466,10 @@ Hidden Advancements will now show a small icon in their place in the advancement
 #### Blue Axolotls
 
 The chance for a baby Axolotl to be blue increases depending on how many axolotls the player has previously bred. It has a maximum of ⅒ at 600 breeds.
+
+#### Imposter Zombies
+
+Zombies (and their variants) now have a ¹/₁₀ ₀₀₀ chance to spawn wearing a Player's head. The Player is randomly selected from those in the world when the Zombie spawns.
 
 #### No Creative Phantoms
 
