@@ -11,7 +11,15 @@
 		"OozingSlimeChunks",
 		"PerEntityBredStat",
 		"PlayerHeadZombies",
-		"SwampTree"
+		"SwampTree",
+		
+		"hiddenAdvancement.Hinter",
+		"hiddenAdvancement.Revealer",
+
+		"trigger.CrushTurtleEgg",
+		"trigger.GainOcelotTrust",
+		"trigger.LlamaJoinsCaravan",
+		"trigger.LeadSnaps"
 	],
 	"client": [],
 	"server": [],

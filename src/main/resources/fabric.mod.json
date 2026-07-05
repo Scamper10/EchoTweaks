@@ -23,9 +23,7 @@
 		]
 	},
 	"mixins": [
-		"mixins/general.json",
-		"mixins/hiddenAdvancement.json",
-		"mixins/trigger.json"
+		"mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
