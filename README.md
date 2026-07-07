@@ -272,7 +272,7 @@ Have a Chicken break free from a Lead.
 
 Nice one!
 
-Collect all 21 Music Discs, and play each one in a Jukebox.
+Collect all 22 Music Discs, and play each one in a Jukebox.
 
 #### <ins>One with the Wild</ins>
 
