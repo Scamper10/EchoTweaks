@@ -410,7 +410,7 @@ Pick up in a bucket, all 22 specially-named Tropical Fish<br>
 |- `bool`: `requires_brown`<br>
 |- `bool`: `requires_gray`
 
-Color checks succeed if any Llama in the caravan has the specidied color.
+Color checks succeed if any Llama in the caravan has the specified color.
 
 ### Statistics
 
