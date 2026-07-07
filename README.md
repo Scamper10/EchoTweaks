@@ -463,6 +463,9 @@ Hidden Advancements will now show a small icon in their place in the advancement
 
 ### Gameplay
 
+#### Blindness Ancient Cities
+When an entity has the Blindness effect, particles will appear randomly around it. There will be more of them as the entity moves closer to an Ancient City. Additionally, the particles will be more dense in the direction of the nearest City.
+
 #### Blue Axolotls
 
 The chance for a baby Axolotl to be blue increases depending on how many axolotls the player has previously bred. It has a maximum of ⅒ at 600 breeds.

@@ -1,4 +1,4 @@
-package net.echo.echotweaks.mixin;
+package net.echo.echotweaks.mixin.effect;
 
 import org.spongepowered.asm.mixin.Mixin;
 
