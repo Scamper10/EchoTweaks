@@ -14,10 +14,10 @@ import net.minecraft.text.Text;
 public class ModCommands {
 
 	public static void registerAll() {
-		HealCommand.register();
-		NameCommand.register();
-		PlatformCommand.register();
-		UnbreakableCommand.register();
+		register("heal", HealCommand::addArgs);
+		register("name", NameCommand::addArgs);
+		register("platform", PlatformCommand::addArgs);
+		register("unbreakable", UnbreakableCommand::addArgs);
 	}
 
 	public static void register(String command, Function<LiteralArgumentBuilder<ServerCommandSource>, LiteralArgumentBuilder<ServerCommandSource>> listener) {

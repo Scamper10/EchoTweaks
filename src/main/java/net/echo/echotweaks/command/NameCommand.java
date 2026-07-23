@@ -5,6 +5,7 @@ import static net.echo.echotweaks.EchoTweaks.MOD_ID;
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 import com.mojang.brigadier.arguments.BoolArgumentType;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
@@ -22,46 +23,43 @@ import net.minecraft.text.Text;
 
 public class NameCommand {
 	private static final String
-		COMMAND = "name"
-		, ITEM_SUBCOMMAND = "item"
+		  ITEM_SUBCOMMAND = "item"
 		, ENTITY_SUBCOMMAND = "entity"
 		, TARGET_ENTITY_ARG = "target"
 		, NAME_TEXT_ARG = "name"
 		, VISIBLE_ARG = "display";
 
-	private static final String TRANSLATE_PREFIX = "commands."+MOD_ID+"."+COMMAND+".";
+	private static final String TRANSLATE_PREFIX = "commands."+MOD_ID+".name.";
 
-	public static void register() {
-		ModCommands.register(COMMAND, (argBuilder, registryAccess) -> {
-			return argBuilder
-				.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
-				.then(CommandManager.literal(ITEM_SUBCOMMAND).then(createNameTextArgument(registryAccess)
-					.executes(context -> {
-						ServerCommandSource source = context.getSource();
-						ItemStack heldStack = source.getEntity().getWeaponStack();
-						heldStack.set(DataComponentTypes.ITEM_NAME, getNameTextArgumentValue(context));
-						source.sendFeedback(() -> Text.translatable(TRANSLATE_PREFIX.concat(ITEM_SUBCOMMAND+".success"), heldStack.getFormattedName()), false);
-						return SINGLE_SUCCESS;
-					})
-				))
-				.then(CommandManager.literal(ENTITY_SUBCOMMAND)
-					.then(CommandManager.argument(TARGET_ENTITY_ARG, EntityArgumentType.entity())
-						.then(createNameTextArgument(registryAccess)
+	public static LiteralArgumentBuilder<ServerCommandSource> addArgs(LiteralArgumentBuilder<ServerCommandSource> argBuilder, CommandRegistryAccess registryAccess) {
+		return argBuilder
+			.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
+			.then(CommandManager.literal(ITEM_SUBCOMMAND).then(createNameTextArgument(registryAccess)
+				.executes(context -> {
+					ServerCommandSource source = context.getSource();
+					ItemStack heldStack = source.getEntity().getWeaponStack();
+					heldStack.set(DataComponentTypes.ITEM_NAME, getNameTextArgumentValue(context));
+					source.sendFeedback(() -> Text.translatable(TRANSLATE_PREFIX.concat(ITEM_SUBCOMMAND+".success"), heldStack.getFormattedName()), false);
+					return SINGLE_SUCCESS;
+				})
+			))
+			.then(CommandManager.literal(ENTITY_SUBCOMMAND)
+				.then(CommandManager.argument(TARGET_ENTITY_ARG, EntityArgumentType.entity())
+					.then(createNameTextArgument(registryAccess)
+						.executes(context -> {
+							Entity target = EntityArgumentType.getEntity(context, TARGET_ENTITY_ARG);
+							return executeNameEntity(context, target);
+						})
+						.then(CommandManager.argument(VISIBLE_ARG, BoolArgumentType.bool())
 							.executes(context -> {
 								Entity target = EntityArgumentType.getEntity(context, TARGET_ENTITY_ARG);
+								target.setCustomNameVisible(BoolArgumentType.getBool(context, VISIBLE_ARG));
 								return executeNameEntity(context, target);
 							})
-							.then(CommandManager.argument(VISIBLE_ARG, BoolArgumentType.bool())
-								.executes(context -> {
-									Entity target = EntityArgumentType.getEntity(context, TARGET_ENTITY_ARG);
-									target.setCustomNameVisible(BoolArgumentType.getBool(context, VISIBLE_ARG));
-									return executeNameEntity(context, target);
-								})
-							)
 						)
 					)
-				);
-		});
+				)
+			);
 	}
 
 	private static int executeNameEntity(CommandContext<ServerCommandSource> context, Entity target) throws CommandSyntaxException {

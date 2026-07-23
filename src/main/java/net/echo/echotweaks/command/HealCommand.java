@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.entity.Entity;
@@ -13,32 +14,30 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 
 public class HealCommand {
-	public static void register() {
-		ModCommands.register("heal", argBuilder -> {
-			return argBuilder
-				.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
+	public static LiteralArgumentBuilder<ServerCommandSource> addArgs(LiteralArgumentBuilder<ServerCommandSource> argBuilder) {
+		return argBuilder
+			.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
+			.executes(context -> {
+				ServerCommandSource source = context.getSource();
+				if(!(source.getEntity() instanceof LivingEntity target)) return 0;
+				healEntity(source, target);
+				return SINGLE_SUCCESS;
+			})
+			.then(CommandManager.argument("targets", EntityArgumentType.entities())
 				.executes(context -> {
+					Collection<? extends Entity> targets = EntityArgumentType.getEntities(context, "targets");
 					ServerCommandSource source = context.getSource();
-					if(!(source.getEntity() instanceof LivingEntity target)) return 0;
-					healEntity(source, target);
-					return SINGLE_SUCCESS;
+					return healEntities(source, targets);
 				})
-				.then(CommandManager.argument("targets", EntityArgumentType.entities())
+				.then(CommandManager.argument("amount", IntegerArgumentType.integer())
 					.executes(context -> {
 						Collection<? extends Entity> targets = EntityArgumentType.getEntities(context, "targets");
+						int amount = IntegerArgumentType.getInteger(context, "amount");
 						ServerCommandSource source = context.getSource();
-						return healEntities(source, targets);
+						return healEntities(source, targets, amount);
 					})
-					.then(CommandManager.argument("amount", IntegerArgumentType.integer())
-						.executes(context -> {
-							Collection<? extends Entity> targets = EntityArgumentType.getEntities(context, "targets");
-							int amount = IntegerArgumentType.getInteger(context, "amount");
-							ServerCommandSource source = context.getSource();
-							return healEntities(source, targets, amount);
-						})
-					)
-				);
-		});
+				)
+			);
 	}
 
 	private static int healEntities(ServerCommandSource source, Collection<? extends Entity> targets, int amount) {

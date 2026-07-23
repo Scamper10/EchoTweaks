@@ -16,6 +16,7 @@ package net.echo.echotweaks.command;
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
@@ -61,20 +62,18 @@ public class PlatformCommand {
 	  ,	FILL_SOME_KEY	= tranlationKey("success.some_filled")
 	  ,	FILL_ALL_KEY	= tranlationKey("success.all_filled");
 
-	public static void register() {
-		ModCommands.register("platform", (argBuilder, registryAccess) -> {
-			return argBuilder
-				.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
-				.executes(PlatformCommand::executeNoArg)
-				.then(CommandManager.argument(MAIN_BLOCK_ARG, BlockStateArgumentType.blockState(registryAccess))
-					.executes(context -> execute(context, false, false, false))
-					.then(buildSizeArgTree(registryAccess, false))
-				)
-				.then(CommandManager.literal(USE_HELD_INPUT)
-					.executes(context -> execute(context, true, false, false))
-					.then(buildSizeArgTree(registryAccess, true))
-				);
-		});
+	public static LiteralArgumentBuilder<ServerCommandSource> addArgs(LiteralArgumentBuilder<ServerCommandSource> argBuilder, CommandRegistryAccess registryAccess) {
+		return argBuilder
+			.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
+			.executes(PlatformCommand::executeNoArg)
+			.then(CommandManager.argument(MAIN_BLOCK_ARG, BlockStateArgumentType.blockState(registryAccess))
+				.executes(context -> execute(context, false, false, false))
+				.then(buildSizeArgTree(registryAccess, false))
+			)
+			.then(CommandManager.literal(USE_HELD_INPUT)
+				.executes(context -> execute(context, true, false, false))
+				.then(buildSizeArgTree(registryAccess, true))
+			);
 	}
 
 	private static RequiredArgumentBuilder<ServerCommandSource, Integer> buildSizeArgTree(CommandRegistryAccess registryAccess, boolean useHeld) {
