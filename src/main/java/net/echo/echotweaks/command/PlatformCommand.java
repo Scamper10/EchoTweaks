@@ -1,16 +1,3 @@
-/* TODO
- * remove centerblock argument when size is 0
- * 
- * existing block handling?
- * 
- * config?
- * 	  map items -> blocks (eg water bucket to water)
- * 	  offhand for center block when using held item
- * 
- * reconsider survival mode access - maybe some new item (sources block from offhand) instead
- */
-
-
 package net.echo.echotweaks.command;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;

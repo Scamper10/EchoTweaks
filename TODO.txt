@@ -89,6 +89,14 @@ Commands
 		- config: give compass? display coords? client-only glowing? display distance? (compass tells distance?)
 		- could maybe also be /locate player ... but that might be harder/impossible
 
+Existing Commands
+	/platform
+		- remove centerblock argument when size is 0
+		- existing block handling?
+		- config?
+			- map items -> blocks (eg water bucket to water)
+			- offhand for center block when using held item
+
 Spore blossoms renewable
 	- Particles drop straight down onto certain blocks -> one generates underneath?
 
