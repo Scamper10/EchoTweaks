@@ -181,11 +181,12 @@ public class PlatformCommand {
 		int successCount = 0;
 		for(int i = -size; i <= size; i++) {
 			for(int j = -size; j <= size; j++) {
-				boolean success;
-				if(center != null && i == 0 && j == 0) success = setSingle(source, origin, center);
-				else success = setSingle(source, origin.add(i, 0, j), main);
+				boolean success = center != null && i == 0 && j == 0 ?
+					  setSingle(source, origin, center)
+					: setSingle(source, origin.add(i, 0, j), main);
 
-				if(success) successCount++;
+				if(success)
+					successCount++;
 			}
 		}
 		return successCount;
