@@ -52,11 +52,22 @@ public class PlatformCommand {
 
 	private static final String TRANSLATE_PREFIX = "commands."+MOD_ID+".platform.";
 
-	private static final String
-		INVALID_ITEM_SUFFIX = "fail.invalid_item"
-	  ,	SET_FAIL_SUFFIX	 = "fail.not_set"
-	  ,	NONE_FILLED_SUFFIX	 = "fail.none_filled"
-	  ,	TOO_BIG_SUFFIX		 = "fail.too_big";
+	private static enum FailReason {
+		  INVALID_ITEM("invalid_item")
+		, SINGLE_NOT_SET("not_set")
+		, NONE_FILLED("none_filled")
+		, TOO_BIG("too_big");
+
+		String translation;
+
+		FailReason(String translation) {
+			this.translation = translation;
+		}
+
+		public String getFullKey() {
+			return tranlationKey("fail."+translation);
+		}
+	}
 	
 	private static final String
 		SET_SUCCESS_KEY	= tranlationKey("success.one_filled")
@@ -141,7 +152,7 @@ public class PlatformCommand {
 			ModCommands.sendFeedback(source, true, SET_SUCCESS_KEY);
 			return SINGLE_SUCCESS;
 		}
-		throw createException(SET_FAIL_SUFFIX);
+		throw createException(FailReason.SINGLE_NOT_SET);
 	}
 	private static boolean setSingle(ServerCommandSource source, BlockPos pos, BlockState block) {
 		return source.getWorld().setBlockState(pos, block, Block.NOTIFY_LISTENERS | Block.SKIP_BLOCK_ADDED_CALLBACK);
@@ -153,12 +164,12 @@ public class PlatformCommand {
 		final int maxAllowedBlocks = context.getSource().getWorld().getGameRules().getValue(GameRules.MAX_BLOCK_MODIFICATIONS);
 		if(totalPossible > maxAllowedBlocks) {
 			final int maxAllowedSize = blocksToSizeFloored(maxAllowedBlocks);
-			throw createException(TOO_BIG_SUFFIX, maxAllowedSize);
+			throw createException(FailReason.TOO_BIG, maxAllowedSize);
 		}
 		final int totalSet = fillMany(source, pos, main, size, center);
 
 		if(totalSet == 0)
-			throw createException(NONE_FILLED_SUFFIX);
+			throw createException(FailReason.NONE_FILLED);
 		if(totalSet == totalPossible) {
 			ModCommands.sendFeedback(source, true, FILL_ALL_KEY, totalPossible);
 			return totalPossible;
@@ -199,7 +210,9 @@ public class PlatformCommand {
 
 	private static BlockState getHeldBlock(PlayerEntity player) throws CommandSyntaxException {
 		final Item item = player.getWeaponStack().getItem();
-		if(!(item instanceof BlockItem blockItem)) throw createException(INVALID_ITEM_SUFFIX);
+		if(!(item instanceof BlockItem blockItem))
+			throw createException(FailReason.INVALID_ITEM);
+		
 		return blockItem.getBlock().getDefaultState();
 	}
 
@@ -210,7 +223,8 @@ public class PlatformCommand {
 	private static String tranlationKey(String suffix) {
 		return TRANSLATE_PREFIX.concat(suffix);
 	}
-	private static CommandSyntaxException createException(String translationSuffix, Object ...args) {
-		return (new SimpleCommandExceptionType(Text.translatable(TRANSLATE_PREFIX.concat(translationSuffix), args))).create();
+	private static CommandSyntaxException createException(FailReason reason, Object ...args) {
+		Text translatable = Text.translatable(reason.getFullKey(), args);
+		return (new SimpleCommandExceptionType(translatable)).create();
 	}
 }
