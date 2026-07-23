@@ -16,9 +16,6 @@ Changed Advancements:
 
 Nether sus gravel for blaze rods
 
-Per-Player phantoms (invisible to others, won't attack others)
-	^ can't find a way to link spawn-causing player when entity is created
-
 Villager inventory management
 - gifting/stealing (with gossips)
 	add button to trading menu? (would require villager to have a profession)
@@ -109,3 +106,6 @@ NOT SOON or TOO HARD
 
 Items from dead players take longer to despawn
 	seems very difficult, DESPAWN_AGE is shared for all items
+
+Per-Player phantoms (invisible to others, won't attack others)
+	can't find a way to link spawn-causing player when entity is created
