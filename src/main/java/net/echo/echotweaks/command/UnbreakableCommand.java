@@ -1,6 +1,7 @@
 package net.echo.echotweaks.command;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
+import static net.echo.echotweaks.EchoTweaks.MOD_ID;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 
@@ -17,7 +18,7 @@ public class UnbreakableCommand {
 				// ... maybe check with itemstack.isdamageable
 				ServerCommandSource source = context.getSource();
 				source.getEntity().getWeaponStack().set(DataComponentTypes.UNBREAKABLE, Unit.INSTANCE);
-				ModCommands.sendFeedback(source, false, "commands.echotweaks.unbreakable.success");
+				ModCommands.sendFeedback(source, false, "commands."+MOD_ID+".unbreakable.success");
 				return SINGLE_SUCCESS;
 			});
 	}

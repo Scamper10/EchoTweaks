@@ -14,6 +14,7 @@
 package net.echo.echotweaks.command;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
+import static net.echo.echotweaks.EchoTweaks.MOD_ID;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
@@ -49,7 +50,7 @@ public class PlatformCommand {
 	  ,	SIZE_ARG			= "size"
 	  ,	CENTER_BLOCK_ARG	= "center";
 
-	private static final String TRANSLATE_PREFIX = "commands.echotweaks.platform.";
+	private static final String TRANSLATE_PREFIX = "commands."+MOD_ID+".platform.";
 
 	private static final String
 		INVALID_ITEM_SUFFIX = "fail.invalid_item"

@@ -3,6 +3,8 @@ package net.echo.echotweaks.command;
 import java.util.Collection;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
+import static net.echo.echotweaks.EchoTweaks.MOD_ID;
+
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 
@@ -14,6 +16,9 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 
 public class HealCommand {
+
+	private static final String TRANSLATE_PREFIX = "commands."+MOD_ID+".heal.";
+
 	public static LiteralArgumentBuilder<ServerCommandSource> addArgs(LiteralArgumentBuilder<ServerCommandSource> argBuilder) {
 		return argBuilder
 			.requires(CommandManager.requirePermissionLevel(CommandManager.GAMEMASTERS_CHECK))
@@ -64,12 +69,12 @@ public class HealCommand {
 
 	private static void healEntity(ServerCommandSource source, LivingEntity target, int amount) {
 		target.setHealth(target.getHealth() + amount);
-		source.sendFeedback(() -> Text.translatable("commands.echotweaks.heal.specific", target.getDisplayName(), amount), true);
+		source.sendFeedback(() -> Text.translatable(TRANSLATE_PREFIX+"specific", target.getDisplayName(), amount), true);
 	}
 
 	private static void healEntity(ServerCommandSource source, LivingEntity target) {
 		target.setHealth(target.getMaxHealth());
-		source.sendFeedback(() -> Text.translatable("commands.echotweaks.heal.maximum", target.getDisplayName()), true);
+		source.sendFeedback(() -> Text.translatable(TRANSLATE_PREFIX+"maximum", target.getDisplayName()), true);
 	}
 
 }
