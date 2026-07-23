@@ -100,3 +100,12 @@ Spore blossoms renewable
 	Undo lead and saddle crafts? (Nerf trader llama leads?) (NAME TAG in 26.1)
 	Revert 'Mobs' to 'Creatures' in sound settings
 	Option to hide worldgen progress bar
+
+
+
+==========
+
+NOT SOON or TOO HARD
+
+Items from dead players take longer to despawn
+	seems very difficult, DESPAWN_AGE is shared for all items
