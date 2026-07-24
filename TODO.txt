@@ -117,3 +117,8 @@ Items from dead players take longer to despawn
 
 Per-Player phantoms (invisible to others, won't attack others)
 	can't find a way to link spawn-causing player when entity is created
+
+Make Big Stick do no damage, knockback only
+	attack damage starts at the attacking entity and is added to
+	hence must be greater than Player's base damage: 0.5 h
+	also PlayerEntity#attack knockback specifically checks ( damage > 0 )

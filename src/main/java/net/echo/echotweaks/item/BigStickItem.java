@@ -1,7 +1,3 @@
-/* TODO:
- * Make zero damage (like snowballs to most mobs)
- */
-
 package net.echo.echotweaks.item;
 
 import java.util.List;
