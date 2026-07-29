@@ -1,0 +1,25 @@
+{
+	"parent": "minecraft:adventure/throw_trident",
+	"criteria": {
+		"create_charged_creeper": {
+			"trigger": "minecraft:channeled_lightning",
+			"conditions": {
+				"victims": [{
+					"type": "minecraft:creeper"
+				}]
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.adventure.create_charged_creeper.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.adventure.create_charged_creeper.description"
+		},
+		"icon": {
+			"id": "minecraft:creeper_head"
+		},
+		"frame": "goal"
+	}
+}

@@ -154,6 +154,7 @@ The Recipe unlocks when you get to bedrock level.
 - [Rein Check](#rein-check)
 - [Spitting Image](#spitting-image)
 - [Stack Overflow](#stack-overflow)
+- [Supercharged](#supercharged)
 - [The Lie](#the-lie)
 - [Varied Dairy](#varied-dairy)
 - [You Monster](#you-monster)
@@ -357,6 +358,12 @@ It's too deep!
 Have a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle inside a Bundle.
 
 (Basically either just do it until you can't anymore, or, if you want to be interesting, get one of every color.)
+
+#### <ins>Supercharged</ins>
+
+What made you think this was a good idea?
+
+Strike a Creeper with a Chanelling Trident to charge it.
 
 #### <ins>The Lie</ins>
 
