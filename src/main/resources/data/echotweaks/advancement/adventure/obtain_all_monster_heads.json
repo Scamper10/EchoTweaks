@@ -1,0 +1,65 @@
+{
+	"parent": "echotweaks:adventure/create_charged_creeper",
+	"criteria": {
+		"skeleton": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": "minecraft:skeleton_skull"
+				}]
+			}
+		},
+		"wither_skeleton": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": "minecraft:wither_skeleton_skull"
+				}]
+			}
+		},
+		"zombie": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": "minecraft:zombie_head"
+				}]
+			}
+		},
+		"creeper": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": "minecraft:creeper_head"
+				}]
+			}
+		},
+		"piglin": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": "minecraft:piglin_head"
+				}]
+			}
+		},
+		"dragon": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": "minecraft:dragon_head"
+				}]
+			}
+		}
+	},
+	"display": {
+		"title": {
+			"translate": "advancement.echotweaks.adventure.obtain_all_monster_heads.title"
+		},
+		"description": {
+			"translate": "advancement.echotweaks.adventure.obtain_all_monster_heads.description"
+		},
+		"icon": {
+			"id": "minecraft:piglin_head"
+		},
+		"frame": "challenge"
+	}
+}

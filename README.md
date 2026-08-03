@@ -145,6 +145,7 @@ The Recipe unlocks when you get to bedrock level.
 - [Full Circle](#full-circle)
 - [Fully Furnaced](#fully-furnaced)
 - [Flower Power](#flower-power)
+- [Getting A Head](#getting-a-head)
 - [Goose on the Loose!](#goose-on-the-loose)
 - [It's a New Record!](#its-a-new-record)
 - [One with the Wild](#one-with-the-wild)
@@ -262,6 +263,12 @@ minecraft:wither_rose
 (don't @ me)
 
 </details>
+
+#### <ins>Getting A Head</ins>
+
+Vive la révolution!
+
+Pick up, at some point, all six Mob Heads. You do not need to decapitate a Player for this Advancement.
 
 #### <ins>Goose on the Loose!</ins>
 
